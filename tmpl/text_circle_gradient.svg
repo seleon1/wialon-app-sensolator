@@ -1,0 +1,9 @@
+<svg class="indicator-body" xml:space="preserve" viewBox="0 0 100 100">
+    <g class="text_circle_gradientSVG">
+        <circle cx="50" cy="50" r="50" class="sensor-state"/>
+        <g>
+            <text x="50" y="40" text-anchor="middle" fill="#FEFEFE" class="sensor-name"></text>
+            <text x="50" y="65" text-anchor="middle" fill="#FEFEFE" class="sensor-val"></text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'CrystalNormal';
+    src: url('crystal_normal.eot');
+    src: url('crystal_normal.eot') format('embedded-opentype'),
+         url('crystal_normal.woff') format('woff'),
+         url('crystal_normal.ttf') format('truetype'),
+         url('crystal_normal.svg#CrystalNormal') format('svg');
+}

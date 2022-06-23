@@ -1,0 +1,63 @@
+{
+    "name": "sensolator",
+    "url_name": "sensolator",
+    "title": "Sensolator",
+    "description": "Sensolator",
+    "release_date": "2015-02-12",
+    "author": {
+        "name": "",
+        "url": ""
+    },
+    "licenses": [
+        {
+            "type": " LGPL",
+            "url": "http://www.gnu.org/licenses/lgpl.html"
+        }
+    ],
+    "dependencies": {
+        "jquery": "2.1.0"
+    },
+    "modules": [
+        "sdk"
+    ],
+    "params": [
+        "Active SID",
+        "Base URL",
+        "Host URL",
+        "Language",
+        "Current user"
+    ],
+    "docs": [],
+    "language": [
+        "en",
+        "bg",
+        "br",
+        "de",
+        "es",
+        "et",
+        "fa",
+        "fi",
+        "hu",
+        "pl",
+        "ru",
+        "sk",
+        "tr",
+        "vi"
+    ],
+    "build_date": "<!--@echo date -->",
+    "version": "1.3.7",
+    "keywords": [
+        "wialon",
+        "wialon-apps"
+    ],
+    "browser": {
+        "ie": "9+",
+        "opera": "26+",
+        "safari": "7+",
+        "chrome": "40+",
+        "firefox": "38+"
+    },
+    "logo": "logo.png",
+    "images_path": "images",
+    "desc_path": "desc"
+}

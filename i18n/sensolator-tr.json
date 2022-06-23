@@ -1,0 +1,381 @@
+{
+    "app_name": "Sensolator",
+    "app_title": "Sensolator",
+    "background_url": {
+        "title": "Arkaplan görüntüsünü belirleyin",
+        "url": "URL:",
+        "url_placeholder": "example.com/image.jpg",
+        "set": "Tamam"
+    },
+    "button_dont_save": "Hayır",
+    "button_save": "Evet",
+    "close_modal_text": "Değişiklikleri kaydetmek ister misiniz ?",
+    "close_modal_btn_ok": "Tamam",
+    "copy": "Kopya",
+    "counter_info_header": "%%UNIT%% aracın sayacı %%COUNTER%%  için grafik",
+    "counter_info_header_names": {
+        "Mileage": "km sayacı",
+        "EngineHours": "motor saati sayacı",
+        "Traffic": "GPRS trafiği sayacı"
+    },
+    "counter_properties_header": "%%UNIT%% Aracın sayacı %%COUNTER%% ",
+    "counters": {
+        "Mileage": "km sayacı",
+        "EngineHours": "motor saati sayacı",
+        "Traffic": "GPRS trafiği sayacı"
+    },
+    "error": "Hata",
+    "delete": "Sil",
+    "desktop_delete_confirm": "\"%%DESKTOP_NAME%%\" kontrol panelini silmek istediğinizden emin misiniz ?",
+    "desktop_name_default": "%%DESKTOP_ID%% kontrol paneli",
+    "desktop_name_placeholder": "Kontrol paneli adı",
+    "desktops": {
+        "add_button_title": "Kontrol paneli ekle"
+    },
+    "errors": {
+        "cant_login": "Giriş hatası.",
+        "performing_request": "Talep gerçekleştirilirken hata",
+        "invalid_url": "Geçersiz URL.",
+        "invalid_image_url": "Görüntü yok.",
+        "invalid_image_url_on_page_load": "Arka görüntü yüklenemiyor.",
+        "cant_create_notification": "İzin verilen bildirim limitine eriştiniz.",
+        "cant_get_registered_events_to_fetch_notifications": "Kaydedilen olaylar yüklenemiyor.",
+        "cant_load_interval_to_fetch_notifications": "Kaydedilen olaylar yüklenemiyor."
+    },
+    "groups": {
+        "graph": "Grafik",
+        "text": "Figürler",
+        "circle": "İbre",
+        "other": "Skala",
+        "switchers": "Anahtar"
+    },
+    "all_units": "Araçlar",
+    "all_sensors": "Tüm sensörler",
+    "km_h": "km/s",
+    "last_message": "Son mesaj",
+    "location": "Konum",
+    "locale": {
+        "days": [
+            "Pazar",
+            "Pazartesi",
+            "Salı",
+            "Çarşamba",
+            "Perşembe",
+            "Cuma",
+            "Cumartesi"
+        ],
+        "days_short": [
+            "Paz",
+            "Pzt",
+            "Sal",
+            "Çar",
+            "Per",
+            "Cum",
+            "Cts"
+        ],
+        "months": [
+            "Ocak",
+            "Şubat",
+            "Mart",
+            "Nisan",
+            "Mayıs",
+            "Haziran",
+            "Temmuz",
+            "Ağustos",
+            "Eylül",
+            "Ekim",
+            "Kasım",
+            "Aralık"
+        ],
+        "months_short": [
+            "Oca",
+            "Şub",
+            "Mar",
+            "Nis",
+            "May",
+            "Haz",
+            "Tem",
+            "Ağu",
+            "Eyl",
+            "Eki",
+            "Kas",
+            "Ara"
+        ]
+    },
+    "measure_units": {
+        "Mileage": [
+            "km",
+            "mil"
+        ],
+        "EngineHours": "s",
+        "Traffic": "KB"
+    },
+    "triggers": "Tetikleyiciler",
+    "notify_range": {
+        "on": "AÇIK",
+        "off": "KAPALI",
+        "lower_bound": "İtibaren:",
+        "upper_bound": "Kadar:",
+        "control_on_inner": "Aralık içi",
+        "control_on_outer": "Aralık dışı",
+        "by_sms": "SMS",
+        "by_email": "E-posta"
+    },
+    "notifications": {
+        "desktop_icon_title": "Bildirimler",
+        "clear_all": "Tümünü temizle",
+        "unit": "Araç",
+        "sensor": "Sensör",
+        "time": "Zaman",
+        "value": "Değer",
+        "email": "E-posta",
+        "email_placeholder": "ad@ornek.com",
+        "phone": "Telefon",
+        "phone_placeholder": "+905299000001"
+    },
+    "openstreetmap": "OpenStreetMap",
+    "ok": "TAMAM",
+    "period": {
+        "today": "Bugün",
+        "yesterday": "Dün",
+        "one_week": "Hafta",
+        "one_month": "Ay",
+        "custom": "Özel"
+    },
+    "pin_to_desktop": "Panele işaretle",
+    "restore_custom_fields": "Özel alanları yeniden yükle",
+    "remote_url": {
+        "add": "TAMAM",
+        "add_button": "İzlemek için yeni URL ekle",
+        "add_title": "URL'i izle",
+        "edit_title": "URL'i düzenle",
+        "url": "URL:",
+        "url_placeholder": "example.com/streaming/",
+        "save": "TAMAM"
+    },
+    "speed": "Hız",
+    "set_background_map": "Arka planda haritayı göster",
+    "set_background_color": "Arka plan rengini belirle",
+    "set_background_image": "Arka plan görüntüyü belirle",
+    "sensor_visual_settings": "Ek ayarlar:",
+    "sensor_notification_settings": "Bildirim:",
+    "sensor_value_and_scale_round": "Tamsayı değerler",
+    "show_unit_counter_properties": "Özellikleri göster",
+    "show_unit_counter_info": "Grafiği göster",
+    "show_unit_sensor_properties": "Özellikleri göster",
+    "show_unit_sensor_info": "Grafiği göster",
+    "time_range_delimiter": "-",
+    "cancel": "İptal",
+    "select_counters_to_watch": "İzlemek üzere sayaçları seçin:",
+    "select_sensors_to_watch": "İzlemek üzere sensörleri seçin:",
+    "update_watch_sensors": "TAMAM",
+    "unpin_from_desktop": "Panodan işareti kaldır",
+    "save_sensor_properties": "TAMAM",
+    "save_user_settings": "TAMAM",
+    "sensor": {
+        "min": "Minimum:",
+        "max": "Maksimum:",
+        "invalid_value": "Bilinmeyen",
+        "background_placeholder": "example.com/background.jpg",
+        "color_scheme": "Renk düzeni:",
+        "reset": "Reset",
+        "remove": "Kaldır",
+        "add": "Ekle",
+        "from": "den",
+        "to": "e",
+        "err_range": "Geçersiz aralık."
+    },
+    "sensor_types": {
+        "impulse fuel consumption": "Darbe yakıt tüketim sensörü",
+        "absolute fuel consumption": "Mutlak yakıt tüketim sensörü",
+        "instant fuel consumption": "Anlık yakıt tüketim sensörü",
+        "fuel level": "Yakıt seviye sensörü",
+        "fuel level impulse sensor": "Yakıt seviyesi darbe sensörü",
+        "temperature": "Sıcaklık sensörü",
+        "temperature coefficient": "Sıcaklık katsayısı",
+        "engine rpm": "Motor devir sensörü",
+        "engine operation": "Motor kontakt sensörü",
+        "voltage": "Gerilim sensörü",
+        "digital": "Özel sayısal sensör",
+        "custom": "Özel sensör",
+        "mileage": "Kilometre sensörü",
+        "odometer": "Bağıl odometre",
+        "engine efficiency": "Motor verimlilik sensörü",
+        "engine hours": "Mutlak motor saati",
+        "relative engine hours": "Bağıl motor saati",
+        "counter": "Sayaç sensörü",
+        "accelerometer": "İvme ölçer",
+        "driver": "Sürücü bağlama",
+        "trailer": "Römork eşleşme",
+        "alarm trigger": "Alarm tetikleyici"
+    },
+    "sensor_metrics": {
+        "absolute fuel consumption": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "fuel level": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "fuel level impulse sensor": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "temperature": {
+            "°C": "°C",
+            "°F": "°F"
+        },
+        "engine rpm": {
+            "rpm": "rpm"
+        },
+        "engine operation": {
+            "On/Off": "Açık/Kapalı"
+        },
+        "voltage": {
+            "V": "V"
+        },
+        "digital": {
+            "On/Off": "Açık/Kapalı"
+        },
+        "mileage": {
+            "km": "km",
+            "mi": "mil"
+        },
+        "odometer": {
+            "km": "km",
+            "mi": "mil"
+        },
+        "engine efficiency": {
+            "On/Off": "Açık/Kapalı"
+        },
+        "engine hours": {
+            "hours": "s"
+        },
+        "relative engine hours": {
+            "hours": "s"
+        },
+        "accelerometer": {
+            "G": "G"
+        },
+        "weight": {
+            "t": "sensör ağırlık metriği ton"
+        }
+    },
+    "sensor_digital_on": "Açık",
+    "sensor_digital_off": "Kapalı",
+    "sensor_properties_header": "%%UNIT%% Aracın %%SENSOR%% sensörü",
+    "sensor_info_header": "%%UNIT%% aracın sayacı %%SENSOR%%  için grafik",
+    "sensor_last_value_prefix": "Son değer:",
+    "sensor_last_value_middle_part": "açık",
+    "widget_show_unit_name": "Plaka",
+    "widget_show_sensor_name": "Sensör adı",
+    "widget_show_axes": "Gridi göster",
+    "widget_fit": "Maksimum boyut",
+    "widget_counter_make_style_default": "Aynı tipteki tüm sayaçlar için bu tipi standart olarak belirle:",
+    "widget_sensor_make_style_default": "Aynı tipteki tüm sayaçlar için bu tipi standart olarak belirle:",
+    "unavailable": "Mevcut değil",
+    "unique_id": "Eşsiz kimlik",
+    "unit_sensors": "Özellikleri göster",
+    "user_settings": {
+        "title": "Bildirim ayarları:",
+        "notifications": {
+            "email": "E-posta:",
+            "phone": "Telefon:"
+        }
+    },
+    "zoom_in_title": "Yakınlaştır",
+    "zoom_out_title": "Uzaklaştır",
+    "commands": {
+        "query_pos": "Konum sorgula",
+        "block_engine": "Motoru blokla",
+        "unblock_engine": "Motor blokajını kaldır",
+        "output_on": "Çıkışı etkinleştir",
+        "output_off": "Çıkışı deaktive et",
+        "download_msgs": "Mesajları indir",
+        "set_report_interval": "Veri transfer aralığını belirle",
+        "custom_msg": "Özel mesaj gönder",
+        "driver_msg": "Sürücüye mesaj gönder",
+        "send_position": "Konum gönder",
+        "send_route": "Rota gönder",
+        "upload_cfg": "Konfigürasyonu yükle",
+        "upload_sw": "Donanım yazılımını yükle",
+        "query_photo": "Anlık görüntü sorgula",
+        "query_ddd": "DDD dosyası sorgula"
+    },
+    "title-commands-window": "Araç için komutlar",
+    "title-change-commands-window": "Komut parametreleri",
+    "title-change-commands-window-name": "Ad",
+    "title-change-commands-window-params": "Metin",
+    "title-change-commands-window-coord": "Koordinatlar",
+    "title-change-commands-window-coord-lat": "Enlem",
+    "title-change-commands-window-coord-lng": "Boylam",
+    "choose-point": "Lütfen, haritada bir nokta seçin.",
+    "type-commands": {
+        "0": "Otomatik",
+        "gsm": "SMS",
+        "tcp": "TCP",
+        "udp": "UDP",
+        "vrt": "Sanal"
+    },
+    "title-activate-output": "Çıkış",
+    "title-deactivate-output": "Çıkış",
+    "exec-command-success": "Komut gönderildi.",
+    "exec-command-error": "Komut yürütülürken hata",
+    "invalid-coord": "Lütfen, koordinatları belirleyiniz.",
+    "invalid-coord-value": "Geçersiz komut parametreleri",
+    "1003": "Aynı anda bir isteğe izin verilir.",
+    "1004": "Mesaj sınırı aşılmıştır.",
+    "1005": "İşlem süresi sınırı aştı.",
+    "err_perf_req": "Talep gerçekleştirilirken hata",
+    "report_object": "Madde",
+    "report_template": "Şablon",
+    "report_object_type": "Madde tipi",
+    "execute": "Yürüt",
+    "no_data": "Veri yok",
+    "report_result": "Rapor Sonucu",
+    "stats": "İstatistikler",
+    "list_table": "Rapor Şablonları",
+    "map": "Harita",
+    "photos": "Görüntüler",
+    "clear": "Temizle",
+    "reports": "Raporlar",
+    "procmsg": "Rapor yükleniyor",
+    "report_empty": "Raporu boşalt",
+    "charts": "Grafikler",
+    "invalid_table": "Geçersiz tablo",
+    "out_of_range": "Aralık dışı",
+    "downloading_error": "Yükleme hatası",
+    "msgs_per_page": "Sayfadaki satırlar",
+    "msgs_all": "Tüm",
+    "errormsg": "Bağlantı hatası",
+    "exec_error": "Seçilen aralık için veri yok.",
+    "export_to_excel": "Excel'e aktarma",
+    "export_to_pdf": "PDF'e aktarma",
+    "make_report_file": "Dosyaya aktar",
+    "messages": "Mesajlara transfer",
+    "msgs_descr": " {total}ın {from} dan {to} e kadar",
+    "nomsg": "Seçilen aralıkta veri yok.",
+    "page": "Sayfa",
+    "pages_descr": "{total}ın",
+    "pagestat": "{from} den {to} e kadar {total} dan maddeler gösteriliyor",
+    "photos_descr": "from %d den %d e kadar %d maddeler",
+    "photos_per_page": "Her sayfadaki görüntüler",
+    "print_report": "Yazdırma hatası",
+    "revert": "Reset",
+    "scroll_left": "Sola kaydır",
+    "scroll_right": "Sağa kaydır",
+    "toolbar_awidth": "Sütunların genişliğinin otomatik olarak ayarla",
+    "toolbar_delete": "Seçilen maddeleri sil",
+    "toolbar_first": "Birinci sayfa",
+    "toolbar_last": "Son sayfa",
+    "toolbar_next": "Sonraki sayfa",
+    "toolbar_page_items": "Bir sayfadaki maddelerin sayısını seçin",
+    "toolbar_page_selector": "Sayfa numarasını girin",
+    "toolbar_prev": "Önceki sayfa",
+    "trace": "Grafik değerlerini tara",
+    "y_auto_scale": "Y ekseni otomatik yakınlaştırma",
+    "zoom_custom": "Özel yakınlaştır",
+    "zoom_in": "Yakınlaştır",
+    "zoom_out": "Uzaklaştır"
+}

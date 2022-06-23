@@ -1,0 +1,7 @@
+<svg class="indicator-body" xml:space="preserve" viewBox="0 0 20982 2515">
+<g class="horizontal_simpleSVG">
+	<path class="fil0" d="M20982 2077c0,242 -193,438 -432,438l-20117 0c-239,0 -433,-196 -433,-438l0 -1640c0,-242 194,-438 433,-438l20117 0c239,0 432,196 432,438l0 1640z"/>
+	<text x="587" y="2222" class="sensor-name"></text>
+	<text x="20000" y="2218" class="sensor-val"></text>
+</g>
+</svg>

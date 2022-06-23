@@ -1,0 +1,381 @@
+{
+    "app_name": "Sensolator",
+    "app_title": "Sensolator",
+    "background_url": {
+        "title": "Defina uma imagem de fundo",
+        "url": "URL:",
+        "url_placeholder": "example.com/image.jpg",
+        "set": "OK"
+    },
+    "button_dont_save": "Não",
+    "button_save": "Sim",
+    "close_modal_text": "Deseja guardar as alterações?",
+    "close_modal_btn_ok": "OK",
+    "copy": "Copiar",
+    "counter_info_header": "Gráfico para %%COUNTER%% da unidade %%UNIT%%",
+    "counter_info_header_names": {
+        "Mileage": "contador de quilometragem",
+        "EngineHours": "contador de horas de notor",
+        "Traffic": "Contador de tráfego GPRS"
+    },
+    "counter_properties_header": "%%COUNTER%% da unidade %%UNIT%%",
+    "counters": {
+        "Mileage": "Contador de quilometragem",
+        "EngineHours": "Contador de horas de motor",
+        "Traffic": "Contador de tráfego GPRS"
+    },
+    "error": "Erro",
+    "delete": "Eliminar",
+    "desktop_delete_confirm": "Tem certeza de que deseja eliminar a área de trabalho \"%% DESKTOP_NAME %%\"?",
+    "desktop_name_default": "Área de trabalho %%DESKTOP_ID%%",
+    "desktop_name_placeholder": "Nome da área de trabalho",
+    "desktops": {
+        "add_button_title": "Adicionar uma área de trabalho"
+    },
+    "errors": {
+        "cant_login": "Erro ao iniciar sessão.",
+        "performing_request": "Erro ao executar pedido.",
+        "invalid_url": "URL inválido.",
+        "invalid_image_url": "Não há imagem disponível.",
+        "invalid_image_url_on_page_load": "Não é possível carregar a imagem de fundo.",
+        "cant_create_notification": "Alcançou o limite de alertas permitidos.",
+        "cant_get_registered_events_to_fetch_notifications": "Não é possível carregar eventos armazenados.",
+        "cant_load_interval_to_fetch_notifications": "Não é possível carregar eventos armazenados."
+    },
+    "groups": {
+        "graph": "Gráfico",
+        "text": "Cifras",
+        "circle": "Agulha",
+        "other": "Escala",
+        "switchers": "Interruptor"
+    },
+    "all_units": "Unidades",
+    "all_sensors": "Todos os sensores",
+    "km_h": "km/h",
+    "last_message": "Última mensagem",
+    "location": "Localização",
+    "locale": {
+        "days": [
+            "Domingo",
+            "Segunda-feira",
+            "Terça-feira",
+            "Quarta-feira",
+            "Quinta-feira",
+            "Sexta-feira",
+            "Sábado"
+        ],
+        "days_short": [
+            "Dom",
+            "Seg",
+            "Ter",
+            "Quar",
+            "Quin",
+            "Sex",
+            "Sáb"
+        ],
+        "months": [
+            "Janeiro",
+            "Fevereiro",
+            "Março",
+            "Abril",
+            "Maio",
+            "Junho",
+            "Julho",
+            "Agosto",
+            "Setembro",
+            "Outubro",
+            "Novembro",
+            "Dezembro"
+        ],
+        "months_short": [
+            "Jan",
+            "Fev",
+            "Mar",
+            "Abr",
+            "Maio",
+            "Jun",
+            "Jul",
+            "Ago",
+            "Set",
+            "Out",
+            "Nov",
+            "Dez"
+        ]
+    },
+    "measure_units": {
+        "Mileage": [
+            "km",
+            "mi"
+        ],
+        "EngineHours": "h",
+        "Traffic": "KB"
+    },
+    "triggers": "Ativações",
+    "notify_range": {
+        "on": "ATIV.",
+        "off": "DESAT.",
+        "lower_bound": "De:",
+        "upper_bound": "A:",
+        "control_on_inner": "No alcance",
+        "control_on_outer": "Fora do alcance",
+        "by_sms": "SMS",
+        "by_email": "E-mail"
+    },
+    "notifications": {
+        "desktop_icon_title": "Alertas",
+        "clear_all": "Eliminar todas",
+        "unit": "Unidade",
+        "sensor": "Sensor",
+        "time": "Tempo",
+        "value": "Valor",
+        "email": "E-mail",
+        "email_placeholder": "name@example.com",
+        "phone": "Telefone",
+        "phone_placeholder": "+375299000001"
+    },
+    "openstreetmap": "OpenStreetMap",
+    "ok": "OK",
+    "period": {
+        "today": "Hoje",
+        "yesterday": "Ontem",
+        "one_week": "Semana",
+        "one_month": "Mês",
+        "custom": "Personalizado"
+    },
+    "pin_to_desktop": "Enviar para área de trabalho",
+    "restore_custom_fields": "Redefinir campos personalizados",
+    "remote_url": {
+        "add": "OK",
+        "add_button": "Adicionar novo URL a seguir",
+        "add_title": "Seguir URL",
+        "edit_title": "Modificar URL",
+        "url": "URL:",
+        "url_placeholder": "example.com/streaming/",
+        "save": "OK"
+    },
+    "speed": "Velocidade",
+    "set_background_map": "Mostrar mapa como fundo",
+    "set_background_color": "Estabelecer a cor de fundo",
+    "set_background_image": "Estabelecer a imagem de fundo",
+    "sensor_visual_settings": "Parâmetros adicionais:",
+    "sensor_notification_settings": "Alerta:",
+    "sensor_value_and_scale_round": "Valores inteiros",
+    "show_unit_counter_properties": "Mostrar propriedades",
+    "show_unit_counter_info": "Mostrar gráfico",
+    "show_unit_sensor_properties": "Mostrar propriedades",
+    "show_unit_sensor_info": "Mostrar gráfico",
+    "time_range_delimiter": "-",
+    "cancel": "Cancelar",
+    "select_counters_to_watch": "Selecione contadores a seguir:",
+    "select_sensors_to_watch": "Selecione sensores a seguir:",
+    "update_watch_sensors": "OK",
+    "unpin_from_desktop": "Desligar da área de trabalho ",
+    "save_sensor_properties": "OK",
+    "save_user_settings": "OK",
+    "sensor": {
+        "min": "Mín.:",
+        "max": "Máx.:",
+        "invalid_value": "Desconhecido",
+        "background_placeholder": "example.com/background.jpg",
+        "color_scheme": "Esquema de cores:",
+        "reset": "Reiniciar",
+        "remove": "Elimminar",
+        "add": "Adicionar",
+        "from": "de",
+        "to": "a",
+        "err_range": "Intervalo inválido."
+    },
+    "sensor_types": {
+        "impulse fuel consumption": "Sensor impulsivo do consumo de combustível",
+        "absolute fuel consumption": "Sensor absoluto do consumo de combustível",
+        "instant fuel consumption": "Sensor instantâneo do consumo de combustível",
+        "fuel level": "Sensor do nível de combustível",
+        "fuel level impulse sensor": "Sensor impulsivo do nível de combustível ",
+        "temperature": "Sensor de temperatura",
+        "temperature coefficient": "Coeficiente de temperatura",
+        "engine rpm": "Sensor de velocidade do motor",
+        "engine operation": "Sensor de ignição de motor",
+        "voltage": "Sensor de voltagem",
+        "digital": "Sensor digital personalizado",
+        "custom": "Sensor personalizado",
+        "mileage": "Sensor de quilometragem",
+        "odometer": "Odômetro relativo",
+        "engine efficiency": "Sensor de eficiência de motor",
+        "engine hours": "Horas de motor absolutas",
+        "relative engine hours": "Horas de motor relativas",
+        "counter": "Sensor contador",
+        "accelerometer": "Acelerômetro",
+        "driver": "Vinculação de motorista",
+        "trailer": "Vinculação de reboque",
+        "alarm trigger": "Ativação de alarme"
+    },
+    "sensor_metrics": {
+        "absolute fuel consumption": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "fuel level": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "fuel level impulse sensor": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "temperature": {
+            "°C": "°C",
+            "°F": "°F"
+        },
+        "engine rpm": {
+            "rpm": "rpm"
+        },
+        "engine operation": {
+            "On/Off": "Ativ./Desat."
+        },
+        "voltage": {
+            "V": "V"
+        },
+        "digital": {
+            "On/Off": "Ativ./Desat."
+        },
+        "mileage": {
+            "km": "km",
+            "mi": "mi"
+        },
+        "odometer": {
+            "km": "km",
+            "mi": "mi"
+        },
+        "engine efficiency": {
+            "On/Off": "Ativ./Desat."
+        },
+        "engine hours": {
+            "hours": "h"
+        },
+        "relative engine hours": {
+            "hours": "h"
+        },
+        "accelerometer": {
+            "G": "G"
+        },
+        "weight": {
+            "t": "t"
+        }
+    },
+    "sensor_digital_on": "Ativ.",
+    "sensor_digital_off": "Desat.",
+    "sensor_properties_header": "Sensor %%SENSOR%% da unidade %%UNIT%%",
+    "sensor_info_header": "Gráfico para %%SENSOR%% da unidade %%UNIT%%",
+    "sensor_last_value_prefix": "Último valor:",
+    "sensor_last_value_middle_part": "ativ.",
+    "widget_show_unit_name": "Nome da unidade",
+    "widget_show_sensor_name": "Nome do sensor",
+    "widget_show_axes": "Mostrar grade",
+    "widget_fit": "Tamanho máximo",
+    "widget_counter_make_style_default": "Fazer este estilo predeterminado para todos os contadores do mesmo tipo:",
+    "widget_sensor_make_style_default": "Fazer este estilo predeterminado para todos os sensores do mesmo tipo:",
+    "unavailable": "Indisponível",
+    "unique_id": "ID único",
+    "unit_sensors": "Ver propriedades",
+    "user_settings": {
+        "title": "Propriedades do alerta:",
+        "notifications": {
+            "email": "E-mail:",
+            "phone": "Telefone"
+        }
+    },
+    "zoom_in_title": "Aproximar",
+    "zoom_out_title": "Afastar",
+    "commands": {
+        "query_pos": "Solicitar posição",
+        "block_engine": "Bloquear motor?",
+        "unblock_engine": "Desbloquear motor",
+        "output_on": "Ativar saída",
+        "output_off": "Desativar saída",
+        "download_msgs": "Fazer download de mensagens",
+        "set_report_interval": "Definir intervalo de transferência de dados",
+        "custom_msg": "Enviar mensagem personalizada",
+        "driver_msg": "Enviar mensagem ao motorista",
+        "send_position": "Enviar posição",
+        "send_route": "Enviar rota",
+        "upload_cfg": "Carregar configuração",
+        "upload_sw": "Carregar firmware",
+        "query_photo": "Solicitar instantânea",
+        "query_ddd": "Solicitar arquivo DDD"
+    },
+    "title-commands-window": "Comandos para a unidade",
+    "title-change-commands-window": "Parâmetros do comando",
+    "title-change-commands-window-name": "Nome",
+    "title-change-commands-window-params": "Texto",
+    "title-change-commands-window-coord": "Coordenadas",
+    "title-change-commands-window-coord-lat": "Latitude",
+    "title-change-commands-window-coord-lng": "Longitude",
+    "choose-point": "Por favor, escolha um ponto no mapa.",
+    "type-commands": {
+        "0": "Auto",
+        "gsm": "SMS",
+        "tcp": "TCP",
+        "udp": "UDP",
+        "vrt": "Virtual"
+    },
+    "title-activate-output": "Saída",
+    "title-deactivate-output": "Saída",
+    "exec-command-success": "Comando enviado.",
+    "exec-command-error": "Erro ao executar comando.",
+    "invalid-coord": "Por favor, indique coordenadas.",
+    "invalid-coord-value": "Parâmetros do comando incorretos",
+    "1003": "Somente pode realizar um pedido por vez.",
+    "1004": "Excedeu o limite de mensagens.",
+    "1005": "O tempo de execução excedeu o limite.",
+    "err_perf_req": "Erro ao executar pedido.",
+    "report_object": "Objeto",
+    "report_template": "Planilha",
+    "report_object_type": "Tipo de objeto",
+    "execute": "Executar",
+    "no_data": "Não há dados",
+    "report_result": "Resultado do relatório",
+    "stats": "Estatísticas",
+    "list_table": "Planilhas de relatórios",
+    "map": "Mapa",
+    "photos": "Imagens",
+    "clear": "Eliminar",
+    "reports": "Relatórios",
+    "procmsg": "Carregando o relatório",
+    "report_empty": "Relatório vazio",
+    "charts": "Gráficos",
+    "invalid_table": "Tabela inválida",
+    "out_of_range": "Fora do alcance",
+    "downloading_error": "Erro ao fazer download",
+    "msgs_per_page": "Filas por página",
+    "msgs_all": "Todos",
+    "errormsg": "Erro de conexão",
+    "exec_error": "Não há dados para o intervalo selecionado.",
+    "export_to_excel": "Exportar a Excel",
+    "export_to_pdf": "Exportar a PDF",
+    "make_report_file": "Exportar a Arquivo",
+    "messages": "Transferir a mensagens",
+    "msgs_descr": "Linhas de {from} a {to} de {total}",
+    "nomsg": "Não há dados para o intervalo escolhido.",
+    "page": "Página",
+    "pages_descr": "de {total}",
+    "pagestat": "Mostrando {from} a {to} de {total} objetos",
+    "photos_descr": "Objetos de %d a %d de %d",
+    "photos_per_page": "Imagens por página",
+    "print_report": "Imprimir relatório",
+    "revert": "Redefinir",
+    "scroll_left": "Deslizar à esquerda",
+    "scroll_right": "Deslizar à direita",
+    "toolbar_awidth": "Defina a largura automática da coluna",
+    "toolbar_delete": "Eliminar objetos selecionados",
+    "toolbar_first": "Primeira página",
+    "toolbar_last": "Última página",
+    "toolbar_next": "Seguinte página",
+    "toolbar_page_items": "Selecione o número de objetos por página",
+    "toolbar_page_selector": "Indique o número da página",
+    "toolbar_prev": "Página anterior",
+    "trace": "Marque o valor no gráfico",
+    "y_auto_scale": "Zoom automático do eixo Y",
+    "zoom_custom": "Personalizar o zoom",
+    "zoom_in": "Aproximar",
+    "zoom_out": "Afastar"
+}

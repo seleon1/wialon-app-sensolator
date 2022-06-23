@@ -1,0 +1,44 @@
+<svg class="indicator-body" xml:space="preserve" viewBox="0 0 5769 5769">
+<g class="gauge_quarterSVG">
+  <path class="fil0" d="M5598 5598l-5598 0c0,-3092 2506,-5598 5598,-5598l0 5598z"/>
+  <path class="fil1" d="M5598 5562l-5431 0c0,-2999 2431,-5431 5431,-5431l0 5431z"/>
+  <path class="fil2" d="M5598 5562l-5431 0c0,-1440 572,-2822 1591,-3840l3840 3840z"/>
+  <path class="fil0" d="M5598 5562l-3688 0c0,-2037 1651,-3688 3688,-3688l0 3688z"/>
+  <polygon class="fil4" points="406,5284 182,5271 184,5233 408,5246"/>
+  <polygon class="fil4" points="429,4995 206,4970 210,4932 433,4958"/>
+  <polygon class="fil4" points="684,3860 474,3787 486,3751 697,3825"/>
+  <polygon class="fil4" points="788,3587 582,3502 597,3468 802,3553"/>
+  <polygon class="fil4" points="468,4709 248,4671 255,4634 475,4672"/>
+  <polygon class="fil4" points="744,4481 305,4380 317,4325 756,4426"/>
+  <polygon class="fil4" points="597,4137 382,4075 392,4039 607,4101"/>
+  <polygon class="fil4" points="1306,3533 696,3239 729,3171 1339,3465"/>
+  <polygon class="fil4" points="1040,3061 844,2950 862,2917 1058,3028"/>
+  <polygon class="fil4" points="1187,2811 998,2692 1018,2660 1207,2779"/>
+  <polygon class="fil4" points="1348,2567 1166,2438 1188,2407 1370,2537"/>
+  <polygon class="fil4" points="1693,2481 1342,2200 1377,2156 1729,2436"/>
+  <polygon class="fil4" points="1712,2109 1542,1957 1567,1929 1737,2081"/>
+  <polygon class="fil4" points="1912,1897 1751,1736 1778,1709 1938,1870"/>
+  <polygon class="fil4" points="2576,1332 2446,1149 2476,1127 2606,1310"/>
+  <polygon class="fil4" points="2122,1696 1972,1529 2001,1504 2150,1671"/>
+  <polygon class="fil4" points="2610,1873 2188,1343 2247,1296 2669,1826"/>
+  <polygon class="fil4" points="2819,1169 2698,976 2730,956 2851,1149"/>
+  <polygon class="fil4" points="3069,1020 2960,823 2993,805 3102,1002"/>
+  <polygon class="fil4" points="3418,1089 3223,683 3274,659 3469,1065"/>
+  <polygon class="fil4" points="3594,766 3508,557 3542,542 3629,751"/>
+  <polygon class="fil4" points="3865,661 3791,449 3827,437 3901,649"/>
+  <polygon class="fil4" points="4144,572 4081,352 4117,341 4181,562"/>
+  <polygon class="fil4" points="4509,942 4358,279 4431,262 4582,925"/>
+  <polygon class="fil4" points="4711,442 4674,219 4711,213 4748,435"/>
+  <polygon class="fil4" points="5038,396 5000,400 4975,174 5012,170"/>
+  <polygon class="fil4" points="5329,372 5291,375 5279,149 5316,147"/>
+  <text x="957" y="5507" class="sensor-dash"></text>
+  <text x="1430" y="3805" class="sensor-dash"></text>
+  <text x="2603" y="2338" class="sensor-dash"></text>
+  <text x="4325" y="1425" class="sensor-dash"></text>
+  <text x="5300" y="4330" class="sensor-val" text-anchor="end"></text>
+  <text x="5300" y="3849" class="sensor-name" text-anchor="end"></text>
+  <path class="sensor-arrow" transform="rotate(90, 5598, 5597)" d="M1080 5632l4430 137c15,0 30,0 44,-2 101,-14 175,-84 175,-166l-4752 -2c2,-22 23,-30 103,-33l4430 -134c15,0 30,0 44,2 101,14 175,84 175,167l-4752 -1c2,22 23,30 103,33z">
+    <animateTransform begin="indefinite" attributeName="transform" type="rotate" from="" to="" additive="replace" fill="freeze"/>
+  </path>
+</g>
+</svg>

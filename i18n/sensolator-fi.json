@@ -1,0 +1,381 @@
+{
+    "app_name": "Sensolator",
+    "app_title": "Sensolator",
+    "background_url": {
+        "title": "Aseta taustakuva",
+        "url": "URL:",
+        "url_placeholder": "esimerkki.fi/image.jpg",
+        "set": "OK"
+    },
+    "button_dont_save": "Ei",
+    "button_save": "Kyllä",
+    "close_modal_text": "Haluatko tallentaa muutokset?",
+    "close_modal_btn_ok": "Ok",
+    "copy": "Kopioi",
+    "counter_info_header": "Laitteen %%UNIT%% taulukko %%COUNTER%%",
+    "counter_info_header_names": {
+        "Mileage": "matkamittari",
+        "EngineHours": "käyntitunnit",
+        "Traffic": "GPRS liikenne"
+    },
+    "counter_properties_header": "%%COUNTER%% laitteelle %%UNIT%%",
+    "counters": {
+        "Mileage": "Matkamittari",
+        "EngineHours": "Käyntitunnit",
+        "Traffic": "GPRS liikenne"
+    },
+    "error": "Virhe",
+    "delete": "Poista",
+    "desktop_delete_confirm": "Haluatko varmasti poistaa \"%%DESKTOP_NAME%%\"?",
+    "desktop_name_default": "Työpöytä %%DESKTOP_ID%%",
+    "desktop_name_placeholder": "Työpöydän nimi",
+    "desktops": {
+        "add_button_title": "Lisää työpöytä"
+    },
+    "errors": {
+        "cant_login": "Kirjautumisvirhe.",
+        "performing_request": "Palvelun pyyntövirhe",
+        "invalid_url": "Väärä URL",
+        "invalid_image_url": "Kuvaa ei ole",
+        "invalid_image_url_on_page_load": "Taustakuvan latausvirhe",
+        "cant_create_notification": "Ilmoitusten määrä saavutettu.",
+        "cant_get_registered_events_to_fetch_notifications": "Tapahtumien latausvirhe.",
+        "cant_load_interval_to_fetch_notifications": "Tapahtumien latausvirhe."
+    },
+    "groups": {
+        "graph": "Kaavio",
+        "text": "Kuviot",
+        "circle": "Nuppineula",
+        "other": "Skaalaus",
+        "switchers": "Vaihda"
+    },
+    "all_units": "Ajoneuvot",
+    "all_sensors": "Kaikki anturit",
+    "km_h": "km/h",
+    "last_message": "Viimeisin viesti",
+    "location": "Sijainti",
+    "locale": {
+        "days": [
+            "Sunnuntai",
+            "Maanatai",
+            "Tiistai",
+            "Keskiviikko",
+            "Torstai",
+            "Perjantai",
+            "Lauantai"
+        ],
+        "days_short": [
+            "Su",
+            "Ma",
+            "Ti",
+            "Ke",
+            "To",
+            "Pe",
+            "La"
+        ],
+        "months": [
+            "Tammikuu",
+            "Helmikuu",
+            "Maaliskuu",
+            "Huhtikuu",
+            "Toukokuu",
+            "Kesäkuu",
+            "Heinäkuu",
+            "Elokuu",
+            "Syyskuu",
+            "Lokakuu",
+            "Marraskuu",
+            "Joulukuu"
+        ],
+        "months_short": [
+            "Tam",
+            "Hel",
+            "Maa",
+            "Huh",
+            "Tou",
+            "Kes",
+            "Hei",
+            "Elo",
+            "Syy",
+            "Lok",
+            "Mar",
+            "Jou"
+        ]
+    },
+    "measure_units": {
+        "Mileage": [
+            "km",
+            "mi"
+        ],
+        "EngineHours": "h",
+        "Traffic": "KB"
+    },
+    "triggers": "Kytkentöjä",
+    "notify_range": {
+        "on": "ON",
+        "off": "OFF",
+        "lower_bound": "Mistä:",
+        "upper_bound": "Mihin:",
+        "control_on_inner": "Rajoissa",
+        "control_on_outer": "Rajojen ulkopuolella",
+        "by_sms": "SMS",
+        "by_email": "e-mail"
+    },
+    "notifications": {
+        "desktop_icon_title": "Ilmoitukset",
+        "clear_all": "Tyhjennä kaikki",
+        "unit": "Ajoneuvo",
+        "sensor": "Anturi",
+        "time": "Aika",
+        "value": "Arvo",
+        "email": "e_mail",
+        "email_placeholder": "nimi@malli.fi",
+        "phone": "Puhelin",
+        "phone_placeholder": "+358123456789"
+    },
+    "openstreetmap": "OpenStreetMap",
+    "ok": "OK",
+    "period": {
+        "today": "Tänään",
+        "yesterday": "Eilen",
+        "one_week": "Viikko",
+        "one_month": "Kuukausi",
+        "custom": "Oma"
+    },
+    "pin_to_desktop": "PIN työpöydälle",
+    "restore_custom_fields": "Palauta omat kentät",
+    "remote_url": {
+        "add": "OK",
+        "add_button": "Lisää uusi URL",
+        "add_title": "Seuraa URL",
+        "edit_title": "Muokkaa URL",
+        "url": "URL:",
+        "url_placeholder": "esimerkki.com/streaming/",
+        "save": "OK"
+    },
+    "speed": "Nopeus",
+    "set_background_map": "Näytä kartta taustalla",
+    "set_background_color": "Aseta taustan väri",
+    "set_background_image": "Aseta taustan kuva",
+    "sensor_visual_settings": "Lisäasetukset:",
+    "sensor_notification_settings": "Ilmoitukset:",
+    "sensor_value_and_scale_round": "Integer arvot",
+    "show_unit_counter_properties": "Näytä lisätiedot",
+    "show_unit_counter_info": "Näytä kaavio",
+    "show_unit_sensor_properties": "Näytä lisätiedot",
+    "show_unit_sensor_info": "Näytä kaavio",
+    "time_range_delimiter": "-",
+    "cancel": "Peruuta",
+    "select_counters_to_watch": "Valitse laskurit:",
+    "select_sensors_to_watch": "Valitse anturit:",
+    "update_watch_sensors": "Ok",
+    "unpin_from_desktop": "Irroita työpöydältä",
+    "save_sensor_properties": "OK",
+    "save_user_settings": "OK",
+    "sensor": {
+        "min": "Min:",
+        "max": "Max:",
+        "invalid_value": "Tuntematon",
+        "background_placeholder": "esimerkki.com/background.jpg",
+        "color_scheme": "Värikartta:",
+        "reset": "Tyhjennä",
+        "remove": "Poista",
+        "add": "Lisää",
+        "from": "mistä",
+        "to": "mihin",
+        "err_range": "Väärä aikaväli"
+    },
+    "sensor_types": {
+        "impulse fuel consumption": "Impulssi kulutusanturi",
+        "absolute fuel consumption": "Absoluuttinen kulutusanturi",
+        "instant fuel consumption": "Välitön kulutusanturi",
+        "fuel level": "Polttoaineen määrän anturi",
+        "fuel level impulse sensor": "Polttoaineen määrän anturi - impulssi",
+        "temperature": "Lämpötila-anturi",
+        "temperature coefficient": "Lämpötilakerroin",
+        "engine rpm": "Moottorin kierroslukuanturi",
+        "engine operation": "Moottorin käynnistysanturi",
+        "voltage": "Jänniteanturi",
+        "digital": "Oma digit anturi",
+        "custom": "Oma anturi",
+        "mileage": "Matka-anturi",
+        "odometer": "Suhteellinen odometri",
+        "engine efficiency": "Moottorin teho-anturi",
+        "engine hours": "Moottorin käyntitunnit",
+        "relative engine hours": "Moottorin suht. käyntitunnit",
+        "counter": "Laskuri-anturi",
+        "accelerometer": "Kiihtyvyysanturi",
+        "driver": "Kuljettajan liitos",
+        "trailer": "Perävaunun liitos",
+        "alarm trigger": "Halytys tunnistettu"
+    },
+    "sensor_metrics": {
+        "absolute fuel consumption": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "fuel level": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "fuel level impulse sensor": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "temperature": {
+            "°C": "°C",
+            "°F": "°F"
+        },
+        "engine rpm": {
+            "rpm": "rpm"
+        },
+        "engine operation": {
+            "On/Off": "On/Off"
+        },
+        "voltage": {
+            "V": "V"
+        },
+        "digital": {
+            "On/Off": "On/Off"
+        },
+        "mileage": {
+            "km": "km",
+            "mi": "mi"
+        },
+        "odometer": {
+            "km": "km",
+            "mi": "mi"
+        },
+        "engine efficiency": {
+            "On/Off": "On/Off"
+        },
+        "engine hours": {
+            "hours": "h"
+        },
+        "relative engine hours": {
+            "hours": "h"
+        },
+        "accelerometer": {
+            "G": "G"
+        },
+        "weight": {
+            "t": "t"
+        }
+    },
+    "sensor_digital_on": "Päällä",
+    "sensor_digital_off": "Pois päältä",
+    "sensor_properties_header": "Ajoneuvon %%UNIT%% anturi %%SENSOR%%",
+    "sensor_info_header": "Ajoneuvon %%UNIT%% anturikaavio %%SENSOR%%",
+    "sensor_last_value_prefix": "Viimeisin arvo",
+    "sensor_last_value_middle_part": "päällä",
+    "widget_show_unit_name": "Ajoneuvon nimi",
+    "widget_show_sensor_name": "Anturin nimi",
+    "widget_show_axes": "Näytä tartunta",
+    "widget_fit": "Suurin koko",
+    "widget_counter_make_style_default": "Tee tästä oletustyyli kaikille laskureille:",
+    "widget_sensor_make_style_default": "Tee tästä oletustyyli kaikille antureille:",
+    "unavailable": "Ei saatavilla",
+    "unique_id": "ID",
+    "unit_sensors": "Näytä lisätiedot",
+    "user_settings": {
+        "title": "Ilmoitusasetukset:",
+        "notifications": {
+            "email": "E-mail:",
+            "phone": "Puhelin"
+        }
+    },
+    "zoom_in_title": "Lähennä",
+    "zoom_out_title": "Loitonna",
+    "commands": {
+        "query_pos": "Etsi sijainti",
+        "block_engine": "Ajonesto päälle",
+        "unblock_engine": "Ajonesto pois päältä",
+        "output_on": "Ota lähtö käyttöön",
+        "output_off": "Ota lähtö pois päältä",
+        "download_msgs": "Lataa viestit",
+        "set_report_interval": "Lähetä datan lähetysväli",
+        "custom_msg": "Lähetä oma viesti",
+        "driver_msg": "Lähetä viesti kuljettajalle",
+        "send_position": "Lähetä sijainti",
+        "send_route": "Lähetä reitti",
+        "upload_cfg": "Lataa asetukset",
+        "upload_sw": "Lataa firmware",
+        "query_photo": "Etsi pikakuva",
+        "query_ddd": "Etsi DDD tiedosto"
+    },
+    "title-commands-window": "Ajonuvon komennot",
+    "title-change-commands-window": "Komennon asetukset",
+    "title-change-commands-window-name": "Nimi",
+    "title-change-commands-window-params": "Teksti",
+    "title-change-commands-window-coord": "Koordinaatit",
+    "title-change-commands-window-coord-lat": "Leveys",
+    "title-change-commands-window-coord-lng": "Pituus",
+    "choose-point": "Valitse piste kartalta",
+    "type-commands": {
+        "0": "Auto",
+        "gsm": "SMS",
+        "tcp": "TCP",
+        "udp": "UDP",
+        "vrt": "Virtuaalinen"
+    },
+    "title-activate-output": "Lähtö",
+    "title-deactivate-output": "Lähtö",
+    "exec-command-success": "Komento lähetetty.",
+    "exec-command-error": "Komennon suoritusvirhe",
+    "invalid-coord": "Näytä koordinaatit",
+    "invalid-coord-value": "Komennon parametrivirhe",
+    "1003": "Vain yksi pyyntö on sallittu kerrallaan.",
+    "1004": "Viestien sallittu määrä ylitetty.",
+    "1005": "Suoritusajan raja ylitetty.",
+    "err_perf_req": "Suoritusvirhe",
+    "report_object": "Laite",
+    "report_template": "Malli",
+    "report_object_type": "Laitteen tyyppi",
+    "execute": "Suorita",
+    "no_data": "Ei dataa",
+    "report_result": "Raportti",
+    "stats": "Tilastot",
+    "list_table": "Raporttimallit",
+    "map": "Kartta",
+    "photos": "Kuvat",
+    "clear": "Tyhjennä",
+    "reports": "Raportit",
+    "procmsg": "Ladataan raporttia",
+    "report_empty": "Tyhjä raportti",
+    "charts": "Taulukot",
+    "invalid_table": "Väärä taulu",
+    "out_of_range": "Alueen ulkopuolella",
+    "downloading_error": "Latausvirhe",
+    "msgs_per_page": "Rivejä sivulla",
+    "msgs_all": "Kaikki",
+    "errormsg": "Yhteysvirhe",
+    "exec_error": "Ei dataa valitulla aikavälillä",
+    "export_to_excel": "Vie Exceliin",
+    "export_to_pdf": "Vie PDFn",
+    "make_report_file": "Vie tiedostoon",
+    "messages": "Siirrä viesteihin",
+    "msgs_descr": "Laitteet {from} - {to} {total}",
+    "nomsg": "Ei dataa valitulla aikavälillä.",
+    "page": "Sivu",
+    "pages_descr": "{total}",
+    "pagestat": "Näytetään {from} - {to}  {total} laitetta",
+    "photos_descr": "Laitteet %d - %d %d",
+    "photos_per_page": "Kuvia sivulla",
+    "print_report": "Tulosta raportti",
+    "revert": "Nollaa",
+    "scroll_left": "Vasemmalle",
+    "scroll_right": "Oikealle",
+    "toolbar_awidth": "Sarakkaiden autom leveys",
+    "toolbar_delete": "Poista valitut laitteet",
+    "toolbar_first": "Ensim sivu",
+    "toolbar_last": "Viim sivu",
+    "toolbar_next": "Seur sivu",
+    "toolbar_page_items": "Valitse laitteiden numero yhdelle sivulle",
+    "toolbar_page_selector": "Anna sivunumero",
+    "toolbar_prev": "Edel sivu",
+    "trace": "Jäljitä taulukkoarvot",
+    "y_auto_scale": "Y axis auto zoom",
+    "zoom_custom": "Oma zoomaus",
+    "zoom_in": "Lähennä",
+    "zoom_out": "Loitonna"
+}

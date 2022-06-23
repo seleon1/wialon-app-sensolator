@@ -1,0 +1,378 @@
+{
+    "app_name": "Sensolator",
+    "app_title": "Sensolator",
+    "background_url": {
+        "title": "Задай фоново изображение",
+        "url": "URL:",
+        "url_placeholder": "example.com/image.jpg",
+        "set": "OK"
+    },
+    "button_dont_save": "Не",
+    "button_save": "Да",
+    "close_modal_text": "Желаете ли да запазите промените?",
+    "close_modal_btn_ok": "ОК",
+    "copy": "Копирай",
+    "counter_info_header": "Графика за %%COUNTER%% на устройство %%UNIT%%",
+    "counter_info_header_names": {
+        "Mileage": "брояч на километрите",
+        "EngineHours": "брояч на моточасовете",
+        "Traffic": "брояч на GPRS трафика"
+    },
+    "counter_properties_header": "%%COUNTER%% на устройство %%UNIT%%",
+    "counters": {
+        "Mileage": "Брояч на километрите",
+        "EngineHours": "Брояч на моточасовете",
+        "Traffic": "Брояч на GPRS трафика"
+    },
+    "error": "Грешка",
+    "delete": "Изтриване",
+    "desktop_delete_confirm": "Наистина ли искате да изтриете работния плот \"%%DESKTOP_NAME%%\"?",
+    "desktop_name_default": "Работен плот %%DESKTOP_ID%%",
+    "desktop_name_placeholder": "Име на работният плот",
+    "desktops": {
+        "add_button_title": "Добави работен плот"
+    },
+    "errors": {
+        "cant_login": "Грешка при вписване.",
+        "performing_request": "Грешка при извършване на заявка.",
+        "invalid_url": "Невалиден адрес.",
+        "invalid_image_url": "Няма изображение.",
+        "invalid_image_url_on_page_load": "Не може да се зареди фоново изображение.",
+        "cant_create_notification": "Вие достигнахте лимита от уведомления",
+        "cant_get_registered_events_to_fetch_notifications": "Невъзможност да се заредят, съхранени събития.",
+        "cant_load_interval_to_fetch_notifications": "Невъзможност да се заредят, съхранени събития."
+    },
+    "groups": {
+        "graph": "Графика",
+        "text": "Фигури",
+        "circle": "Стрелка",
+        "other": "Скала",
+        "switchers": "Превключвател"
+    },
+    "all_units": "Устройства",
+    "all_sensors": "Всички датчици",
+    "km_h": "км/ч",
+    "last_message": "Последно съобщение",
+    "location": "Местоположение",
+    "locale": {
+        "days": [
+            "Неделя",
+            "Понеделник",
+            "Вторник",
+            "Сряда",
+            "Четвъртък",
+            "Петък",
+            "Събота"
+        ],
+        "days_short": [
+            "Нед",
+            "Пон",
+            "Вто",
+            "Сря",
+            "Чет",
+            "Пет",
+            "Съб"
+        ],
+        "months": [
+            "Януари",
+            "Февруари",
+            "Март",
+            "Април",
+            "Май",
+            "Юни",
+            "Юли",
+            "Август",
+            "Септември",
+            "Октомври",
+            "Ноември",
+            "Декември"
+        ],
+        "months_short": [
+            "Яну",
+            "Фев",
+            "Мар",
+            "Апр",
+            "Май",
+            "Юни",
+            "Юли",
+            "Авг",
+            "Сеп",
+            "Окт",
+            "Ное",
+            "Дек"
+        ]
+    },
+    "measure_units": {
+        "Mileage": [
+            "км",
+            "км"
+        ],
+        "EngineHours": "час",
+        "Traffic": "КВ"
+    },
+    "triggers": "Задействания",
+    "notify_range": {
+        "on": "ВКЛ",
+        "off": "ИЗКЛ",
+        "lower_bound": "От:",
+        "upper_bound": "До:",
+        "control_on_inner": "В обхват",
+        "control_on_outer": "Извън обхват",
+        "by_sms": "SMS",
+        "by_email": "E-mail"
+    },
+    "notifications": {
+        "desktop_icon_title": "Уведомления",
+        "clear_all": "Изчисти всичко",
+        "unit": "Устройство",
+        "sensor": "Датчик",
+        "time": "Време",
+        "value": "Стойност",
+        "email": "E-mail",
+        "email_placeholder": "name@example.com",
+        "phone": "Телефон",
+        "phone_placeholder": "+3958780000001"
+    },
+    "openstreetmap": "OpenStreetMap",
+    "ok": "ОК",
+    "period": {
+        "today": "Днес",
+        "yesterday": "Вчера",
+        "one_week": "Седмица",
+        "one_month": "Месец",
+        "custom": "Персонализиран"
+    },
+    "pin_to_desktop": "Закачи към работния плот",
+    "restore_custom_fields": "Възстановяване на потребителски полета",
+    "remote_url": {
+        "add": "ОК",
+        "add_button": "Добавяне на нов URL, за наблюдение",
+        "add_title": "Наблюдение URL",
+        "edit_title": "Добави URL",
+        "url": "URL:",
+        "url_placeholder": "example.com/streaming/",
+        "save": "ОК"
+    },
+    "speed": "Скорост",
+    "set_background_map": "Покажи картата за фон",
+    "set_background_color": "Задайте цвят на фона",
+    "set_background_image": "Задайте изображение за фон",
+    "sensor_visual_settings": "Допълнителни настройки:",
+    "sensor_notification_settings": "Уведомление:",
+    "sensor_value_and_scale_round": "Цели стойности",
+    "show_unit_counter_properties": "Показване на свойства",
+    "show_unit_counter_info": "Покажи графика",
+    "show_unit_sensor_properties": "Показване на свойства",
+    "show_unit_sensor_info": "Покажи графика",
+    "time_range_delimiter": "-",
+    "cancel": "Отмени",
+    "select_counters_to_watch": "Изберете брояч за наблюдение:",
+    "select_sensors_to_watch": "Изберете датчик за наблюдение:",
+    "update_watch_sensors": "ОК",
+    "unpin_from_desktop": "Откачи от работния плот",
+    "save_sensor_properties": "ОК",
+    "save_user_settings": "ОК",
+    "sensor": {
+        "min": "Мин:",
+        "max": "Макс:",
+        "invalid_value": "Неизвестен",
+        "background_placeholder": "example.com/background.jpg",
+        "color_scheme": "Цветова схема:",
+        "reset": "Нулиране",
+        "remove": "Премахване",
+        "add": "Добави",
+        "from": "от",
+        "to": "до",
+        "err_range": "Невалиден интервал."
+    },
+    "sensor_types": {
+        "impulse fuel consumption": "Импулсен датчик за разход на гориво",
+        "absolute fuel consumption": "Датчик за общ разход на гориво",
+        "instant fuel consumption": "Датчик за моментен разход на гориво",
+        "fuel level": "Датчик за ниво на гориво",
+        "fuel level impulse sensor": "Импулслен датчик за ниво на гориво",
+        "temperature": "Датчик за температура",
+        "temperature coefficient": "Температурен коефициент",
+        "engine rpm": "Датчик за оборотите на двигателя",
+        "engine operation": "Датчик за работа на двигателя",
+        "voltage": "Датчик за напрежение",
+        "digital": "Произволен цифров датчик",
+        "custom": "Произволен датчик",
+        "mileage": "Датчик за километри",
+        "odometer": "Относителен скоростомер",
+        "engine efficiency": "Датчик за ефективност на работата на двигателя",
+        "engine hours": "Тотален брояч на моточасовете",
+        "relative engine hours": "Относителни моточасове",
+        "counter": "Датчик брояч",
+        "accelerometer": "Акселометър",
+        "driver": "Добавяне на водач",
+        "trailer": "Добавяне на ремарке",
+        "alarm trigger": "Задействана аларма"
+    },
+    "sensor_metrics": {
+        "absolute fuel consumption": {
+            "lt": "лт",
+            "gallons": "литри"
+        },
+        "fuel level": {
+            "lt": "лт",
+            "gallons": "галон"
+        },
+        "fuel level impulse sensor": {
+            "lt": "лт",
+            "gallons": "галон"
+        },
+        "temperature": {
+            "°C": "°C",
+            "°F": "°F"
+        },
+        "engine rpm": {
+            "rpm": "обороти"
+        },
+        "engine operation": {
+            "On/Off": "Вкл/Изкл"
+        },
+        "voltage": {
+            "V": "V"
+        },
+        "digital": {
+            "On/Off": "Вкл/Изкл"
+        },
+        "mileage": {
+            "km": "км",
+            "mi": "ми"
+        },
+        "odometer": {
+            "km": "км",
+            "mi": "ми"
+        },
+        "engine efficiency": {
+            "On/Off": "Вкл/Изкл"
+        },
+        "engine hours": {
+            "hours": "час"
+        },
+        "relative engine hours": {
+            "hours": "час"
+        },
+        "accelerometer": {
+            "G": "G"
+        }
+    },
+    "sensor_digital_on": "Вкл",
+    "sensor_digital_off": "Изкл",
+    "sensor_properties_header": "Датчик %%SENSOR%% на устройство %%UNIT%%",
+    "sensor_info_header": "Графика за %%SENSOR%% на устройство %%UNIT%%",
+    "sensor_last_value_prefix": "Последна стойност:",
+    "sensor_last_value_middle_part": "вкл",
+    "widget_show_unit_name": "Име на устройство",
+    "widget_show_sensor_name": "Име на датчик",
+    "widget_show_axes": "Покажи таблица",
+    "widget_fit": "Максимален размер",
+    "widget_counter_make_style_default": "Направете този стил по подразбиране за всички броячи от един и същи тип:",
+    "widget_sensor_make_style_default": "Направете този стил по подразбиране за всички датчици от един и същи тип:",
+    "unavailable": "Не е на разположение",
+    "unique_id": "Уникален идентификационен номер",
+    "unit_sensors": "Преглед на свойства",
+    "user_settings": {
+        "title": "Настройки за уведомяване:",
+        "notifications": {
+            "email": "E-mail:",
+            "phone": "Телефон:"
+        }
+    },
+    "zoom_in_title": "Приближаване",
+    "zoom_out_title": "Отдалечаване",
+    "commands": {
+        "query_pos": "Заявка за позиция",
+        "block_engine": "Блокиране на двигателя",
+        "unblock_engine": "Отблокиране на двигателя",
+        "output_on": "Активиране на изхода",
+        "output_off": "Деактивиране на изхода",
+        "download_msgs": "Изтегляне на съобщения",
+        "set_report_interval": "Задай интервал за трансфер на данни",
+        "custom_msg": "Изпрати персонално съобщение",
+        "driver_msg": "Изпрати съобщение до водача",
+        "send_position": "Изпрати позиция",
+        "send_route": "Изпрати маршрут",
+        "upload_cfg": "Качване на конфигурация",
+        "upload_sw": "Качване на фърмуер",
+        "query_photo": "Заявка за моментна снимка",
+        "query_ddd": "Заявка за DDD файл"
+    },
+    "title-commands-window": "Команди до устройство",
+    "title-change-commands-window": "Параметър на командите",
+    "title-change-commands-window-name": "Име",
+    "title-change-commands-window-params": "Текст",
+    "title-change-commands-window-coord": "Кординати",
+    "title-change-commands-window-coord-lat": "Географска ширина",
+    "title-change-commands-window-coord-lng": "Географска дължина",
+    "choose-point": "Моля, изберете една точка на картата.",
+    "type-commands": {
+        "0": "Автоматичен",
+        "gsm": "СМС",
+        "tcp": "TCP",
+        "udp": "UDP",
+        "vrt": "Виртуален"
+    },
+    "title-activate-output": "Изход",
+    "title-deactivate-output": "Изход",
+    "exec-command-success": "Команда изпратена.",
+    "exec-command-error": "Грешка при изпълнението на командата.",
+    "invalid-coord": "Моля, посочете координати.",
+    "invalid-coord-value": "Неправилни параметри на командата",
+    "1003": "Само една заявка е позволена по едно и също време.",
+    "1004": "Лимита на съобщенията беше надвишен.",
+    "1005": "Срокът за изпълнение е надхвърлил лимита.",
+    "err_perf_req": "Грешка при извършване на поискване.",
+    "report_object": "Aртикул",
+    "report_template": "Шаблон",
+    "report_object_type": "Вид на артикула",
+    "execute": "Изпълни",
+    "no_data": "Липсват данни",
+    "report_result": "Резултат от отчета",
+    "stats": "Статистика",
+    "list_table": "Шаблон Отчети",
+    "map": "Карта",
+    "photos": "Изображения",
+    "clear": "Изчисти",
+    "reports": "Отчет",
+    "procmsg": "Зареждане на отчет",
+    "report_empty": "Празен отчет",
+    "charts": "Графики",
+    "invalid_table": "Невалидна таблица",
+    "out_of_range": "Извън обхват",
+    "downloading_error": "Грешка при изтегляне",
+    "msgs_per_page": "Редове на страница",
+    "msgs_all": "Всички",
+    "errormsg": "Грешка при свързване",
+    "exec_error": "Няма данни за избрания интервал.",
+    "export_to_excel": "Експорт в Excel",
+    "export_to_pdf": "Експорт в PDF",
+    "make_report_file": "Експорт до файл",
+    "messages": "Трансфер до съобщения",
+    "msgs_descr": "Артикули от {от} до {към} за {общо}",
+    "nomsg": "Липсват данни за избрания интервал.",
+    "page": "Страница",
+    "pages_descr": "на{total}",
+    "pagestat": "Показани {from} до {to} от {total} артикули",
+    "photos_descr": "Артикули от %d до %d за %d",
+    "photos_per_page": "Изображения на страница",
+    "print_report": "Принтирай отчет",
+    "revert": "Нулиране",
+    "scroll_left": "Превъртете на ляво",
+    "scroll_right": "Превъртете на дясно",
+    "toolbar_awidth": "Задайте на колоните автоматична широчина",
+    "toolbar_delete": "Изтриване на отметнатите артикули",
+    "toolbar_first": "Първа страница",
+    "toolbar_last": "Последна страница",
+    "toolbar_next": "Следваща страница",
+    "toolbar_page_items": "Изберете броя на елементите на една страница",
+    "toolbar_page_selector": "Въведете номера на страницата",
+    "toolbar_prev": "Предишна страница",
+    "trace": "Проследяване стойностите на графика",
+    "y_auto_scale": "Y ос автоматично мащабиране",
+    "zoom_custom": "Персонален мащаб",
+    "zoom_in": "Приближаване",
+    "zoom_out": "Отдалечаване"
+}

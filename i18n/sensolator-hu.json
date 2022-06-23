@@ -1,0 +1,381 @@
+{
+    "app_name": "Sensolator",
+    "app_title": "Sensolator",
+    "background_url": {
+        "title": "Háttérkép beállítás",
+        "url": "URL:",
+        "url_placeholder": "example.com/image.jpg",
+        "set": "OK"
+    },
+    "button_dont_save": "Mégse",
+    "button_save": "OK",
+    "close_modal_text": "Menti a beállításokat?",
+    "close_modal_btn_ok": "OK",
+    "copy": "Másolás",
+    "counter_info_header": "Diagram %%UNIT%% - %%COUNTER%%",
+    "counter_info_header_names": {
+        "Mileage": "Km óra állás",
+        "EngineHours": "Gyújtásidő",
+        "Traffic": "GPRS forgalom"
+    },
+    "counter_properties_header": "%%COUNTER%% - %%UNIT%%",
+    "counters": {
+        "Mileage": "Km óra állás",
+        "EngineHours": "Gyújtásidő",
+        "Traffic": "GPRS forgalom"
+    },
+    "error": "Hiba",
+    "delete": "Törlés",
+    "desktop_delete_confirm": "Törli az asztalt \"%%DESKTOP_NAME%%\"?",
+    "desktop_name_default": "Asztal %%DESKTOP_ID%%",
+    "desktop_name_placeholder": "Asztal neve",
+    "desktops": {
+        "add_button_title": "Új asztal"
+    },
+    "errors": {
+        "cant_login": "Bejelentkezési hiba.",
+        "performing_request": "Hiba történt a kérés feldolgozása közben.",
+        "invalid_url": "Érvénytelen URL.",
+        "invalid_image_url": "Kép nem elérhető.",
+        "invalid_image_url_on_page_load": "Háttérképet nem lehet betölteni.",
+        "cant_create_notification": "Elérte a riasztási limitet.",
+        "cant_get_registered_events_to_fetch_notifications": "Nem sikerült betölteni a beállításokat.",
+        "cant_load_interval_to_fetch_notifications": "Nem sikerült betölteni a beállításokat."
+    },
+    "groups": {
+        "graph": "Diagram",
+        "text": "Értékek",
+        "circle": "Mutató",
+        "other": "Skála",
+        "switchers": "Kapcsoló"
+    },
+    "all_units": "Minden jármű",
+    "all_sensors": "Minden szenzor",
+    "km_h": "km/h",
+    "last_message": "utolsó üzenet",
+    "location": "Pozíció",
+    "locale": {
+        "days": [
+            "Vasárnap",
+            "Hétfő",
+            "Kedd",
+            "Szerda",
+            "Csütörtök",
+            "Péntek",
+            "Szombat"
+        ],
+        "days_short": [
+            "V",
+            "H",
+            "K",
+            "Sze",
+            "Cs",
+            "P",
+            "Szo"
+        ],
+        "months": [
+            "Január",
+            "Február",
+            "Március",
+            "Április",
+            "Május",
+            "Június",
+            "Július",
+            "Augusztus",
+            "Szeptember",
+            "Október",
+            "November",
+            "December"
+        ],
+        "months_short": [
+            "Jan",
+            "Febr",
+            "Márc",
+            "Ápr",
+            "Máj",
+            "Jún",
+            "Júl",
+            "Aug",
+            "Szept",
+            "Okt",
+            "Nov",
+            "Dec"
+        ]
+    },
+    "measure_units": {
+        "Mileage": [
+            "km",
+            "mi"
+        ],
+        "EngineHours": "h",
+        "Traffic": "KB"
+    },
+    "triggers": "Triggers",
+    "notify_range": {
+        "on": "Be",
+        "off": "Ki",
+        "lower_bound": "Értékek:",
+        "upper_bound": " - :",
+        "control_on_inner": "Tartományban",
+        "control_on_outer": "Tartományon kívül",
+        "by_sms": "SMS",
+        "by_email": "E-mail"
+    },
+    "notifications": {
+        "desktop_icon_title": "Értesítések",
+        "clear_all": "Mindegyik törlése",
+        "unit": "Jármű",
+        "sensor": "Szenzor",
+        "time": "Idő",
+        "value": "Érték",
+        "email": "E-mail",
+        "email_placeholder": "name@example.com",
+        "phone": "Phone",
+        "phone_placeholder": "+36987654321"
+    },
+    "openstreetmap": "OpenStreetMap",
+    "ok": "OK",
+    "period": {
+        "today": "Ma",
+        "yesterday": "Tegnap",
+        "one_week": "Hét",
+        "one_month": "Hónap",
+        "custom": "Intervallum"
+    },
+    "pin_to_desktop": "Asztalra helyez",
+    "restore_custom_fields": "Szövegmezők visszaállítása",
+    "remote_url": {
+        "add": "OK",
+        "add_button": "Új URL hozzáadása",
+        "add_title": "URL:",
+        "edit_title": "URL szerkesztése",
+        "url": "URL:",
+        "url_placeholder": "example.com/streaming/",
+        "save": "K"
+    },
+    "speed": "Sebesség",
+    "set_background_map": "Térkép beállítása háttérként",
+    "set_background_color": "Háttérszín beállítása",
+    "set_background_image": "Háttérkép beállítása",
+    "sensor_visual_settings": " Beállítások:",
+    "sensor_notification_settings": "Értesítések:",
+    "sensor_value_and_scale_round": "Egész számok",
+    "show_unit_counter_properties": "Tulajdonságok megjelenítése",
+    "show_unit_counter_info": "Diagram megjelenítése",
+    "show_unit_sensor_properties": "Tulajdonságok megjelenítése",
+    "show_unit_sensor_info": "Diagram megjelenítése",
+    "time_range_delimiter": " - ",
+    "cancel": "Mégse",
+    "select_counters_to_watch": "Számláló választás:",
+    "select_sensors_to_watch": "Szenzor választás:",
+    "update_watch_sensors": "OK",
+    "unpin_from_desktop": "Eltávolítás az asztalról",
+    "save_sensor_properties": "OK",
+    "save_user_settings": "OK",
+    "sensor": {
+        "min": "Min:",
+        "max": " Max:",
+        "invalid_value": "Ismeretlen érték",
+        "background_placeholder": "example.com/background.jpg",
+        "color_scheme": "Színséma:",
+        "reset": "Visszaállít",
+        "remove": "Eltávolítás",
+        "add": "Hozzáadás",
+        "from": "-tól",
+        "to": "-ig",
+        "err_range": "Érvénytelen intervallum"
+    },
+    "sensor_types": {
+        "impulse fuel consumption": "Átfolyásmérő",
+        "absolute fuel consumption": "FMS1 fogyasztás",
+        "instant fuel consumption": "FMS2 fogyasztás",
+        "fuel level": "Szonda",
+        "fuel level impulse sensor": "Átfolyásmérő",
+        "temperature": "Hőmérséklet szenzor",
+        "temperature coefficient": "Hőmérséklet együttható",
+        "engine rpm": "Fordulatszám",
+        "engine operation": "Gyújtás szenzor",
+        "voltage": "Feszültség szenzor",
+        "digital": "Digitális szenzor",
+        "custom": "Általános szenzor",
+        "mileage": "km óra számláló",
+        "odometer": "Odométer",
+        "engine efficiency": "Motor segédberendezések",
+        "engine hours": "Üzemóra",
+        "relative engine hours": "Üzemóra2",
+        "counter": "Számláló",
+        "accelerometer": "Gyorsulás szenzor",
+        "driver": "Sofőr reg",
+        "trailer": "Munkagép reg",
+        "alarm trigger": "Riasztási esemény"
+    },
+    "sensor_metrics": {
+        "absolute fuel consumption": {
+            "lt": "liter",
+            "gallons": "gallon"
+        },
+        "fuel level": {
+            "lt": "liter",
+            "gallons": "gallon"
+        },
+        "fuel level impulse sensor": {
+            "lt": "liter",
+            "gallons": "gallon"
+        },
+        "temperature": {
+            "°C": "°C",
+            "°F": "°F"
+        },
+        "engine rpm": {
+            "rpm": "rpm"
+        },
+        "engine operation": {
+            "On/Off": "Be/Ki"
+        },
+        "voltage": {
+            "V": "V"
+        },
+        "digital": {
+            "On/Off": "Be/Ki"
+        },
+        "mileage": {
+            "km": "km",
+            "mi": "mi"
+        },
+        "odometer": {
+            "km": "km",
+            "mi": "mi"
+        },
+        "engine efficiency": {
+            "On/Off": "Be/Ki"
+        },
+        "engine hours": {
+            "hours": "h"
+        },
+        "relative engine hours": {
+            "hours": "h"
+        },
+        "accelerometer": {
+            "G": "G"
+        },
+        "weight": {
+            "t": "t"
+        }
+    },
+    "sensor_digital_on": "Be",
+    "sensor_digital_off": "Ki",
+    "sensor_properties_header": "%%UNIT%% - %%SENSOR%%",
+    "sensor_info_header": "Diagram %%UNIT%% - %%SENSOR%%",
+    "sensor_last_value_prefix": "Utolsó érték: ",
+    "sensor_last_value_middle_part": " @ ",
+    "widget_show_unit_name": "Jármű",
+    "widget_show_sensor_name": "Szenzor",
+    "widget_show_axes": "Rács megjelenítése",
+    "widget_fit": "Max méret",
+    "widget_counter_make_style_default": "Alapértelmezett stílusként mentés minden számlálónál:",
+    "widget_sensor_make_style_default": "Alapértelmezett stílusként mentés minden szenzornál:",
+    "unavailable": "Nem elérhető",
+    "unique_id": "Egyedi azonosító",
+    "unit_sensors": "Tulajdonságok",
+    "user_settings": {
+        "title": "Értesítések beállítása:",
+        "notifications": {
+            "email": "E-mail:",
+            "phone": "SMS:"
+        }
+    },
+    "zoom_in_title": "Nagyítás",
+    "zoom_out_title": "Kicsinyítés",
+    "commands": {
+        "query_pos": "Pozíció kérés",
+        "block_engine": "Motor blokkolás",
+        "unblock_engine": "Motor feloldás",
+        "output_on": "Kimenet aktiválás",
+        "output_off": "Kimenet deaktiválás",
+        "download_msgs": "Üzenetek lekérése",
+        "set_report_interval": "Adat lekérés intervalluma",
+        "custom_msg": "Üzenet küldés",
+        "driver_msg": "Üzenet küldés a sofőrnek",
+        "send_position": "Pozíció küldés",
+        "send_route": "Útvonal küldés",
+        "upload_cfg": "Konfig feltöltés",
+        "upload_sw": "FW feltöltés",
+        "query_photo": "Fénykép lekérés",
+        "query_ddd": "Sofőrkártya lekérés"
+    },
+    "title-commands-window": "Elérhető parancsok",
+    "title-change-commands-window": "Parancsok tulajdonságai",
+    "title-change-commands-window-name": "Név",
+    "title-change-commands-window-params": "Szöveg",
+    "title-change-commands-window-coord": "Koordináták",
+    "title-change-commands-window-coord-lat": "Lat",
+    "title-change-commands-window-coord-lng": "Long",
+    "choose-point": "Pont választása térképről.",
+    "type-commands": {
+        "0": "Auto",
+        "gsm": "SMS",
+        "tcp": "TCP",
+        "udp": "UDP",
+        "vrt": "Virtuális"
+    },
+    "title-activate-output": "Kimenet aktiválás",
+    "title-deactivate-output": "Kimenet deaktiválás",
+    "exec-command-success": "Parancs elküldve.",
+    "exec-command-error": "Hiba a parnacs végrehajtása során.",
+    "invalid-coord": "Koordináták megadása.",
+    "invalid-coord-value": "Helytelen parancs érték",
+    "1003": "Egyidejűleg csak egy kérés engedélyezett.",
+    "1004": "Limit túllépés a lekért üzeneteknél.",
+    "1005": "Idő túllépés.",
+    "err_perf_req": "Hiba a kérés végrehajtása során.",
+    "report_object": "Elem",
+    "report_template": "Sablon",
+    "report_object_type": "Elem típusa",
+    "execute": "Végrehajt",
+    "no_data": "Nincs adat",
+    "report_result": "Lekérdezés eredménye",
+    "stats": "Statisztika",
+    "list_table": "Riport sablonok",
+    "map": "Térkép",
+    "photos": "Képek",
+    "clear": "Törlés",
+    "reports": "Riportok",
+    "procmsg": "Végrehajtás",
+    "report_empty": "Kiürít",
+    "charts": "Diagramok",
+    "invalid_table": "Táblázat hiba",
+    "out_of_range": "Tartományon kívül",
+    "downloading_error": "Hiba a letöltés során",
+    "msgs_per_page": "Megjelenített sorok",
+    "msgs_all": "Mindegyik",
+    "errormsg": "Csatlakozási hiba",
+    "exec_error": "Nincs elérhető adat a kiválasztott intervallumban.",
+    "export_to_excel": "Exportálás Excel-be",
+    "export_to_pdf": "Exportálás PDF-be",
+    "make_report_file": "Exportálás file-ba",
+    "messages": "Ugrás az üzenetekre",
+    "msgs_descr": "Megjelenített elemek {from} - {to} // {total}",
+    "nomsg": "Nincs elérhető adat a kiválasztott intervallumban.",
+    "page": "Oldal",
+    "pages_descr": "// {total}",
+    "pagestat": "megjelenített elemek {from} - {to} // {total} ",
+    "photos_descr": "Képek %d - %d // %d",
+    "photos_per_page": "Képek oldalanként",
+    "print_report": "Riport nyomtatása",
+    "revert": "Visszaállítás",
+    "scroll_left": "Előző",
+    "scroll_right": "Következő",
+    "toolbar_awidth": "Oszlopok automatikus méretezése",
+    "toolbar_delete": "Kijelölt elemek törlése",
+    "toolbar_first": "Első oldal",
+    "toolbar_last": "Utolsó oldal",
+    "toolbar_next": "Következő",
+    "toolbar_page_items": "Egy oldalon megjelenítendő elemek",
+    "toolbar_page_selector": "Oldalszám megadása",
+    "toolbar_prev": "Előző",
+    "trace": "Grafikus követés",
+    "y_auto_scale": "Y tengely menti nagyítás",
+    "zoom_custom": "Szabad nagyítás",
+    "zoom_in": "Nagyítás",
+    "zoom_out": "Kicsinyítés"
+}

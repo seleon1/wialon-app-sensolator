@@ -1,0 +1,127 @@
+<svg class="indicator-body" xml:space="preserve" viewBox="0 0 18653 3731">
+<g class="horizontal_barSVG">
+	<path class="fil0" d="M0 0h18653v3731h-18653z"/>
+	<path class="path_active" d="M923 2291c-163 0-295-132-295-295s132-295 295-295h16783c163 0 295 132 295 295s-132 295-295 295h-16783z"/>
+	<path class="path_inactive" d="M12856 2291c-163 0-295-132-295-295s132-295 295-295h4850c163 0 295 132 295 295s-132 295-295 295h-4850z">
+		<animate attributeName="d" attributeType="XML" from="" to="" begin="indefinite" additive="replace" fill="freeze"/>
+	</path>
+	<g class="horizontal_barSVG-dash-titles">
+		<text x="950" y="3300" text-anchor="middle"></text>
+		<text x="3056" y="3300" text-anchor="middle"></text>
+		<text x="5163" y="3300" text-anchor="middle"></text>
+		<text x="7269" y="3300" text-anchor="middle"></text>
+		<text x="9375" y="3300" text-anchor="middle"></text>
+		<text x="11481" y="3300" text-anchor="middle"></text>
+		<text x="13588" y="3300" text-anchor="middle"></text>
+		<text x="15694" y="3300" text-anchor="middle"></text>
+		<text x="17800" y="3300" text-anchor="middle"></text>
+	</g>
+	<text class="sensor-name" x="618" y="1283"></text>
+	<text class="sensor-val" x="18000" y="1280"></text>
+	<g class="horizontal_barSVG-dot">
+		<animateTransform begin="indefinite" attributeName="transform" type="translate" from="" to="" additive="replace" fill="freeze"/>
+		<path class="fil53 str1" d="M1562 1996c0 350-283 633-633 633s-633-283-633-633 283-633 633-633 633 283 633 633z" id="98"/>
+		<g clip-path="url(#horizontal_barSVG_id0)">
+			<path class="fil4" d="M929 1996l613 654 41-41z"/>
+			<path class="fil4" d="M929 1996l-613-653-41 40z"/>
+			<path class="fil5" d="M929 1996l654 613 37-43z"/>
+			<path class="fil6" d="M929 1996l-654-613-38 43z"/>
+			<path class="fil7" d="M929 1996l691 570 36-45z"/>
+			<path class="fil8" d="M929 1996l-692-570-35 46z"/>
+			<path class="fil9" d="M929 1996l727 525 32-48z"/>
+			<path class="fil10" d="M929 1996l-727-524-32 47z"/>
+			<path class="fil11" d="M929 1996l759 477 29-49z"/>
+			<path class="fil12" d="M929 1996l-759-477-29 50z"/>
+			<path class="fil13" d="M929 1996l788 428 25-52z"/>
+			<path class="fil14" d="M929 1996l-788-427-26 51z"/>
+			<path class="fil15" d="M929 1996l813 376 23-53z"/>
+			<path class="fil16" d="M929 1996l-814-376-22 53z"/>
+			<path class="fil17" d="M929 1996l836 323 19-54z"/>
+			<path class="fil18" d="M929 1996l-836-323-19 55z"/>
+			<path class="fil19" d="M929 1996l855 269 15-55z"/>
+			<path class="fil20" d="M929 1996l-855-268-16 55z"/>
+			<path class="fil21" d="M929 1996l870 214 12-56z"/>
+			<path class="fil22" d="M929 1996l-871-213-12 56z"/>
+			<path class="fil23" d="M929 1996l882 158 8-57z"/>
+			<path class="fil24" d="M929 1996l-883-157-8 57z"/>
+			<path class="fil25" d="M929 1996l890 101 5-58z"/>
+			<path class="fil26" d="M929 1996l-891-100-4 57z"/>
+			<path class="fil27" d="M929 1996l895 43 1-57z"/>
+			<path class="fil28" d="M929 1996l-895-43-1 58z"/>
+			<path class="fil29" d="M929 1996l896-14-3-57z"/>
+			<path class="fil30" d="M929 1996l-896 15 2 57z"/>
+			<path class="fil31" d="M929 1996l893-71-6-58z"/>
+			<path class="fil32" d="M929 1996l-894 72 7 57z"/>
+			<path class="fil33" d="M929 1996l887-129-10-56z"/>
+			<path class="fil34" d="M929 1996l-887 129 10 57z"/>
+			<path class="fil35" d="M929 1996l877-185-14-56z"/>
+			<path class="fil36" d="M929 1996l-877 186 14 56z"/>
+			<path class="fil37" d="M929 1996l863-241-17-55z"/>
+			<path class="fil38" d="M929 1996l-863 242 17 54z"/>
+			<path class="fil39" d="M929 1996l846-296-21-53z"/>
+			<path class="fil40" d="M929 1996l-846 296 21 54z"/>
+			<path class="fil41" d="M929 1996l825-349-24-52z"/>
+			<path class="fil42" d="M929 1996l-825 350 24 52z"/>
+			<path class="fil43" d="M929 1996l801-401-27-51z"/>
+			<path class="fil44" d="M929 1996l-801 402 27 51z"/>
+			<path class="fil45" d="M929 1996l774-452-31-49z"/>
+			<path class="fil46" d="M929 1996l-774 453 31 48z"/>
+			<path class="fil47" d="M929 1996l743-501-34-46z"/>
+			<path class="fil48" d="M929 1996l-743 501 33 47z"/>
+			<path class="fil49" d="M929 1996l709-547-36-45z"/>
+			<path class="fil50" d="M929 1996l-710 548 37 44z"/>
+			<path class="fil51" d="M929 1996l673-592-39-41z"/>
+			<path class="fil52" d="M929 1996l-673 592 39 42z"/>
+			<path class="fil52" d="M929 1996l634-633-42-40z"/>
+			<path class="fil51" d="M929 1996l-634 634 42 39z"/>
+			<path class="fil50" d="M929 1996l592-673-45-36z"/>
+			<path class="fil49" d="M929 1996l-592 673 44 37z"/>
+			<path class="fil48" d="M929 1996l547-709-46-34z"/>
+			<path class="fil47" d="M929 1996l-548 710 47 34z"/>
+			<path class="fil46" d="M929 1996l501-743-49-30z"/>
+			<path class="fil45" d="M929 1996l-501 744 49 30z"/>
+			<path class="fil44" d="M929 1996l452-773-50-28z"/>
+			<path class="fil43" d="M929 1996l-452 774 50 27z"/>
+			<path class="fil42" d="M929 1996l402-801-53-24z"/>
+			<path class="fil41" d="M929 1996l-402 801 52 25z"/>
+			<path class="fil40" d="M929 1996l349-825-53-21z"/>
+			<path class="fil39" d="M929 1996l-350 826 54 20z"/>
+			<path class="fil38" d="M929 1996l296-846-55-17z"/>
+			<path class="fil37" d="M929 1996l-296 846 55 17z"/>
+			<path class="fil36" d="M929 1996l241-863-56-14z"/>
+			<path class="fil35" d="M929 1996l-241 863 55 14z"/>
+			<path class="fil34" d="M929 1996l185-877-56-10z"/>
+			<path class="fil33" d="M929 1996l-186 877 57 10z"/>
+			<path class="fil32" d="M929 1996l129-887-57-6z"/>
+			<path class="fil31" d="M929 1996l-129 887 57 7z"/>
+			<path class="fil30" d="M929 1996l72-893-58-3z"/>
+			<path class="fil29" d="M929 1996l-72 894 57 2z"/>
+			<path class="fil28" d="M929 1996l14-896-57 1z"/>
+			<path class="fil27" d="M929 1996l-15 896h58z"/>
+			<path class="fil26" d="M929 1996l-43-895-58 5z"/>
+			<path class="fil25" d="M929 1996l43 896 57-5z"/>
+			<path class="fil24" d="M929 1996l-101-890-56 8z"/>
+			<path class="fil23" d="M929 1996l100 891 57-8z"/>
+			<path class="fil22" d="M929 1996l-157-882-57 12z"/>
+			<path class="fil21" d="M929 1996l157 883 56-12z"/>
+			<path class="fil20" d="M929 1996l-214-870-55 15z"/>
+			<path class="fil19" d="M929 1996l213 871 56-16z"/>
+			<path class="fil18" d="M929 1996l-269-855-54 19z"/>
+			<path class="fil17" d="M929 1996l269 855 54-19z"/>
+			<path class="fil16" d="M929 1996l-323-836-53 23z"/>
+			<path class="fil15" d="M929 1996l323 836 53-22z"/>
+			<path class="fil14" d="M929 1996l-376-813-51 25z"/>
+			<path class="fil13" d="M929 1996l376 814 51-26z"/>
+			<path class="fil12" d="M929 1996l-427-788-50 29z"/>
+			<path class="fil11" d="M929 1996l427 788 50-29z"/>
+			<path class="fil10" d="M929 1996l-477-759-48 33z"/>
+			<path class="fil9" d="M929 1996l477 759 47-32z"/>
+			<path class="fil8" d="M929 1996l-525-726-45 35z"/>
+			<path class="fil7" d="M929 1996l524 727 46-35z"/>
+			<path class="fil6" d="M929 1996l-570-691-43 38z"/>
+			<path class="fil5" d="M929 1996l570 692 43-38z"/>
+		</g>
+		<path class="path_active" d="M1200 1996c0 150-121 271-271 271s-271-121-271-271 121-271 271-271 271 121 271 271z"/>
+	</g>
+</g>
+</svg>

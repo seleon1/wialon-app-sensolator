@@ -1,0 +1,378 @@
+{
+    "app_name": "Bộ cảm biến",
+    "app_title": "Bộ cảm biến",
+    "background_url": {
+        "title": "Thiết lập hình nền",
+        "url": "Đường dẫn URL:",
+        "url_placeholder": "example.com/image.jpg",
+        "set": "Đồng ý"
+    },
+    "button_dont_save": "Không",
+    "button_save": "Đồng ý",
+    "close_modal_text": "Bạn có muốn lưu thay đổi",
+    "close_modal_btn_ok": "OK",
+    "copy": "Sao chép",
+    "counter_info_header": "Biểu đồ cho %%COUNTER%% của thiết bị %%UNIT%%",
+    "counter_info_header_names": {
+        "Mileage": "Đếm dặm",
+        "EngineHours": "Bộ đếm giờ làm việc",
+        "Traffic": "Đếm lưu lượng GPRS"
+    },
+    "counter_properties_header": "%%COUNTER%% của thiết bị %%UNIT%%",
+    "counters": {
+        "Mileage": "Quảng đường",
+        "EngineHours": "Thời gian hoạt động",
+        "Traffic": "Lưu lượng GPRS"
+    },
+    "error": "Lỗi",
+    "delete": "Xóa",
+    "desktop_delete_confirm": "Bạn có chắc là muốn xóa bảng điều khiển \"%%DESKTOP_NAME%%\"?",
+    "desktop_name_default": "Bảng điều khiển %%DESKTOP_ID%%",
+    "desktop_name_placeholder": "Tên bản điều khiển",
+    "desktops": {
+        "add_button_title": "Thêm bảng điều khiển"
+    },
+    "errors": {
+        "cant_login": "Đăng nhập bị lỗi",
+        "performing_request": "Không thể gửi yêu cầu.",
+        "invalid_url": "Đường dẫn sai",
+        "invalid_image_url": "Không có hình ảnh nào",
+        "invalid_image_url_on_page_load": "Không thể tải về hình nền",
+        "cant_create_notification": "Bạn đã vượt quá số thông báo cho phép",
+        "cant_get_registered_events_to_fetch_notifications": "Không thể tải về sự kiện đã lưu",
+        "cant_load_interval_to_fetch_notifications": "Không thể tải về sự kiện đã lưu."
+    },
+    "groups": {
+        "graph": "Biểu đồ",
+        "text": "Văn bản",
+        "circle": "Vòng kết nối",
+        "other": "Khác",
+        "switchers": "Chuyển đổi"
+    },
+    "all_units": "Thiết bị",
+    "all_sensors": "Tất cả các cảm biến",
+    "km_h": "km/h",
+    "last_message": "Tin nhắn cuối",
+    "location": "Vị trí",
+    "locale": {
+        "days": [
+            "Chủ nhật",
+            "Thứ 2",
+            "Thứ 3",
+            "Thứ 4",
+            "Thứ 5",
+            "Thứ 6",
+            "Thứ 7"
+        ],
+        "days_short": [
+            "CN",
+            "T2",
+            "T3",
+            "T4",
+            "T5",
+            "T6",
+            "T7"
+        ],
+        "months": [
+            "Tháng 1",
+            "Tháng 2",
+            "Tháng 3",
+            "Tháng 4",
+            "Tháng 5",
+            "Tháng 6",
+            "Tháng 7",
+            "Tháng 8",
+            "Tháng 9",
+            "10",
+            "Tháng 11",
+            "Tháng 12"
+        ],
+        "months_short": [
+            "Thg 1",
+            "Thg 2",
+            "Thg 3",
+            "Thg 4",
+            "Thg 5",
+            "Thg 6",
+            "Thg 7",
+            "Thg 8",
+            "Thg 9",
+            "Thg 10",
+            "Thg 11",
+            "Thg 12"
+        ]
+    },
+    "measure_units": {
+        "Mileage": [
+            "km",
+            "mi"
+        ],
+        "EngineHours": "h",
+        "Traffic": "KB"
+    },
+    "triggers": "Kích hoạt",
+    "notify_range": {
+        "on": "BẬT",
+        "off": "TẮT",
+        "lower_bound": "Từ:",
+        "upper_bound": "Đến:",
+        "control_on_inner": "Trong vùng",
+        "control_on_outer": "Ngoài vùng",
+        "by_sms": "SMS",
+        "by_email": "Email"
+    },
+    "notifications": {
+        "desktop_icon_title": "Thông báo",
+        "clear_all": "Xóa tất cả",
+        "unit": "Thiết bị",
+        "sensor": "Cảm biến",
+        "time": "Thời gian",
+        "value": "Giá trị",
+        "email": "Email",
+        "email_placeholder": "name@company.com",
+        "phone": "Số điện thoại",
+        "phone_placeholder": "+84912345678"
+    },
+    "openstreetmap": "OpenStreetMap",
+    "ok": "Đồng ý",
+    "period": {
+        "today": "Hôm nay",
+        "yesterday": "Hôm qua",
+        "one_week": "Tuần",
+        "one_month": "Tháng",
+        "custom": "Tùy chỉnh"
+    },
+    "pin_to_desktop": "Đánh dấu trên bản điều khiển",
+    "restore_custom_fields": "Phục hồi trường tùy chỉnh",
+    "remote_url": {
+        "add": "OK",
+        "add_button": "Thêm đường dẫn để theo dõi",
+        "add_title": "Đường dẫn URL theo dõi",
+        "edit_title": "Chỉnh sửa URL",
+        "url": "URL:",
+        "url_placeholder": "example.com/streaming/",
+        "save": "OK"
+    },
+    "speed": "Tốc độ",
+    "set_background_map": "Hiển thị bản đồ trên hình nền",
+    "set_background_color": "Thiết lập màu nền",
+    "set_background_image": "Thiết lập ảnh nền",
+    "sensor_visual_settings": "Cấu hình thêm:",
+    "sensor_notification_settings": "Thông báo",
+    "sensor_value_and_scale_round": "Số nguyên dương",
+    "show_unit_counter_properties": "Hiển thị thuộc tính",
+    "show_unit_counter_info": "Hiển thị biểu đồ",
+    "show_unit_sensor_properties": "Hiển thị thuộc tính",
+    "show_unit_sensor_info": "Hiển thị biểu đồ",
+    "time_range_delimiter": "-",
+    "cancel": "Bỏ qua",
+    "select_counters_to_watch": "Chọn bộ đếm để theo dõi:",
+    "select_sensors_to_watch": "Chọn cảm biến để theo dõi:",
+    "update_watch_sensors": "OK",
+    "unpin_from_desktop": "Gỡ gán khỏi bản điều khiển",
+    "save_sensor_properties": "OK",
+    "save_user_settings": "OK",
+    "sensor": {
+        "min": "Tối thiểu:",
+        "max": "Tối đa:",
+        "invalid_value": "Không rõ",
+        "background_placeholder": "example.com/background.jpg",
+        "color_scheme": "Color scheme:",
+        "reset": "Reset",
+        "remove": "Xóa",
+        "add": "Thêm",
+        "from": "từ",
+        "to": "đến",
+        "err_range": "Sai thông số"
+    },
+    "sensor_types": {
+        "impulse fuel consumption": "Cảm biến xung nhiên liệu tiêu thụ",
+        "absolute fuel consumption": "Cảm biển tiêu thụ nhiên liệu",
+        "instant fuel consumption": "Cảm biến mức tiêu thụ nhiên liệu",
+        "fuel level": "Cảm biến nhiên liệu",
+        "fuel level impulse sensor": "Cảm biến xung nhiên liệu",
+        "temperature": "Cảm biến nhiệt độ",
+        "temperature coefficient": "Hệ số nhiệt độ",
+        "engine rpm": "Cảm biến động cơ",
+        "engine operation": "Cảm biến khởi động",
+        "voltage": "Cảm biến điện áp",
+        "digital": "Cảm biến kỹ thuật số",
+        "custom": "Cảm biến tùy chỉnh",
+        "mileage": "Cảm biến quảng đường",
+        "odometer": "Đồng hồ đo tương đối",
+        "engine efficiency": "Cảm biến hiệu suất động cơ",
+        "engine hours": "Thời gian động cơ hoạt động",
+        "relative engine hours": "Giờ tương đối động cơ",
+        "counter": "Cảm biến đếm",
+        "accelerometer": "Gia tốc kế",
+        "driver": "Gán tài xế",
+        "trailer": "Gán đầu kéo",
+        "alarm trigger": "Kích hoạt báo thức"
+    },
+    "sensor_metrics": {
+        "absolute fuel consumption": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "fuel level": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "fuel level impulse sensor": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "temperature": {
+            "°C": "°C",
+            "°F": "°F"
+        },
+        "engine rpm": {
+            "rpm": "rpm"
+        },
+        "engine operation": {
+            "On/Off": "Bật/Tắt"
+        },
+        "voltage": {
+            "V": "V"
+        },
+        "digital": {
+            "On/Off": "Bật/Tắt"
+        },
+        "mileage": {
+            "km": "km",
+            "mi": "mi"
+        },
+        "odometer": {
+            "km": "km",
+            "mi": "mi"
+        },
+        "engine efficiency": {
+            "On/Off": "Bật/Tắt"
+        },
+        "engine hours": {
+            "hours": "h"
+        },
+        "relative engine hours": {
+            "hours": "giờ"
+        },
+        "accelerometer": {
+            "G": "G"
+        }
+    },
+    "sensor_digital_on": "Bật",
+    "sensor_digital_off": "Tắt",
+    "sensor_properties_header": "Cảm biến %%SENSOR%% của thiết bị %%UNIT%%",
+    "sensor_info_header": "Biểu đồ cho %%SENSOR%% của thiết bị %%UNIT%%",
+    "sensor_last_value_prefix": "Giá trị cuối cùng:",
+    "sensor_last_value_middle_part": "trên",
+    "widget_show_unit_name": "Tên thiết bị",
+    "widget_show_sensor_name": "Tên cảm biến",
+    "widget_show_axes": "Hiển thị lưới",
+    "widget_fit": "Cỡ lớn nhất",
+    "widget_counter_make_style_default": "Chọn định dạng mặc định cho tất cả các bộ đếm cùng loại",
+    "widget_sensor_make_style_default": "Chọn định dạng mặc định cho tất cả các bộ đếm cùng loại:",
+    "unavailable": "Không tồn tại",
+    "unique_id": "ID duy nhất",
+    "unit_sensors": "Xem thuộc tính",
+    "user_settings": {
+        "title": "Thiết lập thông báo:",
+        "notifications": {
+            "email": "Email:",
+            "phone": "Số điện thoại"
+        }
+    },
+    "zoom_in_title": "Phóng to",
+    "zoom_out_title": "Thu nhỏ",
+    "commands": {
+        "query_pos": "Truy xuất vị trí",
+        "block_engine": "Khóa động cơ",
+        "unblock_engine": "Mở khóa động cơ",
+        "output_on": "Kích hoạt đầu ra",
+        "output_off": "Khóa đầu ra",
+        "download_msgs": "Tải tin nhắn",
+        "set_report_interval": "Thiết lập thời gian gửi dữ liệu",
+        "custom_msg": "Gửi tin nhắn tùy chỉnh",
+        "driver_msg": "Gửi tin nhắn tới tài xế",
+        "send_position": "Gửi vị trí",
+        "send_route": "Gửi tuyến đường",
+        "upload_cfg": "Tải lên cấu hình",
+        "upload_sw": "Tải lên firmware",
+        "query_photo": "Truy xuất ảnh chụp",
+        "query_ddd": "Truy xuất file DDD"
+    },
+    "title-commands-window": "Lệnh cho thiết bị",
+    "title-change-commands-window": "Thông số lệnh",
+    "title-change-commands-window-name": "Tên",
+    "title-change-commands-window-params": "Văn bản",
+    "title-change-commands-window-coord": "Vị trí",
+    "title-change-commands-window-coord-lat": "Latitute",
+    "title-change-commands-window-coord-lng": "Longitude",
+    "choose-point": "Vui lòng chọn 1 điểm trên bản đồ",
+    "type-commands": {
+        "0": "Tự động",
+        "gsm": "SMS",
+        "tcp": "TCP",
+        "udp": "UDP",
+        "vrt": "Ảo"
+    },
+    "title-activate-output": "Xuất ra",
+    "title-deactivate-output": "Xuất ra",
+    "exec-command-success": "Đã gửi lệnh thành công",
+    "exec-command-error": "Lỗi thực thi lệnh",
+    "invalid-coord": "Vui lòng xác định vị trí chính xác",
+    "invalid-coord-value": "Lỗi thông số lệnh",
+    "1003": "Chỉ một lần một yêu cầu",
+    "1004": "Số tin nhắn đã quá giới hạn",
+    "1005": "Thời gian thực thi đã vượt giới hạn",
+    "err_perf_req": "Không thể gửi yêu cầu",
+    "report_object": "Mục",
+    "report_template": "Mẫu biểu",
+    "report_object_type": "Loại mục",
+    "execute": "Thực thi",
+    "no_data": "Không có dữ liệu",
+    "report_result": "Báo cáo kết quả",
+    "stats": "Thống kê",
+    "list_table": "Mẫu báo cáo",
+    "map": "Bản đồ",
+    "photos": "Hình ảnh",
+    "clear": "Xóa",
+    "reports": "Báo cáo",
+    "procmsg": "Tải về báo cáo",
+    "report_empty": "Báo cáo trống",
+    "charts": "Biểu đồ",
+    "invalid_table": "Lỗi bảng",
+    "out_of_range": "Ngoài vùng",
+    "downloading_error": "Tải về bị lỗi",
+    "msgs_per_page": "Số dòng trên trang",
+    "msgs_all": "Tất cả",
+    "errormsg": "Kết nối bị lỗi",
+    "exec_error": "Không có dữ liệu cho khoảng chọn.",
+    "export_to_excel": "Xuất ra Excel",
+    "export_to_pdf": "Xuất ra PDF",
+    "make_report_file": "Xuất ra tập tin",
+    "messages": "Truyền sang tin nhắn",
+    "msgs_descr": "Mục từ {from} đến {to} trong {total}",
+    "nomsg": "Không có dữ liệu cho vùng chọn",
+    "page": "Trang",
+    "pages_descr": "trên {total}",
+    "pagestat": "Hiển thị {from} đến {to} trong tổng số {total}",
+    "photos_descr": "Mục từ %d đến %d trong %d",
+    "photos_per_page": "Số hình trên trang",
+    "print_report": "In báo cáo",
+    "revert": "Reset",
+    "scroll_left": "Cuộn trái",
+    "scroll_right": "Cuộn phải",
+    "toolbar_awidth": "Chiều dài cột tự động",
+    "toolbar_delete": "Xóa mục đã chọn",
+    "toolbar_first": "Trang đầu",
+    "toolbar_last": "Trang cuối",
+    "toolbar_next": "Tiếp",
+    "toolbar_page_items": "Chọn số mục trên một trang",
+    "toolbar_page_selector": "Nhập vào số trang",
+    "toolbar_prev": "Trước",
+    "trace": "Giá trị biểu đồ theo dõi",
+    "y_auto_scale": "Zoom tự động theo tọa độ Y",
+    "zoom_custom": "Zoom tùy chỉnh",
+    "zoom_in": "Phóng to",
+    "zoom_out": "Phóng to"
+}

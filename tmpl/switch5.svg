@@ -1,0 +1,6 @@
+<svg class="indicator-body switch5SVGHolder" xml:space="preserve" viewBox="0 0 5000 5000" preserveAspectRatio="xMidYMid meet">
+<g class="switch5SVG">
+	<path d="M0 0l5000 0 0 5000 -5000 0z" />
+	<text x="2500" y="2500" class="sensor-name"></text>
+</g>
+</svg>

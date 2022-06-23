@@ -1,0 +1,391 @@
+{
+    "app_name": "Sensolator",
+    "app_title": "Sensolator",
+    "background_url": {
+        "title": "Set background image",
+        "url": "URL:",
+        "url_placeholder": "example.com/image.jpg",
+        "set": "OK"
+    },
+    "button_dont_save": "No",
+    "button_save": "Yes",
+    "close_modal_text": "Would you like to save changes?",
+    "close_modal_btn_ok": "OK",
+    "copy": "Copy",
+    "counter_info_header": "Chart for %%COUNTER%% of unit %%UNIT%%",
+    "counter_info_header_names": {
+        "Mileage": "mileage counter",
+        "EngineHours": "engine hours counter",
+        "Traffic": "GPRS traffic counter"
+    },
+    "counter_properties_header": "%%COUNTER%% of unit %%UNIT%%",
+    "counters": {
+        "Mileage": "Mileage counter",
+        "EngineHours": "Engine hours counter",
+        "Traffic": "GPRS traffic counter"
+    },
+    "error": "Error",
+    "delete": "Delete",
+    "desktop_delete_confirm": "Are you sure you want to delete dashboard \"%%DESKTOP_NAME%%\"?",
+    "desktop_name_default": "Dashboard %%DESKTOP_ID%%",
+    "desktop_name_placeholder": "Dashboard name",
+    "desktops": {
+        "add_button_title": "Add a dashboard"
+    },
+    "errors": {
+        "cant_login": "Login error.",
+        "performing_request": "Error performing request.",
+        "invalid_url": "Invalid URL.",
+        "invalid_image_url": "No image available.",
+        "invalid_image_url_on_page_load": "Unable to load background image.",
+        "cant_create_notification": "You reached the limit of notifications allowed.",
+        "cant_get_registered_events_to_fetch_notifications": "Unable to load stored events.",
+        "cant_load_interval_to_fetch_notifications": "Unable to load stored events."
+    },
+    "groups": {
+        "graph": "Chart",
+        "text": "Figures",
+        "circle": "Needle",
+        "other": "Scale",
+        "switchers": "Switch"
+    },
+    "gurtam_maps": "Gurtam Maps",
+    "all_units": "Units",
+    "all_sensors": "All sensors",
+    "km_h": "km/h",
+    "last_message": "Last message",
+    "location": "Location",
+    "locale": {
+        "days": [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+        ],
+        "days_short": [
+            "Sun",
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat"
+        ],
+        "months": [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ],
+        "months_short": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+        ]
+    },
+    "measure_units": {
+        "Mileage": [
+            "km",
+            "mi"
+        ],
+        "EngineHours": "h",
+        "Traffic": "KB"
+    },
+    "triggers": "Triggers",
+    "notify_range": {
+        "on": "ON",
+        "off": "OFF",
+        "lower_bound": "From:",
+        "upper_bound": "To:",
+        "control_on_inner": "In range",
+        "control_on_outer": "Out of range",
+        "by_sms": "SMS",
+        "by_email": "E-mail"
+    },
+    "notifications": {
+        "desktop_icon_title": "Notifications",
+        "clear_all": "Clear all",
+        "unit": "Unit",
+        "sensor": "Sensor",
+        "time": "Time",
+        "value": "Value",
+        "email": "E-mail",
+        "email_placeholder": "name@example.com",
+        "phone": "Phone",
+        "phone_placeholder": "+375299000001"
+    },
+    "openstreetmap": "OpenStreetMap",
+    "ok": "OK",
+    "period": {
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "one_week": "Week",
+        "one_month": "Month",
+        "custom": "Custom"
+    },
+    "pin_to_desktop": "Pin to dashboard",
+    "restore_custom_fields": "Restore custom fields",
+    "remote_url": {
+        "add": "OK",
+        "add_button": "Add new URL to watch",
+        "add_title": "Watch URL",
+        "edit_title": "Edit URL",
+        "url": "URL:",
+        "url_placeholder": "example.com/streaming/",
+        "save": "OK"
+    },
+    "speed": "Speed",
+    "set_background_map": "Show map on background",
+    "set_background_color": "Set background color",
+    "set_background_image": "Set background image",
+    "sensor_visual_settings": " Additional settings:",
+    "sensor_notification_settings": "Notification:",
+    "sensor_value_and_scale_round": "Integer values",
+    "show_unit_counter_properties": "Show properties",
+    "show_unit_counter_info": "Show chart",
+    "show_unit_sensor_properties": "Show properties",
+    "show_unit_sensor_info": "Show chart",
+    "time_range_delimiter": " - ",
+    "cancel": "Cancel",
+    "select_counters_to_watch": "Select counters to watch:",
+    "select_sensors_to_watch": "Select sensors to watch:",
+    "update_watch_sensors": "OK",
+    "unpin_from_desktop": "Unpin from dashboard",
+    "save_sensor_properties": "OK",
+    "save_user_settings": "OK",
+    "sensor": {
+        "min": "Min:",
+        "max": " Max:",
+        "invalid_value": "Unknown",
+        "background_placeholder": "example.com/background.jpg",
+        "color_scheme": "Color scheme:",
+        "reset": "Reset",
+        "remove": "Remove",
+        "add": "Add",
+        "from": "from",
+        "to": "to",
+        "err_range": "Invalid interval."
+    },
+    "sensor_types": {
+        "impulse fuel consumption": "Impulse fuel consumption sensor",
+        "absolute fuel consumption": "Absolute fuel consumption sensor",
+        "instant fuel consumption": "Instant fuel consumption sensor",
+        "fuel level": "Fuel level sensor",
+        "fuel level impulse sensor": "Fuel level impulse sensor",
+        "temperature": "Temperature sensor",
+        "temperature coefficient": "Temperature coefficient",
+        "engine rpm": "Engine revs sensor",
+        "engine operation": "Engine ignition sensor",
+        "voltage": "Voltage sensor",
+        "digital": "Custom digital sensor",
+        "custom": "Custom sensor",
+        "mileage": "Mileage sensor",
+        "odometer": "Relative odometer",
+        "engine efficiency": "Engine efficiency sensor",
+        "engine hours": "Absolute engine hours",
+        "relative engine hours": "Relative engine hours",
+        "counter": "Counter sensor",
+        "accelerometer": "Accelerometer",
+        "driver": "Driver binding",
+        "trailer": "Trailer binding",
+        "alarm trigger": "Alarm trigger"
+    },
+    "sensor_metrics": {
+        "impulse fuel consumption": "",
+        "absolute fuel consumption": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "instant fuel consumption": "",
+        "fuel level": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "fuel level impulse sensor": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "temperature": {
+            "°C": "°C",
+            "°F": "°F"
+        },
+        "temperature coefficient": "",
+        "engine rpm": {
+            "rpm": "rpm"
+        },
+        "engine operation": {
+            "On/Off": "On/Off"
+        },
+        "voltage": {
+            "V": "V"
+        },
+        "digital": {
+            "On/Off": "On/Off"
+        },
+        "custom": "",
+        "mileage": {
+            "km": "km",
+            "mi": "mi"
+        },
+        "odometer": {
+            "km": "km",
+            "mi": "mi"
+        },
+        "engine efficiency": {
+            "On/Off": "On/Off"
+        },
+        "engine hours": {
+            "hours": "h"
+        },
+        "relative engine hours": {
+            "hours": "h"
+        },
+        "counter": "",
+        "accelerometer": {
+            "G": "G"
+        },
+        "driver": "",
+        "trailer": "",
+        "alarm trigger": "",
+        "weight": {
+            "t": "t"
+        }
+    },
+    "sensor_digital_on": "On",
+    "sensor_digital_off": "Off",
+    "sensor_properties_header": "Sensor %%SENSOR%% of unit %%UNIT%%",
+    "sensor_info_header": "Chart for %%SENSOR%% of unit %%UNIT%%",
+    "sensor_last_value_prefix": "Last value: ",
+    "sensor_last_value_middle_part": " on ",
+    "widget_show_unit_name": "Unit name",
+    "widget_show_sensor_name": "Sensor name",
+    "widget_show_axes": "Show grid",
+    "widget_fit": "Max size",
+    "widget_counter_make_style_default": "Make this style default for all counters of the same type:",
+    "widget_sensor_make_style_default": "Make this style default for all sensors of the same type:",
+    "unavailable": "Unavailable",
+    "unique_id": "Unique ID",
+    "unit_sensors": "View properties",
+    "user_settings": {
+        "title": "Notification settings:",
+        "notifications": {
+            "email": "E-mail:",
+            "phone": "Phone:"
+        }
+    },
+    "zoom_in_title": "Zoom in",
+    "zoom_out_title": "Zoom out",
+    "commands": {
+        "query_pos": "Query position",
+        "block_engine": "Block engine",
+        "unblock_engine": "Unblock engine",
+        "output_on": "Activate output",
+        "output_off": "Deactivate output",
+        "download_msgs": "Download messages",
+        "set_report_interval": "Set data transfer interval",
+        "custom_msg": "Send custom message",
+        "driver_msg": "Send message to driver",
+        "send_position": "Send position",
+        "send_route": "Send route",
+        "upload_cfg": "Upload configuration",
+        "upload_sw": "Upload firmware",
+        "query_photo": "Query snapshot",
+        "query_ddd": "Query DDD file"
+    },
+    "title-commands-window": "Commands for unit",
+    "title-change-commands-window": "Command parameters",
+    "title-change-commands-window-name": "Name",
+    "title-change-commands-window-params": "Text",
+    "title-change-commands-window-coord": "Coordinates",
+    "title-change-commands-window-coord-lat": "Latitude",
+    "title-change-commands-window-coord-lng": "Longitude",
+    "choose-point": "Please, choose a point on the map.",
+    "type-commands": {
+        "0": "Auto",
+        "gsm": "SMS",
+        "tcp": "TCP",
+        "udp": "UDP",
+        "vrt": "Virtual"
+    },
+    "title-activate-output": "Output",
+    "title-deactivate-output": "Output",
+    "exec-command-success": "Command sent.",
+    "exec-command-error": "Error executing command.",
+    "invalid-coord": "Please, indicate coordinates.",
+    "invalid-coord-value": "Incorrect command parameters",
+    "1003": "Only one request is allowed at the same time.",
+    "1004": "Limit of messages has been exceeded.",
+    "1005": "Execution time has exceeded the limit.",
+    "err_perf_req": "Error performing request.",
+    "report_object": "Item",
+    "report_template": "Template",
+    "report_object_type": "Item type",
+    "execute": "Execute",
+    "no_data": "No data",
+    "report_result": "Report Result",
+    "stats": "Statistics",
+    "list_table": "Report Templates",
+    "map": "Map",
+    "photos": "Images",
+    "clear": "Clear",
+    "reports": "Reports",
+    "procmsg": "Loading report",
+    "report_empty": "Empty report",
+    "charts": "Charts",
+    "invalid_table": "Invalid table",
+    "out_of_range": "Out of range",
+    "downloading_error": "Downloading error",
+    "msgs_per_page": "Rows on page",
+    "msgs_all": "All",
+    "errormsg": "Connection error",
+    "exec_error": "No data for selected interval.",
+    "export_to_excel": "Export to Excel",
+    "export_to_pdf": "Export to PDF",
+    "make_report_file": "Export to File",
+    "messages": "Transfer to messages",
+    "msgs_descr": "Items from {from} to {to} of {total}",
+    "nomsg": "No data for selected interval.",
+    "page": "Page",
+    "pages_descr": "of {total}",
+    "pagestat": "Displaying {from} to {to} from {total} items",
+    "photos_descr": "Items from %d to %d of %d",
+    "photos_per_page": "Images per page",
+    "print_report": "Print report",
+    "revert": "Reset",
+    "scroll_left": "Scroll left",
+    "scroll_right": "Scroll right",
+    "toolbar_awidth": "Set columns auto width",
+    "toolbar_delete": "Delete checked items",
+    "toolbar_first": "First page",
+    "toolbar_last": "Last page",
+    "toolbar_next": "Next page",
+    "toolbar_page_items": "Select number of items on one page",
+    "toolbar_page_selector": "Enter page number",
+    "toolbar_prev": "Previous page",
+    "trace": "Trace chart values",
+    "y_auto_scale": "Y axis auto zoom",
+    "zoom_custom": "Custom zoom",
+    "zoom_in": "Zoom in",
+    "zoom_out": "Zoom out",
+    "Example name": ""
+}

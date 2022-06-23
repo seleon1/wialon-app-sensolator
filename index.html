@@ -1,0 +1,953 @@
+<!doctype html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="shortcut icon" href="img/sensolator.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+	<title data-localize="app_title"></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+
+
+    <link rel="stylesheet" href="//apps.wialon.com/plugins/leaflet/leaflet/leaflet.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
+
+	<script src="js/modernizr.js"></script>
+	<script>
+		var availableLanguages=null;
+		var documentationLink=null;
+		var is_white=null;
+		var APP_CONFIG = {};
+	</script>
+</head>
+<body data-bind="event: {keydown: $root.desktops.onKeyDown}">
+<div style="position:absolute;width:0;height:0">
+<svg>
+<defs>
+	<clippath id="horizontal_barSVG_id0">
+		<path d="M1562 1996c0 350-283 633-633 633s-633-283-633-633 283-633 633-633 633 283 633 633z"/>
+	</clippath>
+	<clippath id="switch2SVG-clip-on">
+		<path d="M2647 2153c0 388-315 702-703 702s-702-315-702-702c0-388 314-702 702-702s703 314 703 702z"/>
+	</clippath>
+	<clippath id="switch2SVG-clip-off">
+		<path d="M4814 2153c0 388 315 702 703 702s702-315 702-702c0-388-314-702-702-702s-703 314-703 702z"/>
+	</clippath>
+	<clippath id="switch3SVG-clip-off">
+		<path d="M4256 2153c0 304 246 550 550 550s550-246 550-550-246-550-550-550-550 246-550 550z"/>
+	</clippath>
+	<clippath id="switch3SVG-clip-on">
+			<path d="M3206 2153c0 304-246 550-550 550s-550-246-550-550 246-550 550-550 550 246 550 550z"/>
+	</clippath>
+	<clippath id="switch4SVG-clip-off">
+		<path d="M4256 2153c0 304 246 550 550 550s550-246 550-550-246-550-550-550-550 246-550 550z"/>
+	</clippath>
+	<clippath id="switch4SVG-clip-on">
+		<path d="M3206 2153c0 304-246 550-550 550s-550-246-550-550 246-550 550-550 550 246 550 550z"/>
+	</clippath>
+	<lineargradient id="horizontal_bar_gradient_1SVG-gradient1" gradientunits="userSpaceOnUse" x1="60" y1="214" x2="1806" y2="214">
+	 <stop offset="0" style="stop-color:#00CCFF"/>
+	 <stop offset="0.2863" style="stop-color:#0000FE"/>
+	 <stop offset="0.6471" style="stop-color:#FC00FC"/>
+	 <stop offset="1" style="stop-color:#FB0004"/>
+	</lineargradient>
+	<lineargradient id="horizontal_bar_gradient_1SVG-gradient2" gradientunits="userSpaceOnUse" x1="95" y1="214" x2="1771" y2="214">
+		<stop offset="0" style="stop-color:#00CCFF"/>
+		<stop offset="0.2471" style="stop-color:#00FE66"/>
+		<stop offset="0.5608" style="stop-color:#98FD00"/>
+		<stop offset="1" style="stop-color:#FB0004"/>
+	</lineargradient>
+	<lineargradient id="horizontal_bar_markSVG-gradient" gradientunits="userSpaceOnUse" x1="42" y1="438" x2="1823" y2="438">
+		<stop offset="0" style="stop-color:#00CCFF"/>
+		<stop offset="0.2471" style="stop-color:#00FE66"/>
+		<stop offset="0.5608" style="stop-color:#98FD00"/>
+		<stop offset="1" style="stop-color:#FB0004"/>
+	</lineargradient>
+	<lineargradient id="vertical_bar_markSVG-gradient" gradientunits="userSpaceOnUse" x1="228" y1="1440" x2="228" y2="240">
+		<stop offset="0" style="stop-color:#00CCFF"/>
+		<stop offset="0.2471" style="stop-color:#00FE66"/>
+		<stop offset="0.5608" style="stop-color:#98FD00"/>
+		<stop offset="1" style="stop-color:#FB0004"/>
+	</lineargradient>
+</defs>
+</svg>
+</div>
+
+<div id="page_bg" data-bind="css: {no_units: !$root.units.list().length}">
+	<div id="page_bg_cached_imgs" style="display:none"></div>
+</div>
+
+<div class="gridster" data-bind="css: {no_units: !$root.units.list().length}">
+	<div id="grid_cont"></div>
+</div>
+
+<div id="page_container" class="main-wrapps" data-bind="css: {units_exists: $root.units.list().length}">
+	<div id="header">
+		<div id="logo_text"><img src="img/sensolator.svg" height="33" width="36"><span data-localize="app_name"></span></div>
+		<div id="help"></div>
+		<div id="remote-url" data-bind="click: $root.desktops.remoteURLShow, attr: {title: $root.lang.remote_url.add_button}">
+			<span></span>
+		</div>
+		<div id="user-settings" data-bind="click: $root.user.showUserSettingsWindow, attr: {title: $root.lang.user_settings.button}">
+			<span></span>
+		</div><div id="desktop-notifications" class="desktop-nav" data-bind="css: {active: $root.notifications.allowNotifications && $root.notifications.unreadCount() > 0}">
+			<div id="desktop-notifications-btn" data-toggle="dropdown" data-bind="attr: {title: $root.lang.notifications.desktop_icon_title}, click: $root.notifications.toggleOnDesktop">
+				<span data-bind="text: $root.notifications.unreadCount()"></span>
+			</div>
+			<ul id="desktop-notifications-ul" class="dropdown-menu pull-right" role="menu" aria-labelledby="desktop-notifications-btn" data-bind="click: function(scope, event) { event.stopPropagation(); }">
+				<li>
+					<table id="desktop-notifications-table" width="100%">
+						<thead>
+							<tr>
+								<th class="n-uId" data-bind="text: $root.lang.notifications.unit"></th>
+								<th class="n-sId" data-bind="text: $root.lang.notifications.sensor"></th>
+								<th class="n-time" data-bind="text: $root.lang.notifications.time"></th>
+								<th class="n-val" data-bind="text: $root.lang.notifications.value"></th>
+							</tr>
+						</thead>
+					</table>
+					<hr/>
+					<button id="desktop-notifications-clear-all" type="button" class="btn btn-success pull-right" data-bind="click: $root.notifications.clearAllFromDesktop">
+						<span data-localize="notifications.clear_all"></span>
+					</button>
+				</li>
+			</ul>
+		</div><div class="desktop-nav" id="desktop-list">
+			<div id="desktops-prev" data-bind="click: $root.desktops.desktopsButtonsPrevNextClick"></div>
+			<div id="desktops-list">
+				<!-- ko foreach: $root.desktops.list --><div class="desktop-nav-hld" data-bind="css: {active: $root.desktops.currentId() === id}, event: {mousedown: $root.desktops.desktopIconClick}"><div class="desktop-nav-btn"><div><span data-bind="text: printName(), visible: id !== $root.desktops.editId()"></span><input data-bind="
+	visible: id === $root.desktops.editId(),
+	value: printName,
+	hasSelectedFocus: id === $root.desktops.editId(),
+	event: {
+		blur: function(){
+			$root.desktops.editId(0);
+		}
+	},
+	attr: {
+		placeholder: $root.lang.desktop_name_placeholder,
+		maxlength: $root.desktops.MAX_DESKTOP_NAME_LENGTH
+	},
+	validate: {
+		validator: function(val){
+			val = $.trim(val);
+			return val.length ? is_valid_text(val) : false;
+		},
+		validState: $root.desktops.isDesktopNameValid
+}"/></div></div></div><!-- /ko -->
+			</div><div class="desktop-nav-hld" id="desktop-add" data-bind="visible: $root.desktops.list().length < $root.desktops.MAX_DESKTOP_COUNT"><div class="desktop-nav-btn" data-bind="click: function(desktop) { $root.desktops.createDesktop(); $root.desktops.editId($root.desktops.currentId()); }, attr: {title: $root.lang.desktops.add_button_title}"><div>+</div></div></div><div class="desktop-nav"><div id="desktops-dropdown" data-toggle="dropdown"></div>
+				<ul class="dropdown-menu" id="desktops-dropdown-list" role="menu" aria-labelledby="desktops-dropdown">
+					<!-- ko foreach: $root.desktops.list -->
+						<li data-bind="css: {disabled: $root.desktops.currentId() === id}"><a role="menuitem" class="btn"><span class="name"><span data-bind="text: printName, click: function(){$root.desktops.changeDesktopTo(id)}"></span></span><span class="del" data-bind="visible: $root.desktops.list().length > 1, attr: {title: $root.lang.delete}, click: function() {
+							$root.core.closeConfirm(
+								true,
+								false,
+								function(){
+									$root.desktops.deleteDesktop(id)
+								},
+								true,
+								$root.lang.desktop_delete_confirm({DESKTOP_NAME: printName()})
+							);
+						}"></span><span class="copy" data-bind="visible: $root.desktops.list().length < $root.desktops.MAX_DESKTOP_COUNT, attr: {title: $root.lang.copy}, click: function(){$root.desktops.copyDesktop(id)}"></span></a></li>
+					<!-- /ko -->
+				</ul>
+			</div><div id="desktops-next" data-bind="click: $root.desktops.desktopsButtonsPrevNextClick"></div>
+		</div><div class="desktop-nav" id="desktop-props">
+			<input type="file" id="desktop-select-file" style="display:none">
+			<div class="desktop-nav-preholder dropdown" data-bind="css: {active: $root.desktops.current().background.type() === 'map'}">
+				<div class="desktop-nav-hld" data-toggle="dropdown" data-bind="attr: {title: $root.lang.set_background_map}">
+					<div class="desktop-nav-btn map" id="desktopMap" data-bind="click: $root.desktops.changeBackgroundToMap">
+						<div></div>
+					</div>
+				</div>
+				<ul class="dropdown-menu" id="map-tiles-holder" role="menu" aria-labelledby="desktopMap">
+					<!-- <li><a role="menuitem" class="btn map-tiles" data-bind="css: {disabled: $root.desktops.current().background.type() === 'map' && $root.desktops.current().background.value() && $root.desktops.current().background.value().tileType == 'osm'}, click: function(){ $root.desktops.changeBackground('map', {tileType: 'osm'}) }" data-localize="openstreetmap"></a></li> -->
+					<li><a role="menuitem" class="btn map-tiles" data-bind="css: {disabled: $root.desktops.current().background.type() === 'map' && $root.desktops.current().background.value() && $root.desktops.current().background.value().tileType == 'gurtam'}, click: function(){ $root.desktops.changeBackground('map', {tileType: 'gurtam'}) }" data-localize="gurtam_maps"></a></li>
+				</ul>
+			</div>
+			<div class="desktop-nav-preholder" data-bind="css: {active: $root.desktops.current().background.type() === 'color'}, attr: {title: $root.lang.set_background_color}">
+				<div class="desktop-nav-hld">
+					<div class="desktop-nav-btn color" id="colorpicker" data-bind="attr: {style: 'border-color: ' + ($root.desktops.current().background.type() === 'color' ? $root.desktops.current().background.value() : $root.desktops.current().backgroundInactive.color.value)}">
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="desktop-nav-preholder" data-bind="css: {active: $root.desktops.current().background.type() === 'image'}, attr: {title: $root.lang.set_background_image}"><div class="desktop-nav-hld" data-bind="click: function(){ $root.desktops.changeBackground('image') }"><div class="desktop-nav-btn image"><div></div></div></div></div>
+		</div>
+	</div>
+
+	<!-- <div>
+			<span data-localize="all_units"></span>
+			<input type="text" name="search_units">
+	</div>-->
+	<!-- <button id="search_sensors" type="button" class="btn btn-default" data-toggle="button" data-localize="all_sensors" data-bind=""></button> -->
+	<!--<div id="search_sensors" data-localize="all_sensors">
+			<span data-localize="all_sensors"></span>
+			<input type="text" name="search_sensors">
+	</div>
+	-->
+	<div class="left_panel">
+		<button id="search_units" type="button" class="search_btn" data-localize="all_units" data-bind="css: {visible: $root.units.list().length, collapsed: !$root.units.listVisible()}, click: function(){ $root.units.listVisible( !$root.units.listVisible() ) }"></button>
+		<div id="units" style="display:none" class="no-select" data-bind="visible: $root.units.list().length && $root.units.listVisible">
+			<table id="units_table">
+				<tbody data-bind="foreach: {data: $root.units.list, as: 'unit'}">
+					<tr data-bind="css: {active: ($root.units.sensorsPanelUnit() && $root.units.sensorsPanelUnit().getId() == unit.getId()) || ($root.units.currentSensor() && $root.units.currentSensor().indicator.uId == unit.getId())  }">
+						<td class="uicon"><img data-bind="attr: {src: unit.getIconUrl(20)}"></td>
+						<td class="uname"><div data-bind="text: _.unescape( unit.getName() ), click: $root.units.focusOnUnit"></div></td>
+						<td class="usensors" data-bind="attr: {title: $root.lang.unit_sensors}, click: $root.units.unitWindowShow"></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!--<table id="units_table" class="table table-condensed"
+					data-bind="dataTable: {
+				dataSource: units.list,
+				rowTemplate: 'addressGridTemplate',
+				iDisplayLength: 1,
+				sPaginationType: 'bootstrap',
+				gridId: 'units_table_grid',
+				sDom: 't<\'row\'<\'span12\'i><\'span12 paginateRight\'p>>',
+				columns:
+				[
+					 {'name':'showOnMap' }
+				]
+					}
+			">
+			<tbody>
+			</tbody>
+			</table>
+			 
+			<script id="addressGridTemplate" type="text/html">
+				<td data-bind="text: showOnMap, click: function(unit) { console.log(unit); $parent.units.toggleUnitOnMapEvent(unit); return true;"></td>
+			</script>
+
+			<td class="umapflag"><input type="checkbox" data-bind="checked: showOnMap(), click: function(unit) { $parent.units.toggleUnitOnMapEvent(unit); return true; }"></td>
+			<td class="uicon"><img data-bind="attr: {src: getIconUrl(20)}"></td>
+			<td class="uname" data-bind="text: getName(), click: function(unit) { $parent.units.focusOnUnit(unit); return true; }"></td>
+			<td class="usensors" data-bind="click: function(unit) { $parent.units.showUnitSensors(unit); return true; }" data-toggle="modal" data-target="#unit_sensors"></td>-->
+		</div>
+		<button id="search_reports" type="button" class="search_btn collapsed" style="display:none" data-localize="reports" data-bind="click: function(){ $root.reports.formToggle() }"></button>
+		<div class="reports_form" id="reports_form" style="display:none">
+			<select id="report_template" data-bind="event: {change: function(self, ev) { $root.reports.changeReportTemplate(ev.target.value);}} ">
+
+			</select>
+			<select id="report_unit"></select>
+			<select id="interval" data-bind="event: {change: function(self, ev) { $root.reports.changeSelectInterval(ev);}}">
+				<option value="today" data-bind="text: $root.lang.period['today']"></option>
+				<option value="yesterday" data-bind="text: $root.lang.period['yesterday']"></option>
+				<option value="week" data-bind="text: $root.lang.period['one_week']"></option>
+				<option value="month" data-bind="text: $root.lang.period['one_month']"></option>
+				<option value="custom" data-bind="text: $root.lang.period['custom']"></option>
+			</select>
+			<input type="text" id="interval_from" value="" class="interval_input" style="display:none">
+			<input type="text" id="interval_to" value="" class="interval_input" style="display:none">
+			<div class="form-buttons">
+				<span id="minimized_report" style="display:none" data-bind="event: {click: function() { $root.reports.maximizeReport();}}"><img src="img/report/mini_report.png"></span>
+				<button class="btn btn-default" data-bind="event: {click: function() { $root.reports.executeReport();}}" data-localize="execute"></button>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="report" id="report_window" style="display:none">
+		<div class="report-header">
+			<div class="window-controls">
+				<button type="button" class="close" data-bind="event: {click: function() { $root.reports.minimizeReport();}}">-</button>
+				<button type="button" class="close" data-bind="event: {click: function() { $root.reports.closeReport();}}">&times;</button>
+			</div>
+			<div id="report_templates_filter_accordion_content" class="tabbar"></div>
+			<div class="tabbar-dropdown">
+				<div id="report-tabs-dropdown" data-toggle="dropdown"></div>
+				<ul class="dropdown-menu" id="report-tabs-dropdown-list" role="menu" aria-labelledby="report-tabs-dropdown"></ul>
+			</div>
+		</div>
+		<div class="tab_contents" id="report_result_target"></div>
+	</div>
+
+	<div id="unit_sensors" class="modal" tabindex="-1" role="dialog" aria-labelledby="unit_sensors_label" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog modal-dialog-unit-sensors">
+			<div class="modal-content">
+				<div class="modal-header" data-bind="with: units.sensorsPanelUnit">
+					<button type="button" class="close" aria-hidden="true" data-bind="click: function() {
+						$root.core.closeConfirm($root.units.unitWindowCheckChange, $root.units.unitWindowDontSave, $root.units.unitWindowSave);
+					}">&times;</button>
+					<h5 class="modal-title" id="unit_sensors_label"><span class="unit_sensors_for_name" data-bind="text: _.unescape( getName() )"></span></h5>
+				</div>
+				<div class="modal-body first" data-bind="visible: $root.units.sensorsPanelUnit()">
+					<div class="row" id="custom_fields_holder">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6" data-bind="visible: $root.units.sensorsPanelUnit() && $root.units.sensorsPanelUnit().getUniqueId()">
+							<div class="thumbnail text-center margin0 prop_fixed">
+								<span data-localize="unique_id"></span><br/><span data-bind="text: $root.units.sensorsPanelUnit() && $root.units.sensorsPanelUnit().getUniqueId()"></span>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6" data-bind="visible: $root.units.sensorsPanelUnit() && $root.units.sensorsPanelUnit().getPosition()">
+							<div class="thumbnail text-center margin0 prop_fixed nowrap">
+								<span data-bind="text: $root.units.sensorsPanelUnit() && $root.units.sensorsPanelUnit().getPosition() && $root.units.sensorsPanelUnit().getPosition().x"></span><br/>
+								<span data-bind="text: $root.units.sensorsPanelUnit() && $root.units.sensorsPanelUnit().getPosition() && $root.units.sensorsPanelUnit().getPosition().y"></span>
+							</div>
+						</div>
+						<!-- ko foreach: $root.units.sensorsPanelUnit().customFields -->
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6" data-bind="visible: $data.visible(), click: $root.units.unitWindowHideCustomField">
+								<div class="thumbnail text-center margin0 nowrap">
+									<span data-bind="text: name"></span><br>
+									<span data-bind="text: value"></span>
+								</div>
+							</div>
+						<!-- /ko -->
+					</div>
+					<p class="text-right btn_restore" data-bind="visible: $root.units.sensorsPanelUnit() && $root.units.sensorsPanelUnit().customFields().length">
+						<button type="button" class="btn btn-success" data-localize="restore_custom_fields" data-bind="attr: {disabled: $root.units.sensorsPanelUnit() && $root.units.sensorsPanelUnit().customFieldsShowRestore() ? false : ''}, click: $root.units.unitWindowRestoreCustomFields"></button>
+					</p>
+				</div>
+				<hr class="margin_hr" data-bind="visible: $root.units.sensorsPanelCounters().length"/>
+				<div class="modal-body second" data-bind="visible: $root.units.sensorsPanelCounters().length">
+					<h5 data-localize="select_counters_to_watch"></h5>
+					<div class="row" data-bind="foreach: {data: $root.units.sensorsPanelCounters, as: 'counter'}">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+							<div class="thumbnail" data-bind="css: {selected: counter.updatedOnDesktop()}, click: $root.units.unitSensorCounterClick">
+								<div class="caption">
+									<div class="circle-options" data-bind="click: function(sensor, event){ $root.units.backToUnit = $root.units.listById[ sensor.indicator.uId ]; $root.units.showUnitSensorProperties(sensor, event); }, attr: {title: $root.lang.show_unit_counter_properties}">
+										<span></span>
+									</div>
+									<div class="circle-pin" data-bind="attr: {title: (counter.updatedOnDesktop() ? $root.lang.unpin_from_desktop : $root.lang.pin_to_desktop)}">
+										<span></span>
+									</div>
+									<div class="circle-info" data-bind="click: function(sensor, event){ $root.units.backToUnit = $root.units.listById[ sensor.indicator.uId ]; $root.units.sensorInfoShow(sensor, event); }, attr: {title: $root.lang.show_unit_counter_info}">
+										<span></span>
+									</div>
+									<div class="indicator-thumb" data-bind="attr: {id: 't' + usId}"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr class="margin_hr"/>
+				<div class="modal-body second" data-bind="visible: $root.units.sensorsPanelData().length">
+					<h5 data-localize="select_sensors_to_watch"></h5>
+					<div class="row" data-bind="foreach: $root.units.sensorsPanelData">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+							<div class="thumbnail" data-bind="css: {selected: updatedOnDesktop()}, click: $root.units.unitSensorCounterClick">
+								<div class="caption" data-bind="css: {warn: $root.notifications.triggered[indicator.uId] && $root.notifications.triggered[indicator.uId][indicator.sId]}">
+									<div class="circle-options" data-bind="click: function(sensor, event){ $root.units.backToUnit = $root.units.listById[ sensor.indicator.uId ]; $root.units.showUnitSensorProperties(sensor, event); }, attr: {title: $root.lang.show_unit_sensor_properties}">
+										<span></span>
+									</div>
+									<div class="circle-pin" data-bind="attr: {title: (updatedOnDesktop() ? $root.lang.unpin_from_desktop : $root.lang.pin_to_desktop)}">
+										<span></span>
+									</div>
+									<div class="circle-info" data-bind="click: function(sensor, event){ $root.units.backToUnit = $root.units.listById[ sensor.indicator.uId ]; $root.units.sensorInfoShow(sensor, event); }, attr: {title: $root.lang.show_unit_sensor_info}">
+										<span></span>
+									</div>
+									<div class="indicator-thumb" data-bind="attr: {id: 't' + usId}"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-localize="cancel" data-bind="click: $root.units.unitWindowDontSave"></button>
+					<button type="button" class="btn btn-success" data-bind="click: $root.units.unitWindowSave">
+						<span data-localize="update_watch_sensors"></span>
+					</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div id="unit_commands" class="modal modal-commandss" tabindex="-1" role="dialog" aria-labelledby="unit_commands_label" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog modal-dialog-unit-sensors">
+			<div class="modal-content">
+				<div class="modal-header" data-bind="with: units.sensorsPanelUnit">
+					<button type="button" class="close" aria-hidden="true" data-bind="click: function() {
+						$root.core.closeConfirm($root.units.closeCommandsWindow);
+					}">&times;</button>
+					<h5 class="modal-title" id="unit_commands_label"><span class="unit_commands_for_name" data-bind="text: _.unescape( window.sensolator.langs.translate('title-commands-window'))"></span></h5>
+				</div>
+				<div class="modal-body modal-commands-body" style="padding:0">
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div id="unit-commands-param" class="modal" tabindex="-1" role="dialog" aria-labelledby="unit_changed_commands_label" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog modal-dialog-unit-sensors modal-vertical-centered" style="width: 400px">
+			<div class="modal-content" style="overflow: hidden">
+				<div class="modal-header" data-bind="with: units.sensorsPanelUnit">
+					<button type="button" class="close" aria-hidden="true" data-bind="click: $root.units.closeChangedCommandsWindow">&times;</button>
+					<h5 class="modal-title" id="unit_changed_commands_label"><span class="unit_commands_for_name" data-bind="text: _.unescape( window.sensolator.langs.translate('title-change-commands-window'))"></span></h5>
+				</div>
+				<div class="modal-commands-template" style="display:none">
+					<form class="form-horizontal js-command-param command-param">
+						{{param}}
+					</form>
+				</div>
+				<div class="modal-body" style="padding: 0 10px"></div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-localize="cancel" data-bind="click: function(){$root.units.closeChangedCommandsWindow(false)}"></button>
+					<button type="button" class="btn btn-success">
+						<span data-localize="update_watch_sensors"></span>
+					</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div id="sensor_props" class="modal" tabindex="-1" role="dialog" aria-labelledby="sensor_props_label" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog modal-dialog-sensor-props">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" aria-hidden="true" data-bind="click: function() {
+						$root.core.closeConfirm($root.units.sensorWindowCheckChange, $root.units.sensorWindowCancel, $root.units.sensorWindowSave, $root.units.sensorPropertiesValid);
+					}">&times;</button>
+					<h5 class="modal-title" id="sensor_props_label"></h5>
+				</div>
+				<div class="modal-body first">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div id="sensor_current_skin_holder" class="thumbnail">
+								<div class="caption">
+									<div id="sensor_current_skin"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-12 pl5">
+							<div class="panel-group" id="sensor_skin_defaults" data-bind="foreach: {data: $root.units.sensorGroups, as: 'group'}">
+								<div class="panel panel-default">
+									<div class="panel-heading" data-toggle="collapse" data-parent="#sensor_skin_defaults" data-bind="attr: {'data-target': '#g_' + group.name}">
+										<span data-bind="text: $root.lang.groups[ group.name ]"></span>
+									</div>
+									<div class="panel-collapse collapse" data-bind="attr: {id: 'g_' + group.name}, css: {active: $root.units.currentSensorGroup() === group.name}">
+										<div class="panel-body">
+											<div class="row" data-bind="foreach: {data: group.skins, as: 'skin'}">
+												<div class="col-md-4 col-sm-4 col-xs-4">
+													<div class="thumbnail" data-bind="css: {selected: $root.units.currentSensor() && ($root.units.currentSensor().updatedIndicator.skin() === skin)}">
+														<div class="caption">
+															<div data-bind="attr: {id: skin}, click: $root.units.sensorWindowSelectSensorSkin" class="indicator"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr class="margin_hr"/>
+				<div class="modal-body second horizontal-frm">
+					<div class="right-vline"></div>
+					<div class="row">
+						<div id="sensor_visual_settings" class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+							<p><span data-localize="sensor_visual_settings"></span></p>
+							<div class="checkbox margin05">
+								<p><label>
+									<input class="skip" name="show_unit_name" type="checkbox" data-bind="checked: $root.units.currentSensor() && $root.units.currentSensor().updatedIndicator.show_unit_name, click: $root.units.sensorWindowUpdatePreview"> <span data-localize="widget_show_unit_name"></span></label>
+								</p>
+								<p data-bind="visible: $root.units.currentSensor() && typeof $root.units.sensorSkins[ $root.units.currentSensor().updatedIndicator.skin() ].show_sensor_name !== 'undefined'">
+									<label>
+										<input class="skip" name="show_sensor_name" type="checkbox" data-bind="checked: $root.units.currentSensor() && $root.units.currentSensor().updatedIndicator.show_sensor_name, click: $root.units.sensorWindowUpdatePreview"> <span data-localize="widget_show_sensor_name"></span></label>
+								</p>
+								<p data-bind="visible: $root.units.currentSensor() && typeof $root.units.sensorSkins[ $root.units.currentSensor().updatedIndicator.skin() ].round !== 'undefined'">
+									<label>
+										<input class="skip" name="round_sensor_value" type="checkbox" data-bind="checked: $root.units.currentSensor() && $root.units.currentSensor().updatedIndicator.round, click: $root.units.sensorWindowUpdatePreview"> <span data-localize="sensor_value_and_scale_round"></span></label>
+								</p>
+								<p data-bind="visible: $root.units.currentSensor() && typeof $root.units.sensorSkins[ $root.units.currentSensor().updatedIndicator.skin() ].show_axes !== 'undefined'">
+									<label>
+										<input class="skip" name="show_axes" type="checkbox" data-bind="checked: $root.units.currentSensor() && $root.units.currentSensor().updatedIndicator.show_axes, click: $root.units.sensorWindowUpdatePreview"> <span data-localize="widget_show_axes"></span></label>
+								</p>
+                                <p data-bind="visible: $root.units.currentSensor() && typeof $root.units.sensorSkins[ $root.units.currentSensor().updatedIndicator.skin() ].fit !== 'undefined' && typeof $root.units.sensorSkins[ $root.units.currentSensor().updatedIndicator.skin() ].show_sensor_name !== 'undefined' && !$root.units.currentSensor().updatedIndicator.show_sensor_name()">
+									<label>
+										<input class="skip" name="fit" type="checkbox" data-bind="checked: $root.units.currentSensor() && $root.units.currentSensor().updatedIndicator.fit, click: $root.units.sensorWindowUpdatePreview"> <span data-localize="widget_fit"></span>
+                                    </label>
+								</p>
+							</div>
+                            <!-- ko if: $root.units.currentSensor() && (typeof $root.units.sensorSkins[ $root.units.currentSensor().updatedIndicator.skin() ].min !== 'undefined' || typeof $root.units.sensorSkins[ $root.units.currentSensor().updatedIndicator.skin() ].max !== 'undefined') -->
+                            <div class="row" data-bind="with: $root.units.currentSensor()">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <label class="control-label mr0" for="sensor_prop_min" data-bind="visible: typeof $root.units.sensorSkins[ updatedIndicator.skin() ].min !== 'undefined'">
+                                        <span data-localize="sensor.min"></span>
+                                        <input class="form-control input-sm" id="sensor_prop_min" name="min" data-bind="valueFloat: {data: updatedIndicator.min, change: $root.units.sensorWindowRangeChangeThrottled},
+validate: {
+    validator: function(val){
+        val = $.trim(val);
+        var currentSensor = $root.units.currentSensor();
+        if (currentSensor && val == currentSensor.updatedIndicator.max()) {
+            return false;
+        }
+        return !val.length || is_valid_number(val);
+    },
+    validState: $root.units.sensorPropertiesToValidate.min
+}">
+                                    </label>
+                                    <label class="control-label" for="sensor_prop_max" data-bind="visible: typeof $root.units.sensorSkins[ updatedIndicator.skin() ].max !== 'undefined'">
+                                        <span data-localize="sensor.max"></span>
+                                        <input class="form-control input-sm" id="sensor_prop_max" name="max" data-bind="valueFloat: {data: updatedIndicator.max, change: $root.units.sensorWindowRangeChangeThrottled},
+validate: {
+    validator: function(val){
+        val = $.trim(val);
+        var currentSensor = $root.units.currentSensor();
+        if (currentSensor && val == $root.units.currentSensor().updatedIndicator.min()) {
+            return false;
+        }
+        return !val.length || is_valid_number(val);
+    },
+    validState: $root.units.sensorPropertiesToValidate.max
+}">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-left:0" data-bind="with: $root.units.currentSensor(), visible: typeof $root.units.sensorSkins[ $root.units.currentSensor().updatedIndicator.skin() ].scheme !== 'undefined'">
+                                <div class="col-md-10 col-sm-10 col-xs-10">
+                                    <div class="scale__item scale__item--first" data-bind="text: updatedIndicator.min()"></div>
+                                    <div class="scale__range">
+                                    <!-- ko foreach: updatedIndicator.scheme() -->
+                                        <div class="colorrange colorable" data-bind="attr: {'data-colorable': 'scheme_' + $index(), style: 'background-color:' + $data.color + ';z-index:' + ($parent.updatedIndicator.scheme().length - $index()) + ';width:' + (convertSchemeValues($data.value, [$parent.updatedIndicator.min(), $parent.updatedIndicator.max()]) || 100) + '%'}">&nbsp;</div>
+                                        <!-- ko if: $data.value != null -->
+                                            <div class="scale__item" data-bind="text: formatNumber($data.value), attr: {style: 'left:' + convertSchemeValues($data.value, [$parent.updatedIndicator.min(), $parent.updatedIndicator.max()]) + '%'}, css: {'scale__item--odd': !($index() % 2)}"></div>
+    									<!-- /ko -->
+                                    <!-- /ko -->
+                                    </div>
+                                    <div class="scale__item scale__item--last" data-bind="text: formatNumber(updatedIndicator.max()), css: {'scale__item--odd': (updatedIndicator.scheme().length % 2)}"></div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12" style="padding:0;max-width:80%;margin-bottom:5px">
+									<a href="#" data-localize="sensor.reset" data-bind="click: $root.units.sensorWindowSchemeReset"></a>
+								</div>
+                            </div>
+                            <!-- /ko -->
+							<div class="row" data-bind="with: $root.units.currentSensor(), visible: $root.units.currentSensor() && (!~['gauge_quartercircle', 'gauge_semicircle', 'gauge_circle2'].indexOf($root.units.currentSensor().updatedIndicator.skin())) && (typeof $root.units.sensorSkins[ $root.units.currentSensor().updatedIndicator.skin() ].color_1 !== 'undefined' || typeof $root.units.sensorSkins[ $root.units.currentSensor().updatedIndicator.skin() ].color_2 !== 'undefined' || typeof $root.units.sensorSkins[ $root.units.currentSensor().updatedIndicator.skin() ].color_3 !== 'undefined')">
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<span data-localize="sensor.color_scheme"></span>
+									<!-- ko if: typeof $root.units.sensorSkins[ updatedIndicator.skin() ].color_3 !== 'undefined' -->
+										<div class="colorable" data-colorable="color_3" data-bind="attr: {style: 'background-color: ' + updatedIndicator.color_3()}">&nbsp;</div>
+									<!-- /ko -->
+									<!-- ko if: typeof $root.units.sensorSkins[ updatedIndicator.skin() ].color_2 !== 'undefined' -->
+										<div class="colorable" data-colorable="color_2" data-bind="attr: {style: 'background-color: ' + updatedIndicator.color_2()}">&nbsp;</div>
+									<!-- /ko -->
+									<!-- ko if: typeof $root.units.sensorSkins[ updatedIndicator.skin() ].color_1 !== 'undefined' -->
+										<div class="colorable" data-colorable="color_1" data-bind="attr: {style: 'background-color: ' + updatedIndicator.color_1()}">&nbsp;</div>
+									<!-- /ko -->
+									<a href="#" data-localize="sensor.reset" data-bind="click: $root.units.sensorWindowColorReset"></a>
+								</div>
+							</div>
+							<div class="row" data-bind="with: $root.units.currentSensor(), visible: $root.units.currentSensor() && typeof $root.units.sensorSkins[ $root.units.currentSensor().updatedIndicator.skin() ].bg_image !== 'undefined'">
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<label class="control-label" for="sensor_props_bg_image" id="sensor_props_bg_image_label">
+										<input id="sensor_props_bg_image" class="form-control input-sm clearable" data-bind="value: updatedIndicator.bg_image, event: {change: $root.units.sensorWindowChangeBGImage, input: $root.units.sensorWindowChangeBGImage}, attr: {placeholder: $root.lang.sensor.background_placeholder},
+validate: {
+    validator: function( val ) {
+        val = $.trim( val );
+        return !val.length || is_valid_url( val );
+    },
+    validState: $root.units.sensorPropertiesToValidate.url
+}">
+									</label>
+								</div>
+							</div>
+						</div>
+						<div id="sensor_notification_settings" class="col-lg-7 col-md-7 col-sm-7 col-xs-7 pl8" data-bind="visible: $root.notifications.canCreate && !$root.notifications.canCreate()">
+							<span data-bind="text: $root.lang.errors.cant_create_notification"></span>
+						</div>
+						<div id="sensor_notification_settings" class="col-lg-7 col-md-7 col-sm-7 col-xs-7 pl8" data-bind="visible: $root.notifications.allowNotifications && $root.notifications.observableSettings.allowCreate && $root.units.currentSensor() && Number($root.units.currentSensor().indicator.sId) && $root.notifications.canCreate()">
+							<p data-bind="css: {on: $root.notifications.observableSettings.enabled()}"><span data-localize="sensor_notification_settings"></span><span class="notification_on_preholder" data-bind="click: function(){ $root.notifications.observableSettings.enabled( !$root.notifications.observableSettings.enabled() ) }"><span class="notification_on"><span></span></span></span> <span class="notification_on_txt" data-bind="text: $root.notifications.observableSettings.enabled() ? $root.lang.notify_range.on : $root.lang.notify_range.off, click: function(){ $root.notifications.observableSettings.enabled( !$root.notifications.observableSettings.enabled() ) }"></span></p>
+							<label class="control-label mr0" for="notify_range_start">
+								<span data-localize="notify_range.lower_bound"></span>
+								<input class="form-control input-sm" id="notify_range_start" data-bind="valueString: {data: $root.notifications.observableSettings.lower_bound},
+validate: {
+	validator: function(val){
+		val = $.trim(val);
+		return val === 'false' || !val.length || is_valid_number(val);
+	},
+	validState: $root.units.sensorPropertiesToValidate.lower_bound
+}">
+							</label>
+							<label class="control-label" for="notify_range_end">
+								<span data-localize="notify_range.upper_bound"></span>
+								<input class="form-control input-sm" id="notify_range_end" data-bind="valueString: {data: $root.notifications.observableSettings.upper_bound},
+validate: {
+	validator: function(val){
+		val = $.trim(val);
+		return val === 'false' || !val.length || is_valid_number(val);
+	},
+	validState: $root.units.sensorPropertiesToValidate.upper_bound
+}">
+							</label>
+
+							<span class="nobr"><button class="notify_inside" data-bind="css: {active: $root.notifications.observableSettings.inside()}, click: function(){$root.notifications.observableSettings.inside(true)}"><span data-localize="notify_range.control_on_inner"></span></button><button class="notify_outside" data-bind="css: {active: !$root.notifications.observableSettings.inside()}, click: function(){$root.notifications.observableSettings.inside(false)}"><span data-localize="notify_range.control_on_outer"></span></button></span>
+
+							<p class="768nobr"><span class="notify_via" data-bind="css: {active: $root.notifications.observableSettings.phoneCheckbox()}"><span data-localize="notify_range.by_sms" data-bind="
+click: function(scope, event){
+	$root.notifications.observableSettings.phoneCheckbox( !$root.notifications.observableSettings.phoneCheckbox() );
+	if ( $root.notifications.observableSettings.phoneCheckbox() ) {
+		$(event.target).next('input').focus();
+	}
+	else {
+		$root.notifications.observableSettings.phone($root.user.settings.notifications.phone() || '');
+	}
+}"></span><input class="phone" data-bind="
+valueString: {
+	data: $root.notifications.observableSettings.phone
+},
+attr: {
+	placeholder: $root.lang.notifications.phone_placeholder
+},
+validate: {
+	validator: function(val){
+		val = $.trim(val);
+		return val === 'false' || !val.length || is_valid_phone(val);
+	},
+	validState: $root.units.sensorPropertiesToValidate.phone
+}"></span><span class="notify_via" data-bind="visible: $root.notifications.leftEmailsCount(), css: {active: $root.notifications.observableSettings.emailCheckbox()}"><span data-localize="notify_range.by_email" data-bind="
+click: function(scope, event){
+	$root.notifications.observableSettings.emailCheckbox( !$root.notifications.observableSettings.emailCheckbox() );
+	if ( $root.notifications.observableSettings.emailCheckbox() ) {
+		$(event.target).next('input').focus();
+	}
+	else {
+		$root.notifications.observableSettings.email($root.user.settings.notifications.email() || '');
+	}
+}"></span><input class="email" data-bind="
+valueString: {
+	data: $root.notifications.observableSettings.email
+},
+attr: {
+	placeholder: $root.lang.notifications.email_placeholder
+},
+validate: {
+	validator: function(val){
+		val = $.trim(val);
+		return val === 'false' || !val.length || is_valid_email(val);
+	},
+	validState: $root.units.sensorPropertiesToValidate.email
+}"></span></p>
+						</div>
+					</div>
+				</div>
+				<hr class="margin_hr"/>
+				<div class="modal-body third">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="checkbox">
+								<label>
+									<input name="make_style_default" type="checkbox" data-bind="checked: $root.units.makeSettingsDefaults"> <span data-bind="text: $root.units.currentSensor() &&Number($root.units.currentSensor().indicator.sId) ? $root.lang.widget_sensor_make_style_default : $root.lang.widget_counter_make_style_default"></span> <span class="sensor_data_skin" data-bind="text: $root.units.currentSensor() && Number($root.units.currentSensor().indicator.sId) ? $root.lang.sensor_types[ $root.units.currentSensor().type ] : $root.lang.counters[ $root.units.currentSensor().type ]"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-localize="cancel" data-bind="click: $root.units.sensorWindowCancel"></button>
+					<button type="button" class="btn btn-success" data-bind="click: $root.units.sensorWindowSave, attr: {disabled: !$root.units.sensorPropertiesValid()}">
+						<span data-localize="save_sensor_properties"></span>
+					</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div id="sensor_info" class="modal" tabindex="-1" role="dialog" aria-labelledby="sensor_info_label" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog modal-dialog-sensor-info">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h5 class="modal-title" id="sensor_info_label" data-bind="click: $root.units.sensorCounterInfoHeaderClick"></h5>
+				</div>
+				<div class="modal-body" data-bind="with: $root.units.currentSensor()">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" data-bind="visible: $root.units.sensorInfoCanViewPeriodData()">
+							<div id="sensor_info_period">
+								<div class="btn-group" data-toggle="buttons" data-bind="foreach: $root.history.periods">
+									<label class="btn btn-default btn-sm" data-bind="css: {active: $root.units.currentSensor().period() === $data && !$root.units.sensorInfoPeriodOffset()}, click: $root.units.sensorInfoChangePeriod">
+										<input type="radio" name="options"><span data-bind="text: $root.lang.period[$data]"></span>
+									</label>
+								</div>
+								<span class="time-interval"><span class="time-btn-left" data-bind="click: $root.units.sensorInfoPeriodOffsetMinus"></span><span class="time-info" data-bind="text: $root.units.sensorInfoPeriodText()"></span><span class="time-btn-right" data-bind="click: $root.units.sensorInfoPeriodOffsetPlus"></span></span>
+							</div>
+						</div>
+						<div id="sensor_graph_col" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div id="sensor_graph_container">
+								<div id="sensor_info_graph"></div>
+								<div id="x_axis"></div>
+								<div id="y_axis"></div>
+								<div id="preview"></div>
+								<div id="graph_last_msg"><span data-localize="sensor_last_value_prefix"></span><span id="graph_last_msg_value" data-bind="text: $root.units.currentSensor().val()"></span><span data-localize="sensor_last_value_middle_part" data-bind="visible: $root.units.currentSensor().valid() || $root.units.currentSensor().history.getLastValid() !== false"></span><span id="graph_last_msg_time" data-bind="visible: $root.units.currentSensor().valid() || $root.units.currentSensor().history.getLastValid() !== false, text: $root.units.currentSensor().time()"></span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <hr /> -->
+				<div class="modal-body second">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 sensor_info_log_table_container" style="display:none">
+							<table id="sensor_info_log_table">
+								<thead>
+									<tr><th colspan="2" data-localize="triggers"></th></tr>
+									<tr>
+										<th class="n-time" data-bind="text: $root.lang.notifications.time"></th>
+										<th class="n-val" data-bind="text: $root.lang.notifications.value"></th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal" data-localize="ok"></button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div id="user-settings-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="user-settings-modal-label" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog modal-dialog-user-settings">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" aria-hidden="true" data-bind="click: function() {
+						$root.core.closeConfirm($root.user.isSettingsChanged, $root.user.settingsDontSave, $root.user.settingsSave, $root.user.settingsUpdatedFormValid);
+					}">&times;</button>
+					<h5 class="modal-title" id="user-settings-modal-label"><span data-localize="user_settings.title"></span> <span class="bold" data-bind="text: $root.user.currentUser.getName()"></span></h5>
+				</div>
+				<div class="modal-body horizontal-frm">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<table class="for_form">
+								<tbody>
+									<tr data-bind="visible: $root.notifications.leftEmailsCount()">
+										<td>
+											<label class="control-label" data-localize="user_settings.notifications.email"></label>
+										</td>
+										<td>
+											<input id="user-settings-modal-notifications-email" data-bind="value: $root.user.settingsUpdated.notifications.email, attr: {placeholder: $root.lang.notifications.email_placeholder}, validate: {validator: function(val){ val = $.trim(val); return !val.length || is_valid_email(val); }, validState: $root.user.settingsUpdatedToValidate.notifications.email}">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label class="control-label" for="user-settings-modal-notifications-phone" data-localize="user_settings.notifications.phone"></label>
+										</td>
+										<td>
+											<input id="user-settings-modal-notifications-phone" data-bind="value: $root.user.settingsUpdated.notifications.phone, attr: {placeholder: $root.lang.notifications.phone_placeholder}, validate: {validator: function(val){ val = $.trim(val); return !val.length || is_valid_phone(val); }, validState: $root.user.settingsUpdatedToValidate.notifications.phone}">
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-localize="cancel" data-bind="click: $root.user.settingsDontSave"></button>
+					<button id="user-settings-modal-btn-ok" type="button" class="btn btn-success" data-bind="click: $root.user.settingsSave, attr: {disabled: !$root.user.settingsUpdatedFormValid()}">
+						<span data-localize="save_user_settings"></span>
+					</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div id="remote-url-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="remote-url-modal-label" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog modal-dialog-remote-url">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" aria-hidden="true" data-bind="click: function() {
+						$root.core.closeConfirm($root.desktops.isRemoteURLChanged, $root.desktops.remoteURLDontSave, $root.desktops.remoteURLAddSave);
+					}">&times;</button>
+					<h5 class="modal-title" id="remote-url-modal-label"><span data-bind="text: $root.desktops.remoteURLEditId() ? $root.lang.remote_url.edit_title : $root.lang.remote_url.add_title"></span></h5>
+				</div>
+				<div class="modal-body horizontal-frm">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<table class="for_form">
+								<tbody>
+									<tr>
+										<td><label class="control-label" for="remote-url-modal-url" data-localize="remote_url.url"></label></td>
+										<td><input id="remote-url-modal-url" data-bind="value: $root.desktops.remoteURLInputData, attr: {placeholder: $root.lang.remote_url.url_placeholder}"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-localize="cancel" data-bind="click: $root.desktops.remoteURLDontSave"></button>
+					<button type="button" class="btn btn-success" data-bind="click: $root.desktops.remoteURLAddSave">
+						<span data-bind="text: $root.desktops.remoteURLEditId() ? $root.lang.remote_url.save : $root.lang.remote_url.add"></span>
+					</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div id="background-url-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="background-url-modal-label" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog modal-dialog-background-url">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" aria-hidden="true" data-bind="click: function() {
+						$root.core.closeConfirm($root.desktops.isBackgroundURLChanged, $root.desktops.backgroundURLDontSave, $root.desktops.backgroundURLSet);
+					}">&times;</button>
+					<h5 class="modal-title" id="background-url-modal-label"><span data-localize="background_url.title"></span>
+				</h5></div>
+				<div class="modal-body horizontal-frm">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<table class="for_form">
+								<tbody>
+									<tr>
+										<td><label class="control-label" for="background-url-modal-url" data-localize="background_url.url"></label></td>
+										<td><input id="background-url-modal-url" class="clearable" data-bind="value: $root.desktops.backgroundURLInputData, attr: {placeholder: $root.lang.background_url.url_placeholder}"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-localize="cancel" data-bind="click: $root.desktops.backgroundURLDontSave"></button>
+					<button type="button" id="background-url-modal-button-set" class="btn btn-success ladda-button" data-bind="click: $root.desktops.backgroundURLSet" data-style="expand-left" data-spinner-size="20" data-spinner-color="#333333">
+						<!-- <span class="ladda-label">long title</span> -->
+						<span data-localize="background_url.set"></span>
+					</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div id="close-confirm-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="close-confirm-modal-label" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog modal-dialog-close-confirm-modal">
+			<div class="modal-content">
+				<div class="modal-body horizontal-frm">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<h5 data-bind="text: $root.core.closeConfirmText"></h5>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal" data-localize="cancel"></button>
+					<button type="button" class="btn btn-success" data-dismiss="modal" data-localize="button_dont_save" data-bind="visible: $root.core.closeConfirmDontSaveAction, click: $root.core.closeConfirmDontSaveAction()"></button>
+					<button type="button" class="btn btn-success" data-dismiss="modal" data-localize="button_save" data-bind="click: $root.core.closeConfirmSaveAction(), attr: {disabled: !$root.core.closeConfirmFormValid()}"></button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+</div>
+
+<div class="unit-popover js-popover"></div>
+
+<script type="text/html" id="commands-blocks">
+	{{#blocks}}
+		{{#names}}
+			<div class="form-group">
+				<label for="name-command" class="col-sm-3 control-label">{{#translate}}title-change-commands-window-name{{/translate}}</label>
+				<div class="col-sm-9">
+					<input type="text" id="name-command" class="form-control" value="{{cmd.n}}" name="n" placeholder="{{#translate}}title-change-commands-window-name{{/translate}}" {{#other.disabled}}{{other.disabled}}{{/other.disabled}}>
+				</div>
+			</div>
+		{{/names}}
+		{{#text}}
+			<div class="form-group">
+				<label for="params-command" class="col-sm-3 control-label">{{#translate}}title-change-commands-window-params{{}}{{/translate}}</label>
+				<div class="col-sm-9">
+					<input type="text" class="form-control" value="{{cmd.p}}" name="p" placeholder="{{#translate}}title-change-commands-window-params{{}}{{/translate}}">
+				</div>
+			</div>
+		{{/text}}
+		{{#file}}
+			<div class="form-group">
+				<label for="params-command" class="col-sm-3 control-label">{{translate("title-change-commands-window-params")}}</label>
+				<div class="col-sm-9">
+					<input type="text" class="form-control" value="{{cmd.p}}" name="p" placeholder="{{translate("title-change-commands-window-params")}}">
+				</div>
+			</div>
+		{{/file}}
+		{{#coord}}
+			<div class="form-group">
+				<label for="coord-lng" class="col-sm-3 control-label">{{#translate}}title-change-commands-window-coord{{}}{{/translate}}</label>
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-5" style="padding-right: 1px;">
+							<input type="text" class="form-control" value="{{pos.y}}" name="coord-y" placeholder="{{#translate}}title-change-commands-window-coord-lat{{}}{{/translate}}">
+						</div>
+						<div class="col-sm-5" style="padding-left: 10px;">
+							<input type="text" class="form-control" value="{{pos.x}}" name="coord-x" placeholder="{{#translate}}title-change-commands-window-coord-lng{{}}{{/translate}}">
+						</div>
+						<div class="col-sm-2">
+							<span class="choose-coord js-choose-coord"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		{{/coord}}
+		{{#activate_output}}
+			<div class="form-group">
+				<label for="params-command" class="col-sm-3 control-label">{{#translate}}title-activate-output{{/translate}}</label>
+				<div class="col-sm-9">
+					<select name="p" class="form-control select-commands">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+					</select>
+				</div>
+			</div>
+		{{/activate_output}}
+		{{#deactivate_output}}
+			<div class="form-group">
+				<label for="params-command" class="col-sm-3 control-label">{{#translate}}title-deactivate-output{{/translate}}</label>
+				<div class="col-sm-9">
+					<select name="p" class="form-control select-commands">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+					</select>
+				</div>
+			</div>
+		{{/deactivate_output}}
+	{{/blocks}}
+</script>
+
+<script type="text/html" id="grid_elem_tmpl">
+	<div id="{{data.usId}}" class="grid_elem grid_sensor"></div>
+</script>
+
+<script type="text/html" id="colorrange_range_tmpl">
+	<div class="sp-range sp-removable">
+        {{langs.from}} <input type="text" class="sp-input input-sm" name="colorrange_from" value="{{from}}" /> {{langs.to}} <input type="text" class="sp-input input-sm" name="colorrange_to" value="{{to}}" /><a href="#">{{langs.add}}</a>
+    </div>
+</script>
+
+<script type="text/html" id="colorrange_remove_tmpl">
+    <div class="clearfix sp-removable"></div>
+	<div class="sp-remove-button sp-removable">
+        <a href="#">{{langs.remove}}</a>
+    </div>
+</script>
+
+
+
+<script type="text/html" id="grid_remote_url_tmpl">
+	<div id="{{data.id}}" class="grid_elem grid_remote_url"><div class="grid_remote_url_header nowrap"><span>{{data.url_to_print}}</span></div><iframe class="grid_elem_remote_url" src="{{data.url}}" allowfullscreen wmode="transparent" onload="({{data.onload}}())"></iframe></div>
+</script>
+
+<script src="js/vendors.js"></script>
+
+<script src="js/jq_plugins.js"></script>
+
+<script src="//apps.wialon.com/plugins/leaflet/leaflet/leaflet.js"></script>
+<script src="//apps.wialon.com/plugins/leaflet/webgis/webgis.leaflet.min.js"></script>
+
+<script src="js/leaflet.js"></script>
+
+<script src="js/main.js"></script>
+
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

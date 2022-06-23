@@ -1,0 +1,378 @@
+{
+    "app_name": "Sensolator",
+    "app_title": "Sensolator",
+    "background_url": {
+        "title": "Hintergrundbild setzen",
+        "url": "URL:",
+        "url_placeholder": "example.com/image.jpg",
+        "set": "OK"
+    },
+    "button_dont_save": "Nein",
+    "button_save": "Ja",
+    "close_modal_text": "Änderungen speichern?",
+    "close_modal_btn_ok": "OK",
+    "copy": "Kopieren",
+    "counter_info_header": "Chart für %%COUNTER%% von Objekt %%UNIT%%",
+    "counter_info_header_names": {
+        "Mileage": "Kilometerzähler",
+        "EngineHours": "Maschinenstundenzähler",
+        "Traffic": "GPRS Traffic Zähler"
+    },
+    "counter_properties_header": "%%COUNTER%% des Objektes %%UNIT%%",
+    "counters": {
+        "Mileage": "Kilometerzähler",
+        "EngineHours": "Maschinenstundenzähler",
+        "Traffic": "GPRS Traffic Zähler"
+    },
+    "error": "Fehler",
+    "delete": "Löschen",
+    "desktop_delete_confirm": "Dashboard \"%%DESKTOP_NAME%%\" löschen?",
+    "desktop_name_default": "Dashboard %%DESKTOP_ID%%",
+    "desktop_name_placeholder": "Dashboardname",
+    "desktops": {
+        "add_button_title": "Dashboard hinzufügen"
+    },
+    "errors": {
+        "cant_login": "Loginfehler.",
+        "performing_request": "Fehler beim Ausführen der Anfrage",
+        "invalid_url": "Ungültige URL",
+        "invalid_image_url": "Kein Bild verfügbar.",
+        "invalid_image_url_on_page_load": "Kann Hintergrundbild nicht laden.",
+        "cant_create_notification": "Sie haben das Limit der erlaubten Benachrichtigungen erreicht.",
+        "cant_get_registered_events_to_fetch_notifications": "Kann gespeicherte Vorgänge nicht laden.",
+        "cant_load_interval_to_fetch_notifications": "Kann gespeichertes Vorgänge nicht laden."
+    },
+    "groups": {
+        "graph": "Chart",
+        "text": "Text",
+        "circle": "Kreis",
+        "other": "Skalla",
+        "switchers": "Schalter"
+    },
+    "all_units": "Objekte",
+    "all_sensors": "Alle Sensoren",
+    "km_h": "km/h",
+    "last_message": "Letzte Nachricht",
+    "location": "Standort",
+    "locale": {
+        "days": [
+            "Sonntag",
+            "Montag",
+            "Dienstag",
+            "ittwoch",
+            "Donnerstag",
+            "Freitag",
+            "Samstag"
+        ],
+        "days_short": [
+            "Son",
+            "Mon",
+            "Die",
+            "Mi",
+            "Do",
+            "Fr",
+            "Sa"
+        ],
+        "months": [
+            "So",
+            "Februar",
+            "März",
+            "April",
+            "Mai",
+            "Juni",
+            "Juli",
+            "August",
+            "September",
+            "Oktober",
+            "November",
+            "Dezember"
+        ],
+        "months_short": [
+            "Jan",
+            "Feb",
+            "Mär",
+            "Apr",
+            "Mai",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Okt",
+            "Nov",
+            "Dez"
+        ]
+    },
+    "measure_units": {
+        "Mileage": [
+            "km",
+            "mi"
+        ],
+        "EngineHours": "h",
+        "Traffic": "KB"
+    },
+    "triggers": "Trigger",
+    "notify_range": {
+        "on": "EIN",
+        "off": "AUS",
+        "lower_bound": "Von:",
+        "upper_bound": "An:",
+        "control_on_inner": "Im Bereich",
+        "control_on_outer": "Ausserhalb Bereichs",
+        "by_sms": "SMS",
+        "by_email": "E-Mail"
+    },
+    "notifications": {
+        "desktop_icon_title": "Benachrichtigungen",
+        "clear_all": "Alle löschen",
+        "unit": "Objekt",
+        "sensor": "Sensor",
+        "time": "Zeit",
+        "value": "Wert",
+        "email": "E-Mail",
+        "email_placeholder": "beispielname@mycarcontrol.de",
+        "phone": "Telefon",
+        "phone_placeholder": "+4940696353010"
+    },
+    "openstreetmap": "OpenStreetMap",
+    "ok": "OK",
+    "period": {
+        "today": "Heute",
+        "yesterday": "Gestern",
+        "one_week": "Woche",
+        "one_month": "Monat",
+        "custom": "Individuell"
+    },
+    "pin_to_desktop": "An Dashboard anheften",
+    "restore_custom_fields": "Individuelle Felder zurücksetzen",
+    "remote_url": {
+        "add": "OK",
+        "add_button": "Füge neue URL zum Beobachten hinzu",
+        "add_title": "Beobachte URL",
+        "edit_title": "Editiere URL",
+        "url": "URL:",
+        "url_placeholder": "mycarcontrol.de/streaming/",
+        "save": "OK"
+    },
+    "speed": "Geschwindigkeit",
+    "set_background_map": "Zeige Karte auf Hintergrund",
+    "set_background_color": "Hintergrundfarbe setzen",
+    "set_background_image": "Setze Hintergrundbild",
+    "sensor_visual_settings": "Zusätzliche Einstellungen:",
+    "sensor_notification_settings": "Benachrichtigung:",
+    "sensor_value_and_scale_round": "Integerwerte",
+    "show_unit_counter_properties": "Zeige Einstellungen",
+    "show_unit_counter_info": "Zeige Chart",
+    "show_unit_sensor_properties": "Zeige Einstellungen",
+    "show_unit_sensor_info": "Zeige Chart",
+    "time_range_delimiter": "-",
+    "cancel": "Abbrechen",
+    "select_counters_to_watch": "Wähle Zähler zum beobachten:",
+    "select_sensors_to_watch": "Wähle Sensor zum beobachten:",
+    "update_watch_sensors": "OK",
+    "unpin_from_desktop": "vom Dashboard lösen",
+    "save_sensor_properties": "OK",
+    "save_user_settings": "OK",
+    "sensor": {
+        "min": "Min:",
+        "max": "Max:",
+        "invalid_value": "Unbekannt",
+        "background_placeholder": "mycarcontrol.de/background.jpg",
+        "color_scheme": "Farb-Schema:",
+        "reset": "Reset",
+        "remove": "Entfernen",
+        "add": "Hinzufügen",
+        "from": "von",
+        "to": "bis",
+        "err_range": "Ungültiger Interval."
+    },
+    "sensor_types": {
+        "impulse fuel consumption": "Impuls Sprit Verbrauchs Sensor",
+        "absolute fuel consumption": "Absoluter Spritverbrauchssensor",
+        "instant fuel consumption": "Augenblicklicher Sprit Verbrauchs Sensor",
+        "fuel level": "Spritlevel Sensor",
+        "fuel level impulse sensor": "Spritlevel Impuls Sensor",
+        "temperature": "Temperatur Sensor",
+        "temperature coefficient": "Temperatur Koeffizient",
+        "engine rpm": "Maschinen revs Sensor",
+        "engine operation": "Maschinen Zündungs Sensor",
+        "voltage": "Spannungs Sensor ",
+        "digital": "Individueller digital Sensor",
+        "custom": "Individueller Sensor",
+        "mileage": "Kilometer Sensor",
+        "odometer": "Relativer Odometer",
+        "engine efficiency": "Maschinen Effizienz Sensor",
+        "engine hours": "Absolute Maschinen Stunden",
+        "relative engine hours": "Relative Maschinen Stunden",
+        "counter": "Zählersensor",
+        "accelerometer": "Beschleunigungssensor",
+        "driver": "Fahrerverknüpfung",
+        "trailer": "Trailer Verknüpfungen",
+        "alarm trigger": "Alarm Trigger"
+    },
+    "sensor_metrics": {
+        "absolute fuel consumption": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "fuel level": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "fuel level impulse sensor": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "temperature": {
+            "°C": "°C",
+            "°F": "°F"
+        },
+        "engine rpm": {
+            "rpm": "rpm"
+        },
+        "engine operation": {
+            "On/Off": "Ein/Aus"
+        },
+        "voltage": {
+            "V": "V"
+        },
+        "digital": {
+            "On/Off": "Ein/Aus"
+        },
+        "mileage": {
+            "km": "km",
+            "mi": "mi"
+        },
+        "odometer": {
+            "km": "km",
+            "mi": "mi"
+        },
+        "engine efficiency": {
+            "On/Off": "Ein/Aus"
+        },
+        "engine hours": {
+            "hours": "h"
+        },
+        "relative engine hours": {
+            "hours": "h"
+        },
+        "accelerometer": {
+            "G": "G"
+        }
+    },
+    "sensor_digital_on": "An",
+    "sensor_digital_off": "Aus",
+    "sensor_properties_header": "Senor %%SENSOR%% von Objekt %%UNIT%%",
+    "sensor_info_header": "Chart für %%SENSOR%% von Objekt %%UNIT%%",
+    "sensor_last_value_prefix": "Letzter Wert:",
+    "sensor_last_value_middle_part": "an",
+    "widget_show_unit_name": "Objektname",
+    "widget_show_sensor_name": "Sensor Name",
+    "widget_show_axes": "Zeige Grid",
+    "widget_fit": "Max. Größe",
+    "widget_counter_make_style_default": "Diesen Stil als Standard für alle Zähler diesen Typs festlegen:",
+    "widget_sensor_make_style_default": "Diesen Stil als Standard für alle Sensoren diesen Typs festlegen:",
+    "unavailable": "Nicht verfügbar",
+    "unique_id": "Eineindeutige ID",
+    "unit_sensors": "Zeige Einstellungen",
+    "user_settings": {
+        "title": "Benachrichtigungs-Einstellungen:",
+        "notifications": {
+            "email": "E-Mail:",
+            "phone": "Telefon:"
+        }
+    },
+    "zoom_in_title": "Reinzoomen",
+    "zoom_out_title": "Herauszoomen",
+    "commands": {
+        "query_pos": "Position anfordern",
+        "block_engine": "Motor blockieren",
+        "unblock_engine": "Motor freigeben",
+        "output_on": "Aktiviere Ausgang",
+        "output_off": "Deaktiviere Ausgang",
+        "download_msgs": "Nachrichten herunterladen",
+        "set_report_interval": "Setze Datensendeinterval",
+        "custom_msg": "Sende individuelle Nachricht",
+        "driver_msg": "Sende Nachricht an Fahrer",
+        "send_position": "Sende Position",
+        "send_route": "Sende Route",
+        "upload_cfg": "Konfiguration heraufladen",
+        "upload_sw": "Firmware heraufladen",
+        "query_photo": "Snapshot anfordern",
+        "query_ddd": "DDD File anfordern"
+    },
+    "title-commands-window": "Befehle für Objekt",
+    "title-change-commands-window": "Befehlsparameter",
+    "title-change-commands-window-name": "Name",
+    "title-change-commands-window-params": "Text",
+    "title-change-commands-window-coord": "Koordinaten",
+    "title-change-commands-window-coord-lat": "Breitengrad",
+    "title-change-commands-window-coord-lng": "Längengrad",
+    "choose-point": "Bitte einen Punkt auf Karte wählen",
+    "type-commands": {
+        "0": "Auto",
+        "gsm": "SMS",
+        "tcp": "TCP",
+        "udp": "UDP",
+        "vrt": "Virtuel"
+    },
+    "title-activate-output": "Ausgang",
+    "title-deactivate-output": "Ausgang",
+    "exec-command-success": "Befehl gesendet.",
+    "exec-command-error": "Fehler beim Ausführen des Befehls",
+    "invalid-coord": "Bitte Koordinaten angeben",
+    "invalid-coord-value": "Ungültige Befehlsparameter",
+    "1003": "Nur eine Anfrage ist zur gleichen Zeit erlaubt",
+    "1004": "Anzahl der Nachrichten überschritten",
+    "1005": "Ausführungsdauer zu lang",
+    "err_perf_req": "Fehler beim Ausführen des Befehls",
+    "report_object": "Objekt",
+    "report_template": "Vorlage",
+    "report_object_type": "Objektart",
+    "execute": "Ausführen",
+    "no_data": "Keine Daten",
+    "report_result": "Reportergebnis",
+    "stats": "Statistiken",
+    "list_table": "Report Vorlagen",
+    "map": "Karte",
+    "photos": "Bilder",
+    "clear": "Löschen",
+    "reports": "Reports",
+    "procmsg": "Lade Report",
+    "report_empty": "Leerer Report",
+    "charts": "Charts",
+    "invalid_table": "Ungültige Tabelle",
+    "out_of_range": "Ausserhalb des Bereichs",
+    "downloading_error": "Fehler beim Runterladen",
+    "msgs_per_page": "Reihen auf Seite",
+    "msgs_all": "Alle",
+    "errormsg": "Verbindungsfehler",
+    "exec_error": "Keine Daten für ausgewählten Zeitraum",
+    "export_to_excel": "Export nach Excel",
+    "export_to_pdf": "Export zu PDF",
+    "make_report_file": "Export in Datei ",
+    "messages": "Verschieben nach Nachrichten",
+    "msgs_descr": "Einträge von {from} bis {to} von {total}",
+    "nomsg": "Keine Daten für ausgewählten Zeitraum",
+    "page": "Seite",
+    "pages_descr": "von {total}",
+    "pagestat": "Zeige {from} bis {to} von {total}",
+    "photos_descr": "Einträge von %d bis %d von %d",
+    "photos_per_page": "Bilder pro Seite",
+    "print_report": "Report drucken",
+    "revert": "Reset",
+    "scroll_left": "Nach links scrollen",
+    "scroll_right": "Nach rechts scrollen",
+    "toolbar_awidth": "Setze Spaltenbreite automatisch",
+    "toolbar_delete": "Lösche markierte Objekte",
+    "toolbar_first": "Erste Seite",
+    "toolbar_last": "Letzte Seite",
+    "toolbar_next": "Nächste Seite",
+    "toolbar_page_items": "Wähle Anzahl von Objekten auf einer Seite",
+    "toolbar_page_selector": "Seitennummer eingeben",
+    "toolbar_prev": "Vorherige Seite",
+    "trace": "Beobachte Chart-Werte",
+    "y_auto_scale": "Y-Achse Autozoom",
+    "zoom_custom": "Individueller Zoom",
+    "zoom_in": "Reinzoomen",
+    "zoom_out": "Herauszoomen"
+}

@@ -1,0 +1,77 @@
+<svg class="indicator-body" xml:space="preserve" viewBox="0 0 11229 5786">
+<g class="gauge_semicircleSVG">
+  <path class="fil0" d="M5615 5615l-5615 0c0,-3101 2514,-5615 5615,-5615 3101,0 5615,2514 5615,5615l-5615 0z"/>
+  <path class="fil1" d="M5615 5578l-5447 0c0,-3008 2439,-5447 5447,-5447 3008,0 5447,2439 5447,5447l-5447 0z"/>
+  <path class="fil2" d="M5615 5578l-5447 0c0,-3008 2439,-5447 5447,-5447 1445,0 2830,574 3851,1595l-3851 3851z"/>
+  <path class="fil3" d="M5615 5578l-5447 0c0,-1445 574,-2830 1595,-3851l3851 3851z"/>
+  <path class="fil0" d="M5615 5578l-3699 0c0,-2043 1656,-3699 3699,-3699 2043,0 3699,1656 3699,3699l-3699 0z"/>
+  <polygon class="fil5" points="407,5299 182,5286 184,5249 409,5262"/>
+  <polygon class="fil5" points="430,5010 206,4984 210,4947 435,4972"/>
+  <polygon class="fil5" points="686,3872 475,3798 488,3762 699,3836"/>
+  <polygon class="fil5" points="790,3598 584,3513 599,3478 804,3563"/>
+  <polygon class="fil5" points="470,4723 249,4685 255,4648 476,4685"/>
+  <polygon class="fil5" points="746,4494 306,4393 318,4338 758,4439"/>
+  <polygon class="fil5" points="599,4149 383,4087 394,4051 609,4113"/>
+  <polygon class="fil5" points="1310,3543 698,3248 731,3180 1343,3475"/>
+  <polygon class="fil5" points="1043,3070 846,2958 865,2925 1062,3037"/>
+  <polygon class="fil5" points="1190,2819 1001,2700 1021,2668 1210,2787"/>
+  <polygon class="fil5" points="1352,2575 1169,2445 1191,2414 1374,2544"/>
+  <polygon class="fil5" points="1698,2488 1346,2207 1381,2162 1734,2444"/>
+  <polygon class="fil5" points="1717,2115 1547,1963 1572,1935 1742,2087"/>
+  <polygon class="fil5" points="1918,1902 1756,1741 1783,1714 1944,1876"/>
+  <polygon class="fil5" points="2583,1336 2453,1152 2484,1130 2614,1314"/>
+  <polygon class="fil5" points="2128,1701 1978,1533 2006,1508 2157,1676"/>
+  <polygon class="fil5" points="2618,1878 2195,1347 2254,1300 2677,1831"/>
+  <polygon class="fil5" points="2827,1172 2706,979 2738,958 2859,1152"/>
+  <polygon class="fil5" points="3078,1023 2969,825 3002,807 3111,1005"/>
+  <polygon class="fil5" points="3428,1093 3232,685 3283,661 3479,1068"/>
+  <polygon class="fil5" points="3605,768 3518,558 3553,544 3639,753"/>
+  <polygon class="fil5" points="3877,663 3802,451 3838,438 3912,651"/>
+  <polygon class="fil5" points="4157,574 4093,353 4129,342 4193,563"/>
+  <polygon class="fil5" points="4522,945 4371,280 4444,263 4595,928"/>
+  <polygon class="fil5" points="4725,443 4687,220 4725,214 4762,437"/>
+  <polygon class="fil5" points="5053,397 5015,401 4990,174 5027,170"/>
+  <polygon class="fil5" points="5345,374 5307,376 5294,150 5332,148"/>
+  <polygon class="fil5" points="5645,589 5588,589 5588,136 5645,136"/>
+  <polygon class="fil5" points="5928,375 5890,373 5903,144 5941,146"/>
+  <polygon class="fil5" points="6221,401 6183,396 6209,172 6246,177"/>
+  <polygon class="fil5" points="6509,442 6472,436 6510,212 6547,219"/>
+  <polygon class="fil5" points="6712,945 6638,928 6790,265 6863,281"/>
+  <polygon class="fil5" points="7079,575 7043,565 7106,347 7142,357"/>
+  <polygon class="fil5" points="7357,664 7321,652 7397,436 7433,449"/>
+  <polygon class="fil5" points="7631,770 7596,756 7683,547 7717,562"/>
+  <polygon class="fil5" points="7808,1097 7757,1072 7953,666 8004,691"/>
+  <polygon class="fil5" points="8156,1026 8123,1007 8232,810 8265,828"/>
+  <polygon class="fil5" points="8406,1175 8374,1155 8495,961 8527,982"/>
+  <polygon class="fil5" points="8648,1338 8618,1316 8750,1130 8781,1152"/>
+  <polygon class="fil5" points="8614,1882 8555,1835 8979,1304 9038,1351"/>
+  <polygon class="fil5" points="9106,1706 9078,1681 9228,1513 9256,1538"/>
+  <polygon class="fil5" points="9318,1908 9291,1881 9450,1723 9476,1750"/>
+  <polygon class="fil5" points="9516,2118 9490,2090 9659,1939 9684,1967"/>
+  <polygon class="fil5" points="9533,2492 9498,2447 9851,2166 9887,2210"/>
+  <polygon class="fil5" points="9881,2579 9859,2548 10041,2419 10063,2450"/>
+  <polygon class="fil5" points="10043,2823 10023,2791 10212,2672 10232,2704"/>
+  <polygon class="fil5" points="10189,3074 10171,3041 10368,2932 10386,2965"/>
+  <polygon class="fil5" points="9922,3549 9889,3481 10501,3188 10533,3256"/>
+  <polygon class="fil5" points="10442,3605 10428,3570 10635,3484 10649,3519"/>
+  <polygon class="fil5" points="10544,3876 10532,3840 10745,3766 10757,3801"/>
+  <polygon class="fil5" points="10631,4153 10621,4117 10837,4054 10847,4091"/>
+  <polygon class="fil5" points="10482,4497 10470,4442 10912,4341 10924,4396"/>
+  <polygon class="fil5" points="10759,4728 10753,4691 10976,4653 10982,4691"/>
+  <polygon class="fil5" points="11023,4991 10798,5016 10794,4978 11018,4953"/>
+  <polygon class="fil5" points="11047,5293 10822,5305 10819,5268 11045,5255"/>
+  <text x="960" y="5523" class="sensor-dash"></text>
+  <text x="1434" y="3816" class="sensor-dash"></text>
+  <text x="2611" y="2345" class="sensor-dash"></text>
+  <text x="4338" y="1429" class="sensor-dash"></text>
+  <text x="6410" y="1429" class="sensor-dash"></text>
+  <text x="8112" y="2345" class="sensor-dash"></text>
+  <text x="9046" y="3791" class="sensor-dash"></text>
+  <text x="9677" y="5523" class="sensor-dash"></text>
+  <text x="5614.5" y="3885" class="sensor-val" text-anchor="middle" style="dominant-baseline: hanging;"></text>
+  <text x="5614.5" y="3164" class="sensor-name" text-anchor="middle" style="dominant-baseline: hanging;"></text>
+  <path class="sensor-arrow" d="M1100 5648l4443 138c15,0 30,0 44,-2 102,-14 175,-84 176,-167l-4767 -2c2,-22 23,-31 104,-33l4443 -135c15,0 30,0 44,2 102,14 175,84 175,167l-4767 -2c2,22 23,31 104,33z">
+    <animateTransform begin="indefinite" attributeName="transform" type="rotate" from="" to="" additive="replace" fill="freeze"/>
+  </path>
+</g>
+</svg>

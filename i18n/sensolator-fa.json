@@ -1,0 +1,382 @@
+{
+    "app_name": "Sensolator",
+    "app_title": "Sensolator",
+    "background_url": {
+        "title": "انتخاب تصویر زمینه",
+        "url": "URL:",
+        "url_placeholder": "example.com/image.jpg",
+        "set": "تایید"
+    },
+    "button_dont_save": "خیر",
+    "button_save": "بله",
+    "close_modal_text": "آیا مایل به ذخیره تغییرات می باشید؟ ",
+    "close_modal_btn_ok": "تایید",
+    "copy": "کپی",
+    "counter_info_header": "نمودار برای %%COUNTER%% متحرک %%UNIT%%",
+    "counter_info_header_names": {
+        "Mileage": "کیلومتر شمار",
+        "EngineHours": "شمارنده ساعت كاركرد موتور",
+        "Traffic": "شمارنده ترافيک داده"
+    },
+    "counter_properties_header": "%%COUNTER%% متحرک %%UNIT%%",
+    "counters": {
+        "Mileage": "كيلومتر شمار",
+        "EngineHours": "شمارنده ساعت كاركرد موتور",
+        "Traffic": "شمارنده ترافيک داده"
+    },
+    "error": "خطا",
+    "delete": "حذف",
+    "desktop_delete_confirm": "آیا از حذف میز کار '%%DESKTOP_NAME%%' اطمینان دارید؟",
+    "desktop_name_default": "میز کار %%DESKTOP_ID%%",
+    "desktop_name_placeholder": "نام میز کار",
+    "desktops": {
+        "add_button_title": "اضافه کردن میز کار"
+    },
+    "errors": {
+        "cant_login": "خطای ورود",
+        "performing_request": "خطا هنگام انجام درخواست",
+        "invalid_url": "نشانی اینترنتی نامعتبر",
+        "invalid_image_url": "تصویری موجود نیست",
+        "invalid_image_url_on_page_load": "عدم توانایی در بارگزاری تصویر زمینه",
+        "cant_create_notification": "شما به حداکثر تعداد هشدارها رسيده ايد",
+        "cant_get_registered_events_to_fetch_notifications": "عدم توانایی در بارگزرای رخداد های ذخیره شده",
+        "cant_load_interval_to_fetch_notifications": "عدم توانایی در بارگزرای رخداد های ذخیره شده"
+    },
+    "groups": {
+        "graph": "نمودار",
+        "text": "آمار و ارقام",
+        "circle": "عقربه ای",
+        "other": "مقیاس",
+        "switchers": "سویچ"
+    },
+    "gurtam_maps": "Gurtam Maps",
+    "all_units": "متحرک",
+    "all_sensors": "تمام سنسورها",
+    "km_h": "km/h",
+    "last_message": "آخرین پیام",
+    "location": "موقعیت",
+    "locale": {
+        "days": [
+            "یکشنبه",
+            "دوشنبه",
+            "سه شنبه",
+            "چهارشنبه",
+            "پنجشنبه",
+            "جمعه",
+            "شنبه"
+        ],
+        "days_short": [
+            "یکشنبه",
+            "دوشنبه",
+            "سه شنبه",
+            "چهارشنبه",
+            "پنجشنبه",
+            "جمعه",
+            "شنبه"
+        ],
+        "months": [
+            "ژانویه",
+            "فوریه",
+            "مارس",
+            "آوریل",
+            "می",
+            "ژوئن",
+            "جولای",
+            "آگوست",
+            "سپتامبر",
+            "اکتبر",
+            "نوامبر",
+            "دسامبر"
+        ],
+        "months_short": [
+            "ژانویه",
+            "فوریه",
+            "مارس",
+            "آوریل",
+            "می",
+            "ژوئن",
+            "جولای",
+            "آگوست",
+            "سپتامبر",
+            "اکتبر",
+            "نوامبر",
+            "دسامبر"
+        ]
+    },
+    "measure_units": {
+        "Mileage": [
+            "km",
+            "mi"
+        ],
+        "EngineHours": "h",
+        "Traffic": "KB"
+    },
+    "triggers": "محرک ها",
+    "notify_range": {
+        "on": "روشن",
+        "off": "خاموش",
+        "lower_bound": "از:",
+        "upper_bound": "تا:",
+        "control_on_inner": "در محدوده",
+        "control_on_outer": "خارج از محدوده",
+        "by_sms": "SMS",
+        "by_email": "ایمیل"
+    },
+    "notifications": {
+        "desktop_icon_title": "هشدار",
+        "clear_all": "پاک کردن همه",
+        "unit": "متحرک",
+        "sensor": "سنسور",
+        "time": "زمان",
+        "value": "مقدار",
+        "email": "ایمیل",
+        "email_placeholder": "name@example.com",
+        "phone": "شماره تلفن",
+        "phone_placeholder": "+989XXXXXXXXX"
+    },
+    "openstreetmap": "OpenStreetMap",
+    "ok": "تایید",
+    "period": {
+        "today": "امروز",
+        "yesterday": "دیروز",
+        "one_week": "هفته",
+        "one_month": "ماه",
+        "custom": "سفارشی"
+    },
+    "pin_to_desktop": "الصاق به میز کار",
+    "restore_custom_fields": "بازگرداندن فیلد های سفارشی",
+    "remote_url": {
+        "add": "تایید",
+        "add_button": "اضافه کردن آدرس اینترنتی جدید برای نمایش",
+        "add_title": "نمایش وب سایت",
+        "edit_title": "ویرایش آدرس اینترنتی",
+        "url": "URL:",
+        "url_placeholder": "example.com/streaming/",
+        "save": "تایید"
+    },
+    "speed": "سرعت",
+    "set_background_map": "نمایش نقشه در پس زمینه",
+    "set_background_color": "انتخاب رنگ پس زمینه",
+    "set_background_image": "انتخاب تصویر پس زمینه",
+    "sensor_visual_settings": "تنظیمات اضافی:",
+    "sensor_notification_settings": "هشدار:",
+    "sensor_value_and_scale_round": "مقادیر صحیح",
+    "show_unit_counter_properties": "نمایش مشخصات",
+    "show_unit_counter_info": "نمایش نمودار",
+    "show_unit_sensor_properties": "نمایش مشخصات",
+    "show_unit_sensor_info": "نمایش نمودار",
+    "time_range_delimiter": "-",
+    "cancel": "لغو",
+    "select_counters_to_watch": "انتخاب شمارنده برای مشاهده:",
+    "select_sensors_to_watch": "انتخاب سنسور برای مشاهده:",
+    "update_watch_sensors": "تایید",
+    "unpin_from_desktop": "حذف از میز کاری",
+    "save_sensor_properties": "تایید",
+    "save_user_settings": "تایید",
+    "sensor": {
+        "min": "حداقل:",
+        "max": "حداکثر:",
+        "invalid_value": "نامشخص",
+        "background_placeholder": "example.com/background.jpg",
+        "color_scheme": "الگوی رنگ:",
+        "reset": "ریست",
+        "remove": "پاک کردن",
+        "add": "اضافه کردن",
+        "from": "از",
+        "to": "تا",
+        "err_range": "بازه نامعتبر"
+    },
+    "sensor_types": {
+        "impulse fuel consumption": "سنسور مصرف سوخت تكانه ای",
+        "absolute fuel consumption": "سنسور مصرف سوخت مطلق",
+        "instant fuel consumption": "سنسور مصرف سوخت لحظه ای",
+        "fuel level": "سنسور سطح سوخت",
+        "fuel level impulse sensor": "سنسور سطح سوخت تكانه ای",
+        "temperature": "سنسور دما",
+        "temperature coefficient": "ضریب دما",
+        "engine rpm": "سنسور دور موتور",
+        "engine operation": "سنسور احتراق موتور",
+        "voltage": "سنسور ولتاژ",
+        "digital": "سنسور دیجیتال سفارشی",
+        "custom": "سنسور سفارشی",
+        "mileage": "سنسور مسافت طی شده",
+        "odometer": "کیلومترشمار نسبی",
+        "engine efficiency": "سنسور راندمان موتور",
+        "engine hours": "ساعت کارکرد موتور مطلق",
+        "relative engine hours": "ساعات کارکرد موتور نسبی",
+        "counter": "سنسور شمارنده",
+        "accelerometer": "شتابسنج",
+        "driver": "تخصیص راننده",
+        "trailer": "تخصیص تريلر",
+        "alarm trigger": "آلارم"
+    },
+    "sensor_metrics": {
+        "absolute fuel consumption": {
+            "lt": "L",
+            "gallons": "gal"
+        },
+        "fuel level": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "fuel level impulse sensor": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "temperature": {
+            "°C": "°C",
+            "°F": "°F"
+        },
+        "engine rpm": {
+            "rpm": "rpm"
+        },
+        "engine operation": {
+            "On/Off": "روشن/خاموش"
+        },
+        "voltage": {
+            "V": "V"
+        },
+        "digital": {
+            "On/Off": "روشن/خاموش"
+        },
+        "mileage": {
+            "km": "km",
+            "mi": "mi"
+        },
+        "odometer": {
+            "km": "km",
+            "mi": "mi"
+        },
+        "engine efficiency": {
+            "On/Off": "روشن/خاموش"
+        },
+        "engine hours": {
+            "hours": "h"
+        },
+        "relative engine hours": {
+            "hours": "h"
+        },
+        "accelerometer": {
+            "G": "G"
+        },
+        "weight": {
+            "t": "t"
+        }
+    },
+    "sensor_digital_on": "روشن",
+    "sensor_digital_off": "خاموش ",
+    "sensor_properties_header": "سنسور %%SENSOR%% متحرک %%UNIT%%",
+    "sensor_info_header": "نمودار برای سنسور %%SENSOR%% متحرک %%UNIT%%",
+    "sensor_last_value_prefix": "آخرین مقدار:",
+    "sensor_last_value_middle_part": "روشن",
+    "widget_show_unit_name": "نام متحرک",
+    "widget_show_sensor_name": "نام سنسور",
+    "widget_show_axes": "نمایش گریدلاین",
+    "widget_fit": "حداکثر اندازه",
+    "widget_counter_make_style_default": "اعمال این استایل به عنوان استایل پیش فرض برای همه شمارنده های از این نوع:",
+    "widget_sensor_make_style_default": "اعمال این استایل به عنوان استایل پیش فرض برای همه سنسور های از این نوع:",
+    "unavailable": "در دسترس نیست",
+    "unique_id": "شناسه یکتا",
+    "unit_sensors": "نمایش مشخصات",
+    "user_settings": {
+        "title": "تنظیمات هشدار",
+        "notifications": {
+            "email": "ایمیل:",
+            "phone": "شماره تلفن:"
+        }
+    },
+    "zoom_in_title": "بزرگنمایی",
+    "zoom_out_title": "کوچک نمایی",
+    "commands": {
+        "query_pos": "درخواست ارسال موقعیت",
+        "block_engine": "غيرفعال كردن موتور",
+        "unblock_engine": "فعال كردن موتور",
+        "output_on": "فعال کردن خروجی",
+        "output_off": "غیرفعال کردن خروجی",
+        "download_msgs": "دریافت پیام ها",
+        "set_report_interval": "تنظيم بازه زمانی ارسال داده",
+        "custom_msg": "ارسال پیام های سفارشی",
+        "driver_msg": "ارسال پیام به راننده",
+        "send_position": "ارسال موقعیت",
+        "send_route": "ارسال مسیر",
+        "upload_cfg": "بارگزاری پیکربندی",
+        "upload_sw": "بارگزاری فرم ور",
+        "query_photo": "درخواست ارسال تصویر",
+        "query_ddd": "درخواست فایل DDD"
+    },
+    "title-commands-window": "فرمان برای متحرک",
+    "title-change-commands-window": "پارامترهای فرمان",
+    "title-change-commands-window-name": "نام",
+    "title-change-commands-window-params": "متن",
+    "title-change-commands-window-coord": "مختصات",
+    "title-change-commands-window-coord-lat": "عرض جغرافیایی",
+    "title-change-commands-window-coord-lng": "طول جغرافیایی",
+    "choose-point": "لطفا یک نقطه را در نقشه انتخاب کنید",
+    "type-commands": {
+        "0": "خودکار",
+        "gsm": "پیامک",
+        "tcp": "TCP",
+        "udp": "UDP",
+        "vrt": "مجازی"
+    },
+    "title-activate-output": "خروجی",
+    "title-deactivate-output": "خروجی",
+    "exec-command-success": "ارسال فرمان",
+    "exec-command-error": "خطا هنگام اجرای فرمان",
+    "invalid-coord": "لطفا مختصات را مشخص کنید",
+    "invalid-coord-value": "پارامترهای فرمان نادرست هستند",
+    "1003": "تنها یک درخواست در هر لحظه قابل اجراست",
+    "1004": "تعداد پیام ها از حد مجاز تجاوز کرده است",
+    "1005": "زمان اجرا از حد مجاز تجاوز کرده است",
+    "err_perf_req": "خطا هنگام انجام درخواست",
+    "report_object": "آیتم",
+    "report_template": "قالب",
+    "report_object_type": "نوع آیتم",
+    "execute": "اجرا",
+    "no_data": "داده ای موجود نیست",
+    "report_result": "نتیجه گزارش",
+    "stats": "آمار و ارقام",
+    "list_table": "قالب های گزارش",
+    "map": "نقشه",
+    "photos": "تصاویر",
+    "clear": "پاک کردن",
+    "reports": "گزارشات",
+    "procmsg": "بارگزاری گزارش",
+    "report_empty": "گزارش خالی",
+    "charts": "نمودار",
+    "invalid_table": "جدول نامعتبر",
+    "out_of_range": "خارج از محدوده",
+    "downloading_error": "خطای بارگیری",
+    "msgs_per_page": "ردیف در هر صفحه",
+    "msgs_all": "همه",
+    "errormsg": "خطای اتصال",
+    "exec_error": "داده ای در بازه زمانی انتخاب شده موجود نیست",
+    "export_to_excel": "خروجی Excel",
+    "export_to_pdf": "خروجی PDF",
+    "make_report_file": "برون ریزی در فایل",
+    "messages": "انتقال به پیام ها",
+    "msgs_descr": "آیتم ها از {from} تا {to} در بین {total}",
+    "nomsg": "داده ای در بازه زمانی انتخاب شده موجود نیست",
+    "page": "صفحه",
+    "pages_descr": "از {total}",
+    "pagestat": "نمایش {from} تا {to} از {total} مورد",
+    "photos_descr": "آیتم های %d تا %d از %d",
+    "photos_per_page": "تعداد تصوير در صفحه",
+    "print_report": "چاپ گزارش",
+    "revert": "ریست",
+    "scroll_left": "پیمایش به چپ",
+    "scroll_right": "پیمایش به راست",
+    "toolbar_awidth": "تنظيم خودكار عرض ستون ها",
+    "toolbar_delete": "پاک کردن موارد بررسی شده",
+    "toolbar_first": "اولین صفحه",
+    "toolbar_last": "آخرین صفحه",
+    "toolbar_next": "صفحه بعد",
+    "toolbar_page_items": "انتخاب تعداد آیتم های قابل نمایش بر روی یک صفحه",
+    "toolbar_page_selector": "شماره صفحه را وارد کنید",
+    "toolbar_prev": "صفحه قبل",
+    "trace": "ردیابی مقادير نمودار",
+    "y_auto_scale": "زوم خودکار محور Y",
+    "zoom_custom": "بزرگنمایی سفارشی",
+    "zoom_in": "بزرگنمایی",
+    "zoom_out": "کوچک نمایی"
+}

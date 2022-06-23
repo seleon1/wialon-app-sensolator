@@ -1,0 +1,218 @@
+<svg class="indicator-body" xml:space="preserve" viewBox="0 0 7461 3731">
+<g class="switch2SVG">
+	<path class="fil0" d="M0 0h7461v3731h-7461z"/>
+	<text class="fil1 fnt0 sensor-name" x="3731" y="857" text-anchor="middle"></text>
+	<g class="switch-off">
+		<path class="fil2" d="M5538 1278h-3615c-481 0-874 393-874 874s394 874 874 874h3615c481 0 874-393 874-874s-393-874-874-874z"/>
+		<path class="fil3 str0" d="M1683 2240c39 160 184 279 356 279s317-119 356-279h2769c39 160 184 279 356 279 203 0 367-164 367-367s-164-367-367-367c-172 0-317 119-356 279h-2769c-39-160-184-279-356-279s-317 119-356 279c-13 58-15 121 0 176z"/>
+		<g clip-path="url(#switch2SVG-clip-off)">
+			<path class="fil4" d="M5517 2153l-726 680 45 45z"/>
+			<path class="fil4" d="M5517 2153l725-681-45-45z"/>
+			<path class="fil5" d="M5517 2153l-681 725 48 42z"/>
+			<path class="fil6" d="M5517 2153l680-726-48-42z"/>
+			<path class="fil7" d="M5517 2153l-633 767 51 39z"/>
+			<path class="fil8" d="M5517 2153l632-768-50-39z"/>
+			<path class="fil9" d="M5517 2153l-582 806 53 36z"/>
+			<path class="fil10" d="M5517 2153l582-807-53-35z"/>
+			<path class="fil11" d="M5517 2153l-529 842 55 32z"/>
+			<path class="fil12" d="M5517 2153l529-842-55-33z"/>
+			<path class="fil13" d="M5517 2153l-474 874 57 28z"/>
+			<path class="fil14" d="M5517 2153l474-875-57-28z"/>
+			<path class="fil15" d="M5517 2153l-417 902 58 25z"/>
+			<path class="fil16" d="M5517 2153l417-903-59-25z"/>
+			<path class="fil17" d="M5517 2153l-359 927 61 21z"/>
+			<path class="fil18" d="M5517 2153l358-928-60-21z"/>
+			<path class="fil19" d="M5517 2153l-298 948 61 17z"/>
+			<path class="fil20" d="M5517 2153l298-949-61-17z"/>
+			<path class="fil21" d="M5517 2153l-237 965 62 14z"/>
+			<path class="fil22" d="M5517 2153l237-966-63-13z"/>
+			<path class="fil23" d="M5517 2153l-175 979 63 9z"/>
+			<path class="fil24" d="M5517 2153l174-979-63-10z"/>
+			<path class="fil25" d="M5517 2153l-112 988 64 5z"/>
+			<path class="fil26" d="M5517 2153l111-989-63-5z"/>
+			<path class="fil27" d="M5517 2153l-48 993 64 1z"/>
+			<path class="fil28" d="M5517 2153l48-994-64-1z"/>
+			<path class="fil29" d="M5517 2153l16 994 63-3z"/>
+			<path class="fil30" d="M5517 2153l-16-995-64 3z"/>
+			<path class="fil31" d="M5517 2153l79 991 64-7z"/>
+			<path class="fil32" d="M5517 2153l-80-992-63 7z"/>
+			<path class="fil33" d="M5517 2153l143 984 62-11z"/>
+			<path class="fil34" d="M5517 2153l-143-985-63 12z"/>
+			<path class="fil35" d="M5517 2153l205 973 62-16z"/>
+			<path class="fil36" d="M5517 2153l-206-973-62 15z"/>
+			<path class="fil37" d="M5517 2153l267 957 61-19z"/>
+			<path class="fil38" d="M5517 2153l-268-958-61 19z"/>
+			<path class="fil39" d="M5517 2153l328 938 60-23z"/>
+			<path class="fil40" d="M5517 2153l-329-939-59 23z"/>
+			<path class="fil41" d="M5517 2153l388 915 58-26z"/>
+			<path class="fil42" d="M5517 2153l-388-916-58 27z"/>
+			<path class="fil43" d="M5517 2153l446 889 56-31z"/>
+			<path class="fil44" d="M5517 2153l-446-889-56 30z"/>
+			<path class="fil45" d="M5517 2153l502 858 54-34z"/>
+			<path class="fil46" d="M5517 2153l-502-859-54 34z"/>
+			<path class="fil47" d="M5517 2153l556 824 51-37z"/>
+			<path class="fil48" d="M5517 2153l-556-825-52 37z"/>
+			<path class="fil49" d="M5517 2153l607 787 49-41z"/>
+			<path class="fil50" d="M5517 2153l-608-788-49 41z"/>
+			<path class="fil51" d="M5517 2153l656 746 47-43z"/>
+			<path class="fil52" d="M5517 2153l-657-747-46 43z"/>
+			<path class="fil52" d="M5517 2153l703 703 44-47z"/>
+			<path class="fil51" d="M5517 2153l-703-704-44 47z"/>
+			<path class="fil50" d="M5517 2153l747 656 40-49z"/>
+			<path class="fil49" d="M5517 2153l-747-657-41 49z"/>
+			<path class="fil48" d="M5517 2153l787 607 37-52z"/>
+			<path class="fil47" d="M5517 2153l-788-608-37 52z"/>
+			<path class="fil46" d="M5517 2153l824 555 34-54z"/>
+			<path class="fil45" d="M5517 2153l-825-556-34 54z"/>
+			<path class="fil44" d="M5517 2153l858 501 31-56z"/>
+			<path class="fil43" d="M5517 2153l-859-502-30 56z"/>
+			<path class="fil42" d="M5517 2153l889 445 26-58z"/>
+			<path class="fil41" d="M5517 2153l-889-446-27 58z"/>
+			<path class="fil40" d="M5517 2153l915 387 23-59z"/>
+			<path class="fil39" d="M5517 2153l-916-388-23 59z"/>
+			<path class="fil38" d="M5517 2153l938 328 20-61z"/>
+			<path class="fil37" d="M5517 2153l-939-329-19 61z"/>
+			<path class="fil36" d="M5517 2153l958 267 15-62z"/>
+			<path class="fil35" d="M5517 2153l-958-268-15 62z"/>
+			<path class="fil34" d="M5517 2153l973 205 11-62z"/>
+			<path class="fil33" d="M5517 2153l-973-206-11 63z"/>
+			<path class="fil32" d="M5517 2153l984 143 7-64z"/>
+			<path class="fil31" d="M5517 2153l-984-143-7 63z"/>
+			<path class="fil30" d="M5517 2153l991 79 3-63z"/>
+			<path class="fil29" d="M5517 2153l-991-80-4 64z"/>
+			<path class="fil28" d="M5517 2153l994 16-1-64z"/>
+			<path class="fil27" d="M5517 2153l-995-16 1 63z"/>
+			<path class="fil26" d="M5517 2153l993-48-5-64z"/>
+			<path class="fil25" d="M5517 2153l-994 47 6 64z"/>
+			<path class="fil24" d="M5517 2153l988-112-9-63z"/>
+			<path class="fil23" d="M5517 2153l-988 111 9 63z"/>
+			<path class="fil22" d="M5517 2153l979-175-13-62z"/>
+			<path class="fil21" d="M5517 2153l-979 174 13 62z"/>
+			<path class="fil20" d="M5517 2153l966-237-18-62z"/>
+			<path class="fil19" d="M5517 2153l-966 236 17 62z"/>
+			<path class="fil18" d="M5517 2153l948-299-21-60z"/>
+			<path class="fil17" d="M5517 2153l-949 298 21 60z"/>
+			<path class="fil16" d="M5517 2153l927-359-24-58z"/>
+			<path class="fil15" d="M5517 2153l-928 358 25 59z"/>
+			<path class="fil14" d="M5517 2153l903-417-29-57z"/>
+			<path class="fil13" d="M5517 2153l-903 417 29 57z"/>
+			<path class="fil12" d="M5517 2153l874-474-32-55z"/>
+			<path class="fil11" d="M5517 2153l-874 474 32 55z"/>
+			<path class="fil10" d="M5517 2153l842-529-36-53z"/>
+			<path class="fil9" d="M5517 2153l-842 529 35 53z"/>
+			<path class="fil8" d="M5517 2153l806-582-39-51z"/>
+			<path class="fil7" d="M5517 2153l-807 582 39 50z"/>
+			<path class="fil6" d="M5517 2153l767-633-42-48z"/>
+			<path class="fil5" d="M5517 2153l-768 632 42 48z"/>
+		</g>
+		<path class="fil53 str1" d="M4814 2153c0 388 315 702 703 702s702-315 702-702c0-388-314-702-702-702s-703 314-703 702z"/>
+		<path class="fil54 str2" d="M5180 2153c0 186 151 337 337 337s337-151 337-337-151-337-337-337-337 151-337 337z"/>
+	</g>
+	<g class="switch-on">
+		<path class="fil2" d="M1923 1278h3615c481 0 874 393 874 874s-394 874-874 874h-3615c-481 0-874-393-874-874s393-874 874-874z"/>
+		<path class="fil3_a str0" d="M5778 2240c-39 160-184 279-356 279s-317-119-356-279h-2769c-39 160-184 279-356 279-203 0-367-164-367-367s164-367 367-367c172 0 317 119 356 279h2769c39-160 184-279 356-279s317 119 356 279c13 58 15 121 0 176z"/>
+		<g clip-path="url(#switch2SVG-clip-on)">
+			<path class="fil4" d="M1945 2153l680 725 45-45z"/>
+			<path class="fil4" d="M1945 2153l-681-726-45 45z"/>
+			<path class="fil5" d="M1945 2153l725 680 42-48z"/>
+			<path class="fil6" d="M1945 2153l-726-681-42 48z"/>
+			<path class="fil7" d="M1945 2153l767 632 39-50z"/>
+			<path class="fil8" d="M1945 2153l-768-633-39 51z"/>
+			<path class="fil9" d="M1945 2153l806 582 36-53z"/>
+			<path class="fil10" d="M1945 2153l-807-582-35 53z"/>
+			<path class="fil11" d="M1945 2153l842 529 32-55z"/>
+			<path class="fil12" d="M1945 2153l-842-529-33 55z"/>
+			<path class="fil13" d="M1945 2153l874 474 28-57z"/>
+			<path class="fil14" d="M1945 2153l-875-474-28 57z"/>
+			<path class="fil15" d="M1945 2153l902 417 25-59z"/>
+			<path class="fil16" d="M1945 2153l-903-417-25 58z"/>
+			<path class="fil17" d="M1945 2153l927 358 21-60z"/>
+			<path class="fil18" d="M1945 2153l-928-359-21 60z"/>
+			<path class="fil19" d="M1945 2153l948 298 17-62z"/>
+			<path class="fil20" d="M1945 2153l-949-299-17 62z"/>
+			<path class="fil21" d="M1945 2153l965 236 14-62z"/>
+			<path class="fil22" d="M1945 2153l-966-237-13 62z"/>
+			<path class="fil23" d="M1945 2153l979 174 9-63z"/>
+			<path class="fil24" d="M1945 2153l-979-175-10 63z"/>
+			<path class="fil25" d="M1945 2153l988 111 5-64z"/>
+			<path class="fil26" d="M1945 2153l-989-112-5 64z"/>
+			<path class="fil27" d="M1945 2153l993 47 1-63z"/>
+			<path class="fil28" d="M1945 2153l-994-48-1 64z"/>
+			<path class="fil29" d="M1945 2153l994-16-3-64z"/>
+			<path class="fil30" d="M1945 2153l-995 16 3 63z"/>
+			<path class="fil31" d="M1945 2153l991-80-7-63z"/>
+			<path class="fil32" d="M1945 2153l-992 79 7 64z"/>
+			<path class="fil33" d="M1945 2153l984-143-12-63z"/>
+			<path class="fil34" d="M1945 2153l-985 143 12 62z"/>
+			<path class="fil35" d="M1945 2153l972-206-15-62z"/>
+			<path class="fil36" d="M1945 2153l-973 205 15 62z"/>
+			<path class="fil37" d="M1945 2153l957-268-19-61z"/>
+			<path class="fil38" d="M1945 2153l-958 267 19 61z"/>
+			<path class="fil39" d="M1945 2153l938-329-23-59z"/>
+			<path class="fil40" d="M1945 2153l-939 328 23 59z"/>
+			<path class="fil41" d="M1945 2153l915-388-27-58z"/>
+			<path class="fil42" d="M1945 2153l-916 387 27 58z"/>
+			<path class="fil43" d="M1945 2153l888-446-30-56z"/>
+			<path class="fil44" d="M1945 2153l-889 445 30 56z"/>
+			<path class="fil45" d="M1945 2153l858-502-34-54z"/>
+			<path class="fil46" d="M1945 2153l-859 501 34 54z"/>
+			<path class="fil47" d="M1945 2153l824-556-37-52z"/>
+			<path class="fil48" d="M1945 2153l-825 555 37 52z"/>
+			<path class="fil49" d="M1945 2153l787-608-41-49z"/>
+			<path class="fil50" d="M1945 2153l-788 607 41 49z"/>
+			<path class="fil51" d="M1945 2153l746-657-43-47z"/>
+			<path class="fil52" d="M1945 2153l-747 656 43 47z"/>
+			<path class="fil52" d="M1945 2153l703-704-47-43z"/>
+			<path class="fil51" d="M1945 2153l-704 703 47 43z"/>
+			<path class="fil50" d="M1945 2153l656-747-49-41z"/>
+			<path class="fil49" d="M1945 2153l-657 746 49 41z"/>
+			<path class="fil48" d="M1945 2153l607-788-52-37z"/>
+			<path class="fil47" d="M1945 2153l-608 787 52 37z"/>
+			<path class="fil46" d="M1945 2153l555-825-54-34z"/>
+			<path class="fil45" d="M1945 2153l-556 824 54 34z"/>
+			<path class="fil44" d="M1945 2153l501-859-56-30z"/>
+			<path class="fil43" d="M1945 2153l-502 858 56 31z"/>
+			<path class="fil42" d="M1945 2153l445-889-58-27z"/>
+			<path class="fil41" d="M1945 2153l-446 889 58 26z"/>
+			<path class="fil40" d="M1945 2153l387-916-59-23z"/>
+			<path class="fil39" d="M1945 2153l-388 915 59 23z"/>
+			<path class="fil38" d="M1945 2153l328-939-61-19z"/>
+			<path class="fil37" d="M1945 2153l-329 938 61 19z"/>
+			<path class="fil36" d="M1945 2153l267-958-62-15z"/>
+			<path class="fil35" d="M1945 2153l-268 957 62 16z"/>
+			<path class="fil34" d="M1945 2153l205-973-63-12z"/>
+			<path class="fil33" d="M1945 2153l-206 973 63 11z"/>
+			<path class="fil32" d="M1945 2153l142-985-63-7z"/>
+			<path class="fil31" d="M1945 2153l-143 984 63 7z"/>
+			<path class="fil30" d="M1945 2153l79-992-64-3z"/>
+			<path class="fil29" d="M1945 2153l-80 991 64 3z"/>
+			<path class="fil28" d="M1945 2153l15-995-63 1z"/>
+			<path class="fil27" d="M1945 2153l-16 994 63-1z"/>
+			<path class="fil26" d="M1945 2153l-48-994-64 5z"/>
+			<path class="fil25" d="M1945 2153l47 993 64-5z"/>
+			<path class="fil24" d="M1945 2153l-112-989-63 10z"/>
+			<path class="fil23" d="M1945 2153l111 988 63-9z"/>
+			<path class="fil22" d="M1945 2153l-175-979-62 13z"/>
+			<path class="fil21" d="M1945 2153l174 979 62-14z"/>
+			<path class="fil20" d="M1945 2153l-237-966-62 17z"/>
+			<path class="fil19" d="M1945 2153l236 965 62-17z"/>
+			<path class="fil18" d="M1945 2153l-299-949-60 21z"/>
+			<path class="fil17" d="M1945 2153l298 948 60-21z"/>
+			<path class="fil16" d="M1945 2153l-359-928-59 25z"/>
+			<path class="fil15" d="M1945 2153l358 927 59-25z"/>
+			<path class="fil14" d="M1945 2153l-418-903-56 28z"/>
+			<path class="fil13" d="M1945 2153l417 902 57-28z"/>
+			<path class="fil12" d="M1945 2153l-474-875-56 33z"/>
+			<path class="fil11" d="M1945 2153l474 874 55-32z"/>
+			<path class="fil10" d="M1945 2153l-530-842-52 35z"/>
+			<path class="fil9" d="M1945 2153l529 842 52-36z"/>
+			<path class="fil8" d="M1945 2153l-582-807-51 39z"/>
+			<path class="fil7" d="M1945 2153l581 806 51-39z"/>
+			<path class="fil6" d="M1945 2153l-633-768-48 42z"/>
+			<path class="fil5" d="M1945 2153l632 767 48-42z"/>
+		</g>
+		<path class="fil53 str1" d="M2647 2153c0 388-315 702-703 702s-702-315-702-702c0-388 314-702 702-702s703 314 703 702z" id="98"/>
+		<path class="fil54_a str2" d="M2282 2153c0 186-151 337-337 337s-337-151-337-337 151-337 337-337 337 151 337 337z"/>
+	</g>
+</g>
+</svg>

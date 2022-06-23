@@ -1,0 +1,368 @@
+{
+    "app_name": "Sensolator",
+    "app_title": "Sensolator",
+    "background_url": {
+        "title": "Määra tagatausta pilt",
+        "url": "URL:",
+        "url_placeholder": "example.com/image.jpg",
+        "set": "OK"
+    },
+    "button_dont_save": "Ei",
+    "button_save": "Jah",
+    "close_modal_text": "Kas soovite salvestada muudatused?",
+    "close_modal_btn_ok": "OK",
+    "copy": "Kopeeri",
+    "counter_info_header_names": {
+        "Mileage": "läbisõit",
+        "EngineHours": "mootori tundide loendur",
+        "Traffic": "GPRS liikluse loendur"
+    },
+    "counters": {
+        "Mileage": "Läbisõit",
+        "EngineHours": "Mootori tundide loendur",
+        "Traffic": "GPRS liikluse loendur"
+    },
+    "error": "Viga",
+    "delete": "Kustuta",
+    "desktop_delete_confirm": "Olete kindel, et kustutate töölaua \"%%DESKTOP_NAME%%\"?",
+    "desktop_name_default": "Töölaud %%DESKTOP_ID%%?",
+    "desktop_name_placeholder": "Töölaua nimi",
+    "desktops": {
+        "add_button_title": "Lisa töölaud"
+    },
+    "errors": {
+        "cant_login": "Viga sisselogimisel.",
+        "performing_request": "Viga taotluse täitmisel.",
+        "invalid_url": "Vale URL",
+        "invalid_image_url": "Pilt pole saadaval.",
+        "invalid_image_url_on_page_load": "Taustapilti ei saa laadida.",
+        "cant_create_notification": "Olete jõudnud lubatud märguannete piirini.",
+        "cant_get_registered_events_to_fetch_notifications": "Salvestatud sündmusi ei saa laadida.",
+        "cant_load_interval_to_fetch_notifications": "Salvestatud sündmusi ei saa laadida."
+    },
+    "groups": {
+        "graph": "Graafik",
+        "text": "Arvandmed",
+        "circle": "Nõel",
+        "other": "Skaala",
+        "switchers": "Lüliti"
+    },
+    "all_units": "Ühikud",
+    "all_sensors": "Kõik andurid",
+    "km_h": "km/h",
+    "last_message": "Viimane sõnum",
+    "location": "Asukoht",
+    "locale": {
+        "days": [
+            "Pühapäev",
+            "Esmaspäev",
+            "Teisipäev",
+            "Kolmapäev",
+            "Neljapäev",
+            "Reede",
+            "Laupäev"
+        ],
+        "days_short": [
+            "Pühap",
+            "Esmasp",
+            "Teisip",
+            "Kolmap",
+            "Neljap",
+            "Reede",
+            "Laup"
+        ],
+        "months": [
+            "Jaanuar",
+            "Veebruar",
+            "Märts",
+            "Aprill",
+            "Mai",
+            "Juuni",
+            "Juuli",
+            "August",
+            "September",
+            "Oktoober",
+            "November",
+            "Detsember"
+        ],
+        "months_short": [
+            "Jaan",
+            "Veebr",
+            "Märts",
+            "Aprill",
+            "Mai",
+            "Juuni",
+            "Juuli",
+            "August",
+            "Sept",
+            "Okt",
+            "Nov",
+            "Dets"
+        ]
+    },
+    "measure_units": {
+        "Mileage": [
+            "km",
+            "mi"
+        ],
+        "EngineHours": "h",
+        "Traffic": "KB"
+    },
+    "triggers": "Päästikud",
+    "notify_range": {
+        "on": "SEES",
+        "off": "VÄLJAS",
+        "lower_bound": "Alates:",
+        "upper_bound": "Kuni:",
+        "control_on_inner": "Alas",
+        "control_on_outer": "Väljaspool ala",
+        "by_sms": "SMS",
+        "by_email": "Email"
+    },
+    "notifications": {
+        "desktop_icon_title": "Teadaanded",
+        "clear_all": "Kustuta kõik",
+        "unit": "Ühik",
+        "sensor": " Andur",
+        "time": "Aeg ",
+        "value": "Väärtus ",
+        "email": "Email",
+        "email_placeholder": "name@example.com",
+        "phone": "Telefon ",
+        "phone_placeholder": "+375299000001 "
+    },
+    "openstreetmap": "OpenStreetMap",
+    "ok": "OK",
+    "period": {
+        "today": "Täna",
+        "yesterday": "Eile",
+        "one_week": "Nädal",
+        "one_month": "Kuu",
+        "custom": "Kohandatud"
+    },
+    "pin_to_desktop": "Kinnitage töölauale",
+    "restore_custom_fields": "Taasta kohandatud väljad",
+    "remote_url": {
+        "add": "OK",
+        "add_button": "Lisa URL vaatamiseks",
+        "add_title": "Vaata URL",
+        "edit_title": "Muuda URL",
+        "url": "URL:",
+        "url_placeholder": "example.com/streaming/",
+        "save": "OK"
+    },
+    "speed": "Kiirus",
+    "set_background_map": "Kuva kaarti tagataustal",
+    "set_background_color": "Sea tagatausta värv",
+    "set_background_image": "Sea tagatausta pilt",
+    "sensor_visual_settings": "Täiendavad seaded:",
+    "sensor_notification_settings": "Märguanded:",
+    "show_unit_counter_properties": "Kuva omadused",
+    "show_unit_counter_info": "Kuva graafikut",
+    "show_unit_sensor_properties": "Kuva omadused",
+    "show_unit_sensor_info": "Kuva graafikut",
+    "time_range_delimiter": "-",
+    "cancel": "Tühista",
+    "select_counters_to_watch": "Valige vaadatavad lugejaid: ",
+    "select_sensors_to_watch": "Valige vaadatavad andurid:",
+    "update_watch_sensors": "OK",
+    "unpin_from_desktop": "Eemaldage töölaualt",
+    "save_sensor_properties": "OK",
+    "save_user_settings": "OK",
+    "sensor": {
+        "min": "Min:",
+        "max": "Max:",
+        "invalid_value": "Tundmatu",
+        "background_placeholder": "example.com/background.jpg",
+        "color_scheme": "Värvi skeem:",
+        "reset": "Lähesta",
+        "remove": "Eemalda",
+        "add": "Lisa",
+        "from": "alates",
+        "err_range": "Kehtetu intervall."
+    },
+    "sensor_types": {
+        "absolute fuel consumption": "Absoluutne kütusekulu andur",
+        "fuel level": "Kütuseandur",
+        "fuel level impulse sensor": "Kütusetaseme implussi andur",
+        "temperature": "Temperatuuri andur",
+        "temperature coefficient": "Temperatuuri koefitsent",
+        "engine rpm": "Mootoripöörete andur",
+        "engine operation": "Mootori süüteandur",
+        "voltage": "Voltmeeter",
+        "digital": "Kohandatud digitaalne andur",
+        "custom": "Kohandatud andur",
+        "mileage": "Läbisõit",
+        "odometer": "Relatiivne hodomeeter",
+        "engine efficiency": "Mootori kasuteguri andur",
+        "engine hours": "Absoluutne mootoritunnid",
+        "relative engine hours": "Relatiivne mootoritunnid",
+        "counter": "Loenduri andur",
+        "accelerometer": "Kiirendusmõõtur",
+        "driver": "Autojuhi seondamine",
+        "trailer": "Treileri sidumine",
+        "alarm trigger": "Alarmi päästik"
+    },
+    "sensor_metrics": {
+        "absolute fuel consumption": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "fuel level": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "fuel level impulse sensor": {
+            "lt": "l",
+            "gallons": "gal"
+        },
+        "temperature": {
+            "°C": "°C",
+            "°F": "°F"
+        },
+        "engine rpm": {
+            "rpm": "rpm"
+        },
+        "engine operation": {
+            "On/Off": "Sees/Väljas"
+        },
+        "voltage": {
+            "V": "V"
+        },
+        "digital": {
+            "On/Off": "Sees/Väljas"
+        },
+        "mileage": {
+            "km": "km",
+            "mi": "mi"
+        },
+        "odometer": {
+            "km": "km",
+            "mi": "mi"
+        },
+        "engine efficiency": {
+            "On/Off": "Sees/Väljas"
+        },
+        "engine hours": {
+            "hours": "h"
+        },
+        "relative engine hours": {
+            "hours": "h"
+        },
+        "accelerometer": {
+            "G": "G"
+        },
+        "weight": {
+            "t": "t"
+        }
+    },
+    "sensor_digital_on": "Sees",
+    "sensor_digital_off": "Väljas",
+    "sensor_last_value_prefix": "Viimane väärtus:",
+    "sensor_last_value_middle_part": "sees",
+    "widget_show_unit_name": "Üksuse nimi",
+    "widget_show_sensor_name": "Anduri nimi",
+    "widget_show_axes": "Kuva ruudustik",
+    "widget_fit": "Maks. suurus",
+    "widget_counter_make_style_default": "Määra see stiil kõigi sama tüüpi lugejate jaoks vaikimisi:",
+    "widget_sensor_make_style_default": "Määra see stiil kõigi sama tüüpi andurite jaoks vaikimisi:",
+    "unavailable": "Pole saadaval",
+    "unique_id": "Unikaalne ID",
+    "unit_sensors": "Vaata omadusi",
+    "user_settings": {
+        "title": "Märguande seaded:",
+        "notifications": {
+            "email": "Email:",
+            "phone": "Telefon:"
+        }
+    },
+    "zoom_in_title": "Suurenda",
+    "zoom_out_title": "Vähenda",
+    "commands": {
+        "query_pos": "Päringu positsioon",
+        "block_engine": "Aktiveeri süüde ",
+        "unblock_engine": "Deaktiveeri süüde",
+        "output_on": "Aktiveeri väljund",
+        "output_off": "Deaktiveeri väljund",
+        "download_msgs": "Lae alla sõnumid",
+        "set_report_interval": "Sätesta andmeteedastuse intervalli",
+        "custom_msg": "Saada kohandatud sõnum",
+        "driver_msg": "Saada sõnum sõitjale",
+        "send_position": "Saada positsioon",
+        "send_route": "Saada marsruut",
+        "upload_cfg": "Konfiguratsiooni üleslaadimine",
+        "upload_sw": "Püsivara üleslaadimine",
+        "query_photo": "Päringu kuvatõmmis",
+        "query_ddd": "Päringu DDD fail"
+    },
+    "title-commands-window": "Üksuse käsud",
+    "title-change-commands-window": "Käsu parameetrid",
+    "title-change-commands-window-name": "Nimi",
+    "title-change-commands-window-params": "Tekst",
+    "title-change-commands-window-coord": "Kordinaadid",
+    "title-change-commands-window-coord-lat": "Laiuskraadi",
+    "title-change-commands-window-coord-lng": "Pikkuskraad",
+    "choose-point": "Palun vali punkt kaardil",
+    "type-commands": {
+        "0": "Automaatne",
+        "gsm": "SMS",
+        "tcp": "TCP",
+        "udp": "UDP",
+        "vrt": "Virtuaalne"
+    },
+    "title-activate-output": "Väljund",
+    "title-deactivate-output": "Väljund",
+    "exec-command-success": "Käsk saadetud.",
+    "exec-command-error": "Viga käsu täitmisel.",
+    "invalid-coord": "Palun osuta koordinaadid.",
+    "invalid-coord-value": "Kehtetud käsu parameetrid.",
+    "1003": "Ainult üks taotlus on korraga lubatud.",
+    "1004": "Sõnumite limiit on ületatud.",
+    "1005": "Teostamisaeg on limiidi ületanud.",
+    "err_perf_req": "Viga taotluse täitmisel.",
+    "report_object": "Ese",
+    "report_template": "Šabloon",
+    "report_object_type": "Eseme tüüp",
+    "execute": "Täitma",
+    "no_data": "Andmed puuduvad",
+    "report_result": "Raporti tulemused",
+    "stats": "Statistika",
+    "list_table": "Šablooni ettekanne",
+    "map": "Kaart",
+    "photos": "Pildid",
+    "clear": "Tühi",
+    "reports": "Raportid",
+    "procmsg": "Raporti laadimine",
+    "report_empty": "Tühi raport",
+    "charts": "Graafikud",
+    "invalid_table": "Kehtetu tabel",
+    "out_of_range": "Väljaspool ala",
+    "downloading_error": "Allalaadimise viga",
+    "msgs_per_page": "Lehel olevad read",
+    "msgs_all": "Kõik",
+    "errormsg": "Ühenduse viga",
+    "exec_error": "Valitud intervallis pole andmeid.",
+    "export_to_excel": "Ekspordi Excelisse",
+    "export_to_pdf": "Ekspordi PDFi",
+    "make_report_file": "Ekspordi failina",
+    "messages": "Muuda sõnumiteks",
+    "nomsg": "Valitud intervalli kohta pole andmeid.",
+    "page": "Lehekülg",
+    "photos_per_page": "Pilte lehekülje kohta",
+    "print_report": "Prindi raport",
+    "revert": "Lähesta",
+    "scroll_left": "Keri vasakule",
+    "scroll_right": "Keri paremale",
+    "toolbar_awidth": "Sätesta veerud automaatse laiusega",
+    "toolbar_delete": "Kustuta märgitud esemed",
+    "toolbar_first": "Esimene lehekülg",
+    "toolbar_last": "Viimane lehekülg",
+    "toolbar_next": "Järgmine lehekülg",
+    "toolbar_page_items": "Valige ühel lehel üksuste arv",
+    "toolbar_page_selector": "Sisesta lehekülje number",
+    "toolbar_prev": "Eelmine lehekülg",
+    "trace": "Jäljendgraafiku väärtused",
+    "zoom_custom": "Kohandatud suurendus",
+    "zoom_in": "Suurenda",
+    "zoom_out": "Vähenda"
+}
