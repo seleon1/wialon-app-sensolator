@@ -2957,6 +2957,7 @@ select.select-commands{
 [data-sizey="1"] .gs-info,
 [data-sizey="1"] .gs-unitSensors,
 [data-sizey="1"] .gs-commands
+[data-sizey="1"] .gs-greenValue
 {
 	display: none;
 }*/
@@ -2967,6 +2968,7 @@ select.select-commands{
 .hide-ctrl .gs-info,
 .hide-ctrl .gs-unitSensors,
 .hide-ctrl .gs-commands
+.hide-ctrl .gs-greenValue
 {
 	display: none;
 }
@@ -2983,7 +2985,7 @@ select.select-commands{
 	overflow: hidden !important;
 }
 
-.gs-commands{
+.gs-command{
 	background-size: cover !important;
 }
 
@@ -3022,7 +3024,8 @@ select.select-commands{
 .unit-popover .popover-title .gs-options,
 .unit-popover .popover-title .gs-info,
 .unit-popover .popover-title .gs-unitSensors,
-.unit-popover .popover-title .gs-commands
+.unit-popover .popover-title .gs-commands,
+.unit-popover .popover-title .gs-greenValue
 {
 	opacity: 1;
 	cursor: pointer;
@@ -11715,11 +11718,17 @@ td.visible-print {
 .gs-options,
 .gs-info,
 .gs-unitSensors,
-.gs-commands {
+.gs-commands,
+.gs-greenValue {
     width: 16px;
     height: 16px;
     position:absolute;
     z-index:1;
+}
+
+.gs-greenValue {
+  width: 64px;
+  height: 20px;
 }
 
 .gs-delete {
@@ -11757,6 +11766,18 @@ td.visible-print {
     background: url('../img/icon-commands.png') top left no-repeat;
 }
 
+.gs-greenValue {
+    display: flex;
+    left: 100px;
+    top: 2px;
+}
+
+.gs-greenValue input {
+    width: 80px;
+    margin-left: 4px;
+    border: 2px solid #008000;
+}
+
 .gs-w:hover .gs-resize-handle,
 .resizing .gs-resize-handle {
     opacity: 1;
@@ -11768,7 +11789,8 @@ td.visible-print {
 .gs-options,
 .gs-info,
 .gs-unitSensors,
-.gs-commands {
+.gs-commands,
+.gs-greenValue {
     opacity: 0;
 }
 
@@ -11780,6 +11802,8 @@ td.visible-print {
 .resizing .gs-info,
 .gs-w:hover .gs-commands,
 .resizing .gs-commands,
+.gs-w:hover .gs-greenValue,
+.resizing .gs-greenValue,
 .gs-w:hover .gs-unitSensors,
 .resizing .gs-unitSensors {
     opacity:1;

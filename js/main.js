@@ -4802,6 +4802,7 @@ var sensolator = (function(app){
         DEFAULT_SENSOR_COLOR_2_ = '#f0a116',
         DEFAULT_SENSOR_COLOR_3_ = '#96c22b',
         DEFAULT_SENSOR_SCHEME_ = [],
+		DEFAULT_GREEN_VALUES_ = [0, 0, 0, 0],
         DEFAULT_SENSOR_SCHEME_1_ = [ {
             color: '#96c22b',
             value: 25
@@ -4853,7 +4854,8 @@ var sensolator = (function(app){
                 'options',
                 'info',
                 'unitSensors',
-                'commands'
+                'commands',
+				'greenValues',
             ]
         },
         widgetDefaults_ = {
@@ -4972,7 +4974,8 @@ var sensolator = (function(app){
         DEFAULT_SENSOR_COLOR_1_ : DEFAULT_SENSOR_COLOR_1_,
         DEFAULT_SENSOR_COLOR_2_ : DEFAULT_SENSOR_COLOR_2_,
         DEFAULT_SENSOR_COLOR_3_ : DEFAULT_SENSOR_COLOR_3_,
-        DEFAULT_SENSOR_SCHEME_: DEFAULT_SENSOR_SCHEME_
+        DEFAULT_SENSOR_SCHEME_: DEFAULT_SENSOR_SCHEME_,
+        DEFAULT_GREEN_VALUES_: DEFAULT_GREEN_VALUES_
     };
 
     var unitsHolderOverflowFix_ = function unitsHolderOverflowFix_(event){
@@ -5564,7 +5567,8 @@ var sensolator = (function(app){
                                 color_1: DEFAULT_SENSOR_COLOR_1_,
                                 color_2: DEFAULT_SENSOR_COLOR_2_,
                                 color_3: DEFAULT_SENSOR_COLOR_3_,
-                                scheme: DEFAULT_SENSOR_SCHEME_
+                                scheme: DEFAULT_SENSOR_SCHEME_,
+								greenValues: DEFAULT_GREEN_VALUES_
                             },
                             updatedIndicator: {
                                 skin: ko.observable( DEFAULT_SENSOR_SKIN_ ),
@@ -5579,7 +5583,8 @@ var sensolator = (function(app){
                                 color_1: ko.observable( DEFAULT_SENSOR_COLOR_1_ ),
                                 color_2: ko.observable( DEFAULT_SENSOR_COLOR_2_ ),
                                 color_3: ko.observable( DEFAULT_SENSOR_COLOR_3_ ),
-                                scheme: ko.observableArray( DEFAULT_SENSOR_SCHEME_ )
+                                scheme: ko.observableArray( DEFAULT_SENSOR_SCHEME_ ),
+								greenValues: ko.observableArray( DEFAULT_GREEN_VALUES_ )
                             },
                             type: type,
                             period: ko.observable(false),
@@ -6100,6 +6105,7 @@ var sensolator = (function(app){
             WIDGET_BTN_INFO = 'gs-info',
             WIDGET_BTN_COMMAND = 'gs-commands',
             WIDGET_BTN_UNIT_SENSORS = 'gs-unitSensors',
+            WIDGET_BTN_GREEN_VALUES = 'gs-greenValue',
             $gridster = app.$(GRIDSTER);
 
 
@@ -6130,6 +6136,16 @@ var sensolator = (function(app){
 
             return false;
         };
+
+		this.handlerChange = function(event, widget) {
+			var
+                id = (widget) ? $(widget).attr('id').split('_') : app.$(this).closest(GRID_ELEM).attr('id').split('_'),
+                uId = id[0],
+                sId = id[1],
+                currentSensor = Number(sId) ? app.units.watchSensors[uId][sId] : app.units.watchCounters[uId][sId];
+			
+			app.units.greenValuesChange(currentSensor, event);
+		}
 
         var _dragged = 0;
         var _showPopover = 0;
@@ -6279,6 +6295,13 @@ var sensolator = (function(app){
             WIDGET_SENSOR + ' .' + WIDGET_BTN_COMMAND
         );
 
+		app.core.$c.grid_cont.on(
+            {
+				'input.sensolator': app.units.handlerChange
+            },
+            WIDGET_SENSOR + ' .' + WIDGET_BTN_GREEN_VALUES
+        );
+
         var _showPopoverUnitId = null;
 
         app.core.$c.grid_cont.on({
@@ -6298,7 +6321,7 @@ var sensolator = (function(app){
 
                 return false;
             },
-            "mouseover.sensolator": function(event){
+            "mouseover.sensolator": function(event, widget){
                 if(_dragged)
                     return true;
 
@@ -6325,6 +6348,21 @@ var sensolator = (function(app){
                     $currentTarget.find('.gs-commands').addClass('disabled-btn-cmd');
                 else
                     $currentTarget.find('.gs-commands').removeClass('disabled-btn-cmd');
+
+				var
+					id = (widget) ? $(widget).attr('id').split('_') : app.$(this).closest(GRID_ELEM).attr('id').split('_'),
+					uId = id[0],
+					sId = id[1],
+					currentSensor = Number(sId) ? app.units.watchSensors[uId][sId] : app.units.watchCounters[uId][sId],
+					greenValues = currentSensor.updatedIndicator.greenValues();
+
+				for (var i = 0; i < greenValues.length; i++) {
+					var inputElement = $currentTarget.find('.gs-greenValue input#' + i);
+					if (!inputElement || inputElement.val() === greenValues[i]) {
+						continue;
+					}
+					inputElement.val(greenValues[i]);
+				}
 
                 if($currentTarget.attr('data-sizex')*1 > 6 && $currentTarget.attr('data-sizey')*1 > 3){
                     $currentTarget.removeClass('hide-ctrl');
@@ -7455,7 +7493,7 @@ var sensolator = (function(app){
 
             var
                 onChangeColor = function(color, target) {
-                    if ( app.sensorRemoved ) {
+					if ( app.sensorRemoved ) {
                         delete app.sensorRemoved;
                         return false;
                     }
@@ -7644,6 +7682,44 @@ var sensolator = (function(app){
         }
     };
 
+	app.units.greenValuesChange = function greenValuesChange(currentSensor, event) {
+		app.units.currentSensor(currentSensor);
+		var greenValueIndex = parseInt(event.target.id);
+		var changedItem = currentSensor.updatedIndicator.greenValues()[greenValueIndex];
+		const INTERVAL = 5;
+
+		var scheme = _.map(currentSensor.updatedIndicator.scheme(), _.clone);
+
+		var schemePartToDelete = scheme.find((element) => element.value == changedItem + INTERVAL);
+		if (schemePartToDelete) {
+			var schemePartToDeleteIndex = scheme.indexOf(schemePartToDelete);
+			scheme.splice(schemePartToDeleteIndex - 1, 2);
+		}
+		changedItem = parseInt(event.target.value);
+		currentSensor.updatedIndicator.greenValues()[greenValueIndex] = changedItem;
+
+		if (changedItem >= INTERVAL) {
+			var schemePart = scheme.find((element) => element.value >= changedItem) ?? scheme[scheme.length - 1];
+			var schemePartIndex = scheme.indexOf(schemePart);
+			var newPartIndex = schemePartIndex + 1;
+	
+			if (schemePartIndex >= 1 && scheme[schemePartIndex - 1].value > changedItem - INTERVAL) {
+				scheme[schemePartIndex - 1].value = changedItem - INTERVAL;
+				newPartIndex = schemePartIndex;
+			} else {
+				scheme.splice(schemePartIndex, 0, {value: changedItem - INTERVAL, color: schemePart.color});
+			}
+			scheme.splice(newPartIndex, 0, {value: changedItem + INTERVAL, color: "#008000"});
+		}
+		
+		// Update scheme
+		currentSensor.updatedIndicator.scheme.removeAll();
+		currentSensor.updatedIndicator.scheme.splice.apply(currentSensor.updatedIndicator.scheme, [0, 0].concat(scheme));
+		app.sensorSchemeFocused = _.map(currentSensor.updatedIndicator.scheme(), _.clone);
+		app.sensorSchemeFocusedMinMax = [ currentSensor.updatedIndicator.min(), currentSensor.updatedIndicator.max() ];
+		app.units.sensorWindowSave();
+	};
+
     /**
      * The same as sensorWindowUpdatePreview but throttled version
      */
@@ -7687,6 +7763,7 @@ var sensolator = (function(app){
         // Update scheme
         currentSensor.updatedIndicator.scheme.removeAll();
         currentSensor.updatedIndicator.scheme.splice.apply(currentSensor.updatedIndicator.scheme, [0, 0].concat(scheme));
+		currentSensor.updatedIndicator.greenValues(DEFAULT_GREEN_VALUES_);
         app.units.sensorWindowUpdatePreviewThrottled();
     };
 
@@ -9166,7 +9243,8 @@ var sensolator = (function(app){
 				color_1: app.units.defaultSensor.DEFAULT_SENSOR_COLOR_1_,
 				color_2: app.units.defaultSensor.DEFAULT_SENSOR_COLOR_2_,
 				color_3: app.units.defaultSensor.DEFAULT_SENSOR_COLOR_3_,
-                scheme: app.units.defaultSensor.DEFAULT_SENSOR_SCHEME_
+                scheme: app.units.defaultSensor.DEFAULT_SENSOR_SCHEME_,
+                greenValues: app.units.defaultSensor.DEFAULT_GREEN_VALUES_
 			};
 		}else{
 			indicatorDefault = {
@@ -9230,15 +9308,16 @@ var sensolator = (function(app){
 			desktops = app.desktops.list() || [],
 			currentDesktopIndex,
 			switchToDesktopIndex,
-			keyCode = (typeof event.which === 'number') ? event.which : event.keyCode,
-			numberCode = Number(String.fromCharCode(keyCode)) || (keyCode > 96 && keyCode <= 105 ? keyCode - 96 : false);
+			keyCode = (typeof event.which === 'number') ? event.which : event.keyCode;
+			// numberCode = Number(String.fromCharCode(keyCode)) || (keyCode > 96 && keyCode <= 105 ? keyCode - 96 : false);
 
 		if (desktops.length > 1) {
 			// Distinguish our needed keys
-			if (numberCode && numberCode <= app.desktops.list().length && !app.core.$c.page_container.children('div.modal.in:first').length) {
-				app.desktops.changeDesktopTo( app.desktops.list()[numberCode - 1].id );
-			}
-			else if (event.ctrlKey && (keyCode === 37 || keyCode === 39)) {
+			// if (numberCode && numberCode <= app.desktops.list().length && !app.core.$c.page_container.children('div.modal.in:first').length) {
+			// 	app.desktops.changeDesktopTo( app.desktops.list()[numberCode - 1].id );
+			// }
+			// else 
+			if (event.ctrlKey && (keyCode === 37 || keyCode === 39)) {
 				// Find current desktop index
 				for (i = desktops.length; i > -1; i--) {
 					if (desktops[i] === currentDesktop) {

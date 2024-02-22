@@ -1485,6 +1485,10 @@
             controlsLength = $.isArray(controls) && controls.length;
 
         for (i = 0; i < controlsLength; i++) {
+            if (controls[i] == 'greenValues') {
+                $('<div class="gs-greenValue"><input type="number" id="0"></input><input type="number" id="1"></input><input type="number" id="2"></input><input type="number" id="3"></input></div>').appendTo($w);
+                continue;
+            }
             $('<span class="gs-' + controls[i] + '"></span>').appendTo($w);
         }
 
