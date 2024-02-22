@@ -5304,7 +5304,8 @@ var sensolator = (function(app){
                         color_1: DEFAULT_SENSOR_COLOR_1_,
                         color_2: DEFAULT_SENSOR_COLOR_2_,
                         color_3: DEFAULT_SENSOR_COLOR_3_,
-                        scheme: DEFAULT_SENSOR_SCHEME_
+                        scheme: DEFAULT_SENSOR_SCHEME_,
+						greenValues: DEFAULT_GREEN_VALUES_
                     },
                     updatedIndicator: {
                         skin: ko.observable( DEFAULT_SENSOR_SKIN_ ),
@@ -5319,7 +5320,8 @@ var sensolator = (function(app){
                         color_1: ko.observable( DEFAULT_SENSOR_COLOR_1_ ),
                         color_2: ko.observable( DEFAULT_SENSOR_COLOR_2_ ),
                         color_3: ko.observable( DEFAULT_SENSOR_COLOR_3_ ),
-                        scheme: ko.observableArray( DEFAULT_SENSOR_SCHEME_ )
+                        scheme: ko.observableArray( DEFAULT_SENSOR_SCHEME_ ),
+						greenValues: ko.observableArray( DEFAULT_GREEN_VALUES_ )
                     },
 
                     type: sensorsInfo[sensorId].t,
