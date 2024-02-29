@@ -11772,7 +11772,7 @@ td.visible-print {
     top: 2px;
 }
 
-.gs-greenValue input {
+.gs-greenValue select {
     width: 80px;
     margin-left: 4px;
     border: 2px solid #008000;

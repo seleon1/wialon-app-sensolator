@@ -5570,7 +5570,6 @@ var sensolator = (function(app){
                                 color_2: DEFAULT_SENSOR_COLOR_2_,
                                 color_3: DEFAULT_SENSOR_COLOR_3_,
                                 scheme: DEFAULT_SENSOR_SCHEME_,
-								greenValues: DEFAULT_GREEN_VALUES_
                             },
                             updatedIndicator: {
                                 skin: ko.observable( DEFAULT_SENSOR_SKIN_ ),
@@ -5586,7 +5585,6 @@ var sensolator = (function(app){
                                 color_2: ko.observable( DEFAULT_SENSOR_COLOR_2_ ),
                                 color_3: ko.observable( DEFAULT_SENSOR_COLOR_3_ ),
                                 scheme: ko.observableArray( DEFAULT_SENSOR_SCHEME_ ),
-								greenValues: ko.observableArray( DEFAULT_GREEN_VALUES_ )
                             },
                             type: type,
                             period: ko.observable(false),
@@ -6299,7 +6297,7 @@ var sensolator = (function(app){
 
 		app.core.$c.grid_cont.on(
             {
-				'input.sensolator': app.units.handlerChange
+				'change.sensolator': app.units.handlerChange
             },
             WIDGET_SENSOR + ' .' + WIDGET_BTN_GREEN_VALUES
         );
@@ -6359,11 +6357,11 @@ var sensolator = (function(app){
 					greenValues = currentSensor.updatedIndicator.greenValues();
 
 				for (var i = 0; i < greenValues.length; i++) {
-					var inputElement = $currentTarget.find('.gs-greenValue input#' + i);
-					if (!inputElement || inputElement.val() === greenValues[i]) {
+					var selectElement = $currentTarget.find('.gs-greenValue p select#' + i);
+					if (!selectElement || selectElement.val() === greenValues[i]) {
 						continue;
 					}
-					inputElement.val(greenValues[i]);
+					selectElement.val(greenValues[i]);
 				}
 
                 if($currentTarget.attr('data-sizex')*1 > 6 && $currentTarget.attr('data-sizey')*1 > 3){
@@ -9246,7 +9244,6 @@ var sensolator = (function(app){
 				color_2: app.units.defaultSensor.DEFAULT_SENSOR_COLOR_2_,
 				color_3: app.units.defaultSensor.DEFAULT_SENSOR_COLOR_3_,
                 scheme: app.units.defaultSensor.DEFAULT_SENSOR_SCHEME_,
-                greenValues: app.units.defaultSensor.DEFAULT_GREEN_VALUES_
 			};
 		}else{
 			indicatorDefault = {
@@ -9266,7 +9263,8 @@ var sensolator = (function(app){
 				color_1: app.units.defaultSensor.DEFAULT_SENSOR_COLOR_1_,
 				color_2: app.units.defaultSensor.DEFAULT_SENSOR_COLOR_2_,
 				color_3: app.units.defaultSensor.DEFAULT_SENSOR_COLOR_3_,
-                scheme: app.units.defaultSensor.DEFAULT_SENSOR_SCHEME_
+                scheme: app.units.defaultSensor.DEFAULT_SENSOR_SCHEME_,
+                greenValues: app.units.defaultSensor.DEFAULT_GREEN_VALUES_
 			};
 		}
 
