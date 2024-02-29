@@ -4802,7 +4802,7 @@ var sensolator = (function(app){
         DEFAULT_SENSOR_COLOR_2_ = '#f0a116',
         DEFAULT_SENSOR_COLOR_3_ = '#96c22b',
         DEFAULT_SENSOR_SCHEME_ = [],
-		DEFAULT_GREEN_VALUES_ = [0, 0, 0, 0],
+		DEFAULT_GREEN_VALUES_ = [0],
         DEFAULT_SENSOR_SCHEME_1_ = [ {
             color: '#96c22b',
             value: 25
