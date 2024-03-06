@@ -1486,7 +1486,7 @@
 
         for (i = 0; i < controlsLength; i++) {
             if (controls[i] == 'greenValues') {
-                $('<div class="gs-greenValue"><p><select id="0"><option value=40>40</option>><option value=50>50</option>><option value=60>60</option>><option value=70>70</option></select></p></div>').appendTo($w);
+                $('<div class="gs-greenValue"><button id="gs-greenValueButton" type="button" value="40">40</button><button id="gs-greenValueButton" type="button" value="50">50</button><button id="gs-greenValueButton" type="button" value="60">60</button><button id="gs-greenValueButton" type="button" value="70">70</button></div>').appendTo($w);
                 continue;
             }
             $('<span class="gs-' + controls[i] + '"></span>').appendTo($w);

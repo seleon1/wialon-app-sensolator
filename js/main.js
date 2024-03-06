@@ -1807,6 +1807,7 @@ var sensolator = (function(app){
 												'modules.desktops.listById.*.watchSensors.*.*.indicator.show_unit_name': 'S',
 												'modules.desktops.listById.*.watchSensors.*.*.indicator.show_axes': 'X',
 												'modules.desktops.listById.*.watchSensors.*.*.indicator.skin': 's',
+												'modules.desktops.listById.*.watchSensors.*.*.indicator.greenValues': 'GV',
 											'modules.desktops.listById.*.watchSensors.*.*.onDesktop': 'O',
 											'modules.desktops.listById.*.watchSensors.*.*.period': 'P',
 								'modules.desktops.listById.*.watchCounters': 'C',
@@ -6143,7 +6144,7 @@ var sensolator = (function(app){
                 uId = id[0],
                 sId = id[1],
                 currentSensor = Number(sId) ? app.units.watchSensors[uId][sId] : app.units.watchCounters[uId][sId];
-			
+
 			app.units.greenValuesChange(currentSensor, event);
 		}
 
@@ -6297,7 +6298,7 @@ var sensolator = (function(app){
 
 		app.core.$c.grid_cont.on(
             {
-				'change.sensolator': app.units.handlerChange
+				'mousedown.sensolator': app.units.handlerChange
             },
             WIDGET_SENSOR + ' .' + WIDGET_BTN_GREEN_VALUES
         );
@@ -6348,21 +6349,6 @@ var sensolator = (function(app){
                     $currentTarget.find('.gs-commands').addClass('disabled-btn-cmd');
                 else
                     $currentTarget.find('.gs-commands').removeClass('disabled-btn-cmd');
-
-				var
-					id = (widget) ? $(widget).attr('id').split('_') : app.$(this).closest(GRID_ELEM).attr('id').split('_'),
-					uId = id[0],
-					sId = id[1],
-					currentSensor = Number(sId) ? app.units.watchSensors[uId][sId] : app.units.watchCounters[uId][sId],
-					greenValues = currentSensor.updatedIndicator.greenValues();
-
-				for (var i = 0; i < greenValues.length; i++) {
-					var selectElement = $currentTarget.find('.gs-greenValue p select#' + i);
-					if (!selectElement || selectElement.val() === greenValues[i]) {
-						continue;
-					}
-					selectElement.val(greenValues[i]);
-				}
 
                 if($currentTarget.attr('data-sizex')*1 > 6 && $currentTarget.attr('data-sizey')*1 > 3){
                     $currentTarget.removeClass('hide-ctrl');
@@ -7683,22 +7669,36 @@ var sensolator = (function(app){
     };
 
 	app.units.greenValuesChange = function greenValuesChange(currentSensor, event) {
+		if (event.target.id != "gs-greenValueButton") {
+			return;
+		}
 		app.units.currentSensor(currentSensor);
-		var greenValueIndex = parseInt(event.target.id);
-		var changedItem = currentSensor.updatedIndicator.greenValues()[greenValueIndex];
 		const INTERVAL = 5;
+		var possibleGreenValues = [
+			40 + INTERVAL,
+			50 + INTERVAL,
+			60 + INTERVAL,
+			70 + INTERVAL,
+		];
 
 		var scheme = _.map(currentSensor.updatedIndicator.scheme(), _.clone);
 
-		var schemePartToDelete = scheme.find((element) => element.value == changedItem + INTERVAL);
-		if (schemePartToDelete) {
-			var schemePartToDeleteIndex = scheme.indexOf(schemePartToDelete);
+		var existingGreenSchemeParts = scheme.filter((element) => possibleGreenValues.includes(element.value) && element.color == "#008000");
+
+		var changedItem = parseInt(event.target.value);
+		var deletedSamePart = false;
+		for (var index in existingGreenSchemeParts) {
+			var part = existingGreenSchemeParts[index];
+			if (part.value == changedItem + INTERVAL) {
+				deletedSamePart = true;
+			}
+			var schemePartToDeleteIndex = scheme.indexOf(part);
 			scheme.splice(schemePartToDeleteIndex - 1, 2);
 		}
-		changedItem = parseInt(event.target.value);
-		currentSensor.updatedIndicator.greenValues()[greenValueIndex] = changedItem;
 
-		if (changedItem >= INTERVAL) {
+		currentSensor.updatedIndicator.greenValues()[0] = changedItem;
+
+		if (!deletedSamePart) {
 			var schemePart = scheme.find((element) => element.value >= changedItem) ?? scheme[scheme.length - 1];
 			var schemePartIndex = scheme.indexOf(schemePart);
 			var newPartIndex = schemePartIndex + 1;
