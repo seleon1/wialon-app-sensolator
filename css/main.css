@@ -2967,7 +2967,7 @@ select.select-commands{
 .hide-ctrl .indicator-uname,
 .hide-ctrl .gs-info,
 .hide-ctrl .gs-unitSensors,
-.hide-ctrl .gs-commands
+.hide-ctrl .gs-commands,
 .hide-ctrl .gs-greenValue
 {
 	display: none;
@@ -11791,8 +11791,7 @@ td.visible-print {
 .gs-options,
 .gs-info,
 .gs-unitSensors,
-.gs-commands,
-.gs-greenValue {
+.gs-commands {
     opacity: 0;
 }
 

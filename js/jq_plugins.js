@@ -1489,6 +1489,10 @@
                 $('<div class="gs-greenValue"><button id="gs-greenValueButton" type="button" value="40">40</button><button id="gs-greenValueButton" type="button" value="50">50</button><button id="gs-greenValueButton" type="button" value="60">60</button><button id="gs-greenValueButton" type="button" value="70">70</button></div>').appendTo($w);
                 continue;
             }
+            if (controls[i] == 'commands' && controls.includes('greenValues')) {
+                $('<span class="gs-' + controls[i] + '" style="opacity: 1;"></span>').appendTo($w);
+                continue;
+            }
             $('<span class="gs-' + controls[i] + '"></span>').appendTo($w);
         }
 
@@ -4975,6 +4979,10 @@
     			if (oldIcon !== newIcon) {
     				$uIcon.css('background-image', newIcon);
     			}
+            }
+
+            if (data.metrics == "°C") {
+                $tmpl.css('margin-top', '24px');
             }
 
 			if (!isTMPLExists) {

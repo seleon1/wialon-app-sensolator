@@ -4856,7 +4856,6 @@ var sensolator = (function(app){
                 'info',
                 'unitSensors',
                 'commands',
-				'greenValues',
             ]
         },
         widgetDefaults_ = {
@@ -5174,6 +5173,15 @@ var sensolator = (function(app){
         // Add indicator
         $widget.indicator( data.indicator );
 
+		if (data.indicator.metrics == "°C") {
+			props.controls.push('greenValues');
+		} else {
+			props.controls = [
+				'delete',
+                'options',
+                'unitSensors',
+			];
+		}
         app.gridster.add_widget.apply(
             app.gridster,
             [
