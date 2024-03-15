@@ -6130,13 +6130,13 @@ var sensolator = (function(app){
                 app.units.removeWatchItem(uId, sId);
                 app.core.appStateSave();
             }
-            else if ( app.$(this).hasClass(WIDGET_BTN_OPTIONS) ) {
+            else if ( app.$(this).hasClass(WIDGET_BTN_OPTIONS) && ! $(this).hasClass('disabled-btn-options')) {
                 app.units.showUnitSensorProperties( currentSensor );
             }
             else if ( app.$(this).hasClass(WIDGET_BTN_INFO) ) {
                 app.units.sensorInfoShow( currentSensor );
             }
-            else if ( app.$(this).hasClass(WIDGET_BTN_UNIT_SENSORS) ) {
+            else if ( app.$(this).hasClass(WIDGET_BTN_UNIT_SENSORS) && ! $(this).hasClass('disabled-btn-unitSensors')) {
                 app.units.unitWindowShow( app.units.listById[uId] );
             }
             else if ( app.$(this).hasClass(WIDGET_BTN_COMMAND) && ! $(this).hasClass('disabled-btn-cmd')) {
@@ -6357,6 +6357,14 @@ var sensolator = (function(app){
                     $currentTarget.find('.gs-commands').addClass('disabled-btn-cmd');
                 else
                     $currentTarget.find('.gs-commands').removeClass('disabled-btn-cmd');
+
+				if (unit.getAdminFields() === null) {
+					$currentTarget.find('.gs-options').addClass('disabled-btn-options');
+					$currentTarget.find('.gs-unitSensors').addClass('disabled-btn-unitSensors');
+				} else {
+                    $currentTarget.find('.gs-options').removeClass('disabled-btn-options');
+                    $currentTarget.find('.gs-unitSensors').removeClass('disabled-btn-unitSensors');
+				}
 
                 if($currentTarget.attr('data-sizex')*1 > 6 && $currentTarget.attr('data-sizey')*1 > 3){
                     $currentTarget.removeClass('hide-ctrl');

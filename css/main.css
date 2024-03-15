@@ -2849,6 +2849,16 @@ form.command-param .choose-coord{
 	cursor: default;
 }
 
+.disabled-btn-options{
+	background: url(../img/icon-options.png) no-repeat !important;
+	cursor: not-allowed;
+}
+
+.disabled-btn-unitSensors{
+	background: url(../img/unit_sensors.png) no-repeat !important;
+	cursor: not-allowed;
+}
+
 .main-wrapp{
 	position: absolute;
 	top: 0;
