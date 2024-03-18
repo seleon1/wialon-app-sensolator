@@ -6126,7 +6126,7 @@ var sensolator = (function(app){
                 currentSensor = Number(sId) ? app.units.watchSensors[uId][sId] : app.units.watchCounters[uId][sId];
 
             // Determine the action
-            if ( app.$(this).hasClass(WIDGET_BTN_DELETE) ) {
+            if ( app.$(this).hasClass(WIDGET_BTN_DELETE) && ! $(this).hasClass('disabled-btn-delete') ) {
                 app.units.removeWatchItem(uId, sId);
                 app.core.appStateSave();
             }
@@ -6361,9 +6361,11 @@ var sensolator = (function(app){
 				if (unit.getAdminFields() === null) {
 					$currentTarget.find('.gs-options').addClass('disabled-btn-options');
 					$currentTarget.find('.gs-unitSensors').addClass('disabled-btn-unitSensors');
+					$currentTarget.find('.gs-delete').addClass('disabled-btn-delete');
 				} else {
                     $currentTarget.find('.gs-options').removeClass('disabled-btn-options');
                     $currentTarget.find('.gs-unitSensors').removeClass('disabled-btn-unitSensors');
+                    $currentTarget.find('.gs-delete').removeClass('disabled-btn-delete');
 				}
 
                 if($currentTarget.attr('data-sizex')*1 > 6 && $currentTarget.attr('data-sizey')*1 > 3){
@@ -6670,6 +6672,9 @@ var sensolator = (function(app){
      * @param  {object} unit wialon unit object
      */
     app.units.unitWindowShow = function unitWindowShow(unit) {
+		if (unit.getAdminFields() === null) {
+			return false;
+		}
         var
             unitId = unit.getId(),
             sensorId,

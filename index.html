@@ -195,7 +195,7 @@
 					<tr data-bind="css: {active: ($root.units.sensorsPanelUnit() && $root.units.sensorsPanelUnit().getId() == unit.getId()) || ($root.units.currentSensor() && $root.units.currentSensor().indicator.uId == unit.getId())  }">
 						<td class="uicon"><img data-bind="attr: {src: unit.getIconUrl(20)}"></td>
 						<td class="uname"><div data-bind="text: _.unescape( unit.getName() ), click: $root.units.focusOnUnit"></div></td>
-						<td class="usensors" data-bind="attr: {title: $root.lang.unit_sensors}, click: $root.units.unitWindowShow"></td>
+						<td class="usensors" data-bind="attr: {title: $root.lang.unit_sensors}, click: $root.units.unitWindowShow, visible: unit.getAdminFields() !== null"></td>
 					</tr>
 				</tbody>
 			</table>
